@@ -1,0 +1,38 @@
+
+.tp-caption a {
+    color: inherit;
+    border: 3px solid #fff;
+}
+.tp-caption.button-alt-black a,
+.tp-caption.button-alt-white a {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 5px 70px 5px 24px
+}
+
+.tp-caption.button-alt-black a:hover,
+.tp-caption.button-alt-white a:hover {
+    color: #00b2b2;
+    border: solid #00b2b2;
+    transition: .5s;
+}
+.tp-caption.button-alt-black a:after,
+.tp-caption.button-alt-white a:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    content: "\f178";
+    font-family: FontAwesome;
+    border-left: 3px solid #222;
+    padding: 8px 15px
+}
+.tp-caption.button-alt-white a:after {
+    border-color: #fff
+}
+.tp-caption.button-alt-black a:hover:after,
+.tp-caption.button-alt-white a:hover:after {
+    border-color: #00b2b2;
+    color: #00b2b2
+}

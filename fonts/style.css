@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'iconos-play';
+  src:  url('fonts/iconos-play.eot?yxk4np');
+  src:  url('fonts/iconos-play.eot?yxk4np#iefix') format('embedded-opentype'),
+    url('fonts/iconos-play.ttf?yxk4np') format('truetype'),
+    url('fonts/iconos-play.woff?yxk4np') format('woff'),
+    url('fonts/iconos-play.svg?yxk4np#iconos-play') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="play-"], [class*=" play-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconos-play' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.play-marqueting:before {
+  content: "\e900";
+}
+.play-reloj:before {
+  content: "\e901";
+}
+.play-cafe:before {
+  content: "\e902";
+}
+.play-ideas:before {
+  content: "\e903";
+}
+.play-sueño:before {
+  content: "\e904";
+}
+.play-redes:before {
+  content: "\e905";
+}
+.play-lapiz:before {
+  content: "\e906";
+}
+.play-diseño-reponsive:before {
+  content: "\e907";
+}
+
+.paciente:before{
+
+}
+
+.investigacion:before{
+
+}
+
+.rehabilitacion:before{
+
+}
+
+.articulos:before{
+  content: url(../images/Iconos/article.png);
+  zoom:20%;
+}
+
+.rehabilitacion:before{
+  content: url(../images/Iconos/patient.png);
+  zoom:20%;
+}
+.investigacion:before{
+  content: url(../images/Iconos/investigacion.png);
+  zoom:20%;
+}
+.paciente:before{
+  content: url(../images/Iconos/paciente.png);
+  zoom:20%;
+}

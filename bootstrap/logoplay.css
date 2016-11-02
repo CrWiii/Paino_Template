@@ -1,0 +1,236 @@
+/*-----------CABECERA---------
+.seccion{
+    padding-top: 2em;                             
+}
+.ir-arriba {
+    display:none;
+    padding:0.5em 0.65em 0.5em 0.65em;
+    border-radius: 5em;
+    background:rgba(0,0,0, 0.5);
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    position: fixed;
+    bottom:1.5em;
+    right:1.5em;
+}
+.ir-arriba:hover,.ir-arriba:active {                
+    background:rgba(255,255,255, 0.5);
+    color:#000;
+}*/
+.punto1{
+    color:white;
+}
+.punto1:hover{
+    font-weight: bold;
+    color: white;
+}
+/*-----------FIN CABECERA---------*/
+.logo{
+
+    background-color: #99998;
+    position: relative;
+
+}
+.pop{
+   color:white;
+   font-size: 1.3em !important;
+   text-align: justify;
+}
+.creativos{
+    color:white;
+    font-size: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    padding-right: 73%;
+    text-align: right;
+}
+.proactivos{
+    color:white;
+    font-size: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    padding-left:73%;
+
+}
+.comprometidos{
+    color:white;
+    font-size: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 69%;
+    text-align: right;
+}
+.divertidos{
+    color:white;
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    padding-left:65%;
+}
+
+.animation-logo{
+    height: 520px;
+    background-image: url('../images/logoplay.png') ;
+    background-size: 600px 506px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+.triangulito{
+    -webkit-transform: rotate(45deg);
+    position: relative;
+    border-left: 8em solid red;
+    border-top: 4em solid transparent;
+    border-bottom: 4em solid transparent;   
+}
+.triangulo {
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    border-left: 252px solid black;
+    border-top: 125px solid transparent;
+    border-bottom: 125px solid transparent;      
+}
+
+/*-webkit-transform: rotate(45deg); */
+/*-----ivan GALERIA de imagen--------*/
+
+.contenedor-img {
+    max-width: 100%;
+    xborder-radius: 100%;
+    height: AUTO;
+    float: left;
+    xmargin: 1em;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #fff;
+    transition: width 2s;
+}
+
+.contenedor-img .mascara,.contenedor-img .contenido {
+    width: 100%;
+    height:100%;
+    /*width: 100%;
+    height: 100%;*/
+    xborder-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.contenedor-img img {
+    display: block;
+    position: relative;
+}
+.contenedor-img h2 {
+    font-family: Roboto Condensed;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+
+    position: relative;
+    font-size: 1.45em;
+    padding: 0.5em 1.02em 0em 1.02em;
+    /*background: rgb(201,201,201);
+    background-color: #1a1a1a;*/
+    margin: 10% 0 0 0
+}
+.contenedor-img p {
+    font-size: 1.05em;
+    font-family: Roboto;
+    position: relative;
+    color: #fff;
+    padding: 0.2em 1.4em 1em 1.4em;
+
+}
+.contenedor-img b.link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #555;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.contenedor-img b.link:hover {
+
+    xbox-shadow: 0 0 5px #000;
+
+}
+
+.efecto-1 img {
+    transition: all 0.2s linear;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); /* Para cuando es estándar funcione en todos */
+    filter: Gray(); /* IE4-8 and 9 */
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.efecto-1 .mascara {
+    opacity: 0;
+    xbackground-color: rgba(0,0,0, 0.7);
+    xbackground-color: rgba(85,161,79, 0.85);
+    transition: all 0.3s ease-in-out;
+}
+.efecto-1:hover .mascara {
+    opacity: 1;
+}
+.efecto-1:hover img {
+    xopacity: 0;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+.efecto-1 h2 {
+    transform: translateX(-200px);/*Desplazamos a la izquierda*/
+    opacity: 0;
+
+    transition: all 0.2s ease-in-out;
+}
+.efecto-1 p {
+    transform: translatey(200px);/*Desplazamos a la derecha*/
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.efecto-1 b.link{
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(100px)/*Desplazamos para abajo*/
+}
+
+
+.efecto-1:hover h2,
+.efecto-1:hover p,
+.efecto-1:hover b.link {
+    opacity: 1;
+    transform: translateX(0px);/*Regresamos a las posiciones originales*/
+}
+.efecto-1:hover p {
+    transition-delay: 0.1s;
+}
+.efecto-1:hover b.link {
+    transition-delay: 0.05s; /*Aplicamos un pequeño retardo para que se muestre al final*/
+    transform: translateY(0px);
+}
+a:link   
+{   
+    text-decoration:none;   
+} 
