@@ -55,6 +55,34 @@
         <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
         <link href="http://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
         <style>
+        /*
+            #widget{
+                width: 300px;
+                height:400px;
+                overflow: auto;
+            }
+            ::-webkit-scrollbar {
+                width: 10px;
+                height: 10px;
+            }
+            ::-webkit-scrollbar-button:start:decrement,
+            ::-webkit-scrollbar-button:end:increment  {
+                display: none;
+            }
+            
+            ::-webkit-scrollbar-track-piece  {
+                background-color: #3b3b3b;
+                -webkit-border-radius: 6px;
+            }
+            
+            ::-webkit-scrollbar-thumb:vertical {
+                -webkit-border-radius: 6px;
+                background: #666 url(scrollbar_thumb_bg.png) no-repeat center;
+            }*/
+
+
+
+
             .seccion{
                 padding-top: 5em;
                 padding-left: 0px;
@@ -80,6 +108,20 @@
             }
             .nosotros{
 
+            }
+
+            .scrolll{
+                width:800px;
+                height:500px;
+                /*background-color: #88b6d2;*/
+                margin-top:40px;
+                margin-left:40px;
+                overflow-y:scroll;
+                float:left;
+            }
+
+            .cont{
+                height:450px;
             }
         </style>
 
@@ -150,20 +192,90 @@
             </div>
 
         </div>
-        <div id="DrPaino" class="seccion" style="background-color: #88b6d2;">
-           <div class="container panel-body">
-                <div class="">
-                    <div class="col-md-12 hidden-xs hidden-sm"  style="color:#1F1F1F; font-size: 3em; text-align: center; padding: 1.2em;">
+        <div id="DrPaino"  style="background-color: #88b6d2;height: : 720px;" >
+        <div class="col-md-4 hidden-xs hidden-sm" style="float: left;padding-top: 0px;padding-left: 200px;">
+                    <img src="images/doc.png" width="200px">
+                </div>
+           <div>
+                
+                <div>
+                    <div class="col-md-6 hidden-xs hidden-sm"  style="color:#1F1F1F; font-size: 3em; text-align: center; padding-top: 50px;">
                         <span>Dr. <strong>Paino</strong></span>
                     </div>
 
-                    <div class="vc_col-sm-12 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8  wpb_column vc_column_container      vc_custom_1440820445589  vc_custom_1440820445589">
-                        <div class="wpb_wrapper">
-                            <div class="wpb_text_column wpb_content_element ">
-                                <div class="wpb_wrapper">
-                                    <p style="text-align: justify;">dfasdfasdfasdfasdfasidfg isad gfsagdfuisagdfasgdfiasgdfigasdfi
-                                    laskdjflaskjflkasjdl fashdfjh asdf jasghdfasdfasdfasdfasdfasidfg isad gfsagdfuisagdfasgdfiasgdfigasdfidasaasdasdddsasdadasasdasdasdasdasda
-                                    laskdjflaskjflkasjdl fashdfjh asdf sdasdasdajasghdf</p>
+                                <div class="scrolll">
+                                <div class="cont">
+                                    <p style="text-align: justify;font-size: 0.8em;padding-right: 80px;">
+                                    <ul style="list-style-type: none;">
+                                        <li><strong>Cargos actuales:</strong></li>
+                                        <li>Neurocirujano; Clínica San Felipe.</li>
+                                        <li>Profesor Adjunto - Investigación; Universidad George Washington.</li>
+                                        <li>Profesor Adjunto - Investigación; Universidad Tecnológica del Perú UTEC.</li>
+                                        <li>Profesor - Bioquímica;  Universidad Tecnológica del Perú UTEC.</li>
+                                        <li>Profesor Honoris Causa; Universidad San Martín de Porres.</li>
+                                        <li>Colegio Médico del Perú con licencia CMP: 27336.</li>
+                                        <li>Registro Nacional de Especialistas - Neurocirugía. Nº: 19168.</li>
+                                        <li>Licencia del Estado de Nueva York. NYS: 228347.</li>
+                                        <li>Licencia médica de Estados Unidos  # 228347 Desde el año 2003.</li>
+                                        <li>Colegio Médico de Perú con licencia # 27336, desde 1994.</li>
+                                        <li>Marina de Guerra del Perú: Rescate y Buceo Licencia # K-83064065.</li>
+
+                                        <li><strong>Educación:</strong></li>
+                                        <li>Escuela de la Universidad George Washington de la medicina Phd., Biología Molecular-Bioquímica, Washington, D.C.1994 -2000.</li>
+                                        <li>Universidad Federal de Paraná Escuela de Medicina, Curitiba, Paraná, Brasil. Cirujano, 1985-1989.</li>
+                                        <li><strong>Neurocirujano Especialista:</strong></li>
+                                        <li>Centro Médico Mount Sinai, Nueva York, NY. Departamento de Neurocirugía. Residencia, 1998-2004.</li>
+                                        <li>San Martín de Porres: Revalidación por competencias, Lima PERÚ 2005 – 2007.</li>
+                                        <li><strong>Post Doctorado:</strong></li>
+                                        <li>Centro Médico Mount Sinai, Nueva York, Nueva York. Departamento de Neurocirugía.  Neurotrauma Nivel III, 2004-2005.</li>
+                                        <li>Centro Médico Mount Sinai, Nueva York, Nueva York. Departamento de Radiología. Residencia, 1997-1998.</li>
+                                        <li>Centro Médico Mount Sinai, Nueva York, Nueva York. Departamento de Cirugía General. Internado 1996-1997.</li>
+                                        <li>Universidad de Miami, Escuela de Medicina, Miami, FL. Departamento de Neurocirugía, Miami, FL. Investigador Asociado, 1993-1994.</li>
+                                        <li>Universidad de Miami, Escuela de Medicina: Investigador. Florida, EE.UU. 1992 – 1993.</li>
+                                        <li>Universidad de Miami, Escuela de Medicina, Miami, FL. Departamento de Inmunología. Postdoctorado en Investigación, 1990-1992.</li>
+                                        <li><strong>Docente:</strong></li>
+                                        <li>Universidad de Ingeniería y Tecnología UTEC, Departamento de Ingenieria Química. Profesor de Bioquímica y Biología Molecular 2016.</li>
+                                        <li>Escuela de Medicina de Washington, DC George Washington University.</li>
+                                        <li>Profesor Asistente de Investigación Departamento de Bioquímica y Biología Molecular 2005.</li>
+                                        <li>Academia Stanley H. Kaplan, Washington, DC / Baltimore, MD</li>
+                                        <li>Preparacion de Examenes de Licenciatura en Médicina EE.UU, 1995-1995.</li>
+                                        <li>Rush Medical College Chicago, IL, División ArcVentures, Miami, FL</li>
+                                        <li>Preparacion de Examenes de Licenciatura en Médicina EE.UU, 1992 – 1993.</li>
+                                        <li><strong>Asesoría:</strong></li>
+                                        <li>Marina de Guerra del Perú, Lima Perú, Departamento de Neurocirugía, Hospital Naval, Lima PERÚ. </li>
+                                        <li>Cirugías complejas de columna vertebral y cerebro.</li>
+                                        <li><strong>Intereses:</strong></li>
+                                        <li>Terapia de células regenerativas en las enfermedades neurológicas. Biología Molecular y Biotecnología, Laboratorio UTEC. </li>
+                                        <li>Cirugia minimaente Invasiva de Columna.  Instrumentación compleja de columna vertebral.  Neuro trauma.</li>
+                                        <li>Tumores cerebrales: 9 años de investigación y Cirugía Meningiomas Cerebrales. Dr. Sekhar, Dr. Sen</li>
+                                        <li><strong>Sociedades médicas:</strong></li>
+                                        <li>Asociación Americana de Neurocirujanos, Washington, DC.</li>
+                                        <li>Sociedad Americana de Cirugía de la Base del Cráneo, Little Rock OK.</li>
+                                        <li>Asociación Médica Americana, Washington, DC.</li>
+                                        <li>Sociedad Médica de Nueva York, NY.</li>
+                                        <li>Academia de Ciencias de Nueva York, NY.</li>
+                                        <li>Sociedad Radiológica de Nueva York, NY.</li>
+                                        <li>Sociedad de Neurociencia, Washington, DC</li>
+                                        <li>Sociedad de Biología Celular, Bethesda, MD.</li>
+                                        <li>Colegio Médico de Perú, Lima, Perú.</li>
+                                        <li><strong>Premios:</strong></li>
+                                        <li>Médico del Año" Mount Sinai Hospital, 2001.</li>
+                                        <li>Quién es quién en América" Sociedad de Strathmore de 2002.</li>
+                                        <li>Quién es quién en Medicina en los Estados Unidos" Sociedad de Strathmore de 2004.</li>
+                                        <li>Premio William Beaumont Sociedad de Investigación". Universidad  George Washington. Categoría de cartel anual del comité, ganador del '95 y '96.</li>
+                                        <li>Premio de Intercambio Cultural Perú-Brasil". Becado en primer lugar en Medicina año 1982. Subvención Escuela de Medicina.</li>
+                                        <li><strong>Fuente de proyectos financiados:</strong></li>
+                                        <li>Fuente: Comisión peruana de Ciencia y Tecnología (CONCYTEC). Investigador principal.</li>
+                                        <li>Fuente: Privada. Revisores; GWU y la Academia de Ciencias de Nueva York. Investigador principal.</li>
+                                        <li>Fuente: Centro Médico Mount Sinai, Fundación para el incentivo en la  financiación de Investigación. Investigador principal.</li>
+                                        <li>Fuente: Premio de Investigación Phillip Morris, Patrocinador GWU, Neurocirugía. Tesista.</li>
+                                        <li>Fuente: Privada. Cursos prácticos en Cirugía mínimamente invasiva de la columna vertebral: Alemania.</li>
+                                        <li>Fuente: Privada.  Microneurocirugía, Métodos para el Centro Médico de Base del Cráneo GWU, Washington, DC.</li>
+                                        <li>Fuente: Privada.  Cardiología Avanzada y reanimación: "Harvey" Universidad de Miami, EE.UU.</li>
+                                    </ul>
+
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -171,24 +283,49 @@
                 </div>
             </div>
         </div>
-        <div id="Especializaciones" class="seccion">
-            <div class="panel-body">
+        <div id="Especializaciones" class="seccion" style="padding-top: 0px !important;">
+            <div class="panel-body" style="padding-top: 0px !important;">
                 <div class="vc_tta-container" data-vc-action="collapse">
                     <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
                         <div class="vc_tta-tabs-container">
                             <ul class="vc_tta-tabs-list">
-                                <li class="vc_tta-tab vc_active" data-vc-tab><a style="border-left: 0px;" href="#Neurocirugia" data-vc-tabs data-vc-container=".vc_tta"><span>Neurocirugía de<br /> la Columna y el<br /> Cerebro</span></a></li>
                                 
-                                <li class="vc_tta-tab" data-vc-tab><a style="border-left: 0px;" href="#Diagnostico" data-vc-tabs data-vc-container=".vc_tta"><span>Diagnóstico y<br /> tratamiento del<br /> dolor</span></a></li>
+                                <li class="vc_tta-tab vc_active" data-vc-tab style="width: 180px;height: 130px;">
+                                    <a style="border-left: 0px;" href="#Neurocirugia" data-vc-tabs data-vc-container=".vc_tta">
+                                        <span style="margin: 4px;text-align: center">Neurocirugía de la Columna y el Cerebro</span>
+                                    </a>
+                                </li>
                                 
-                                <li class="vc_tta-tab" data-vc-tab><a style="border-left: 0px;" href="#TerapiaFisica" data-vc-tabs data-vc-container=".vc_tta"><span>Terapia Física /<br /> NeuroRehabilitación</span></a></li>
+                                <li class="vc_tta-tab" data-vc-tab style="width: 180px;height: 130px;">
+                                    <a style="border-left: 0px;" href="#Diagnostico" data-vc-tabs data-vc-container=".vc_tta">
+                                        <span style="margin: 6px;text-align: center">Diagnóstico y tratamiento del dolor</span>
+                                    </a>
+                                </li>
                                 
-                                <li class="vc_tta-tab" data-vc-tab><a style="border-left: 0px;" href="#Tumorescerebrales" data-vc-tabs data-vc-container=".vc_tta"><span>Tumores cerebrales<br /> y de columna</span></a></li>
+                                <li class="vc_tta-tab" data-vc-tab style="width: 180px;height: 130px;">
+                                    <a style="border-left: 0px;" href="#TerapiaFisica" data-vc-tabs data-vc-container=".vc_tta">
+                                        <span>Terapia Física / NeuroRehabilitación</span>
+                                    </a>
+                                </li>
+                                
+                                <li class="vc_tta-tab" data-vc-tab style="width: 180px;height: 130px;">
+                                    <a style="border-left: 0px;" href="#Tumorescerebrales" data-vc-tabs data-vc-container=".vc_tta">
+                                        <span>Tumores cerebrales y de columna</span>
+                                    </a>
+                                </li>
+                                
+                                <li class="vc_tta-tab" data-vc-tab style="width: 180px;height: 130px;">
+                                    <a style="border-left: 0px;" href="#Investigación" data-vc-tabs data-vc-container=".vc_tta">
+                                        <span>La Investigación Medica requiere de todos nosotros </span>
+                                    </a>
+                                </li>
 
-                                <li class="vc_tta-tab" data-vc-tab><a style="border-left: 0px;" href="#Investigación" data-vc-tabs data-vc-container=".vc_tta"><span>Investigación</span></a></li>
-
-                                <li class="vc_tta-tab" data-vc-tab><a style="border-left: 0px;" href="#Alzheimer" data-vc-tabs data-vc-container=".vc_tta"><span>Alzheimer y<br /> otros desórdenes<br /> de la memoria</span></a></li>
-
+                                <li class="vc_tta-tab" data-vc-tab style="width: 180px;height: 130px;">
+                                    <a style="border-left: 0px;border-right: 0px;" href="#Alzheimer" data-vc-tabs data-vc-container=".vc_tta">
+                                        <span>Alzheimer y otros desórdenes de la memoria</span>
+                                    </a>
+                                </li>
+                                
                             </ul>
                         </div>
 
@@ -208,7 +345,7 @@
                                                         <span class="vc_empty_space_inner"></span></div>
                                                 </div>
                                             </div>
-                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-3 vc_col-md-4">
+                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-5 vc_col-md-5" style="padding-top: 50px;">
                                                 <div>
                                                     <div id="cms-empty-space-15679b50e411c8" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                     <div id="cms-custom-headding-15679b50e413e7" class="vc_custom_heading vc_custom_1446622073876  clearfix">
@@ -216,13 +353,12 @@
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element  vc_custom_1446622085015">
                                                         <div>
-                                                            <p><strong style="font-size: 1.2em;">Neurocirugía de la Columna y Cerebro</strong></p>
-                                                            <p>En Pronostico Positivo realizamos más de 100 cirugías al año y hemos expandido la especialidad en el Perú desarrollando áreas como preservación del movimiento y microcirugía con técnicas mínimamente invasivas de columna, reconstrucciones complejas, y navegación. El doctor Paino es líder en Neurocirugía y educación, habiendo publicado artículos importantes y conferencias en la especialidad.  En la sala de operaciones de la Clínica San Felipe contamos con modernos equipos, instrumentos de precisión y navegación por imágenes. Estamos en capacidad para atender casos simples y extremadamente complejos.  Nuestro equipo multidisciplinario trabaja juntos para proporcionar todo el espectro de estrategias en el tratamiento del paciente desde la terapia conservadora, la cirugía si es necesaria y la rehabilitación post operatoria.  Nuestros anestesiólogos están preparados en los mejores centros, manejan casos muy delicados con un excelente record sin complicaciones.  Estamos comprometidos con una atención de excelencia, enfocados en la seguridad de nuestros pacientes e impecables resultados. Como profesor adjunto de investigación en la Universidad George Washington, avanzamos en el desarrollo de la próxima generación de osteobiológicos  para la fusión de lesiones complejas de columna.   Somos pioneros en el uso de Monitoreo Intra Operatorio (IOM), esto nos permite medir en todo momento la integridad funcional del paciente durante las cirugías complejas de columna o Cerebro de tal manera que reducimos el riesgo de cortar algún nervio durante la cirugía.  En nuestro instituto es realizado por un Neurólogo en la sala de operaciones.   </p>
+                                                            <p style="text-align: justify;">En Pronostico Positivo realizamos más de 100 cirugías al año y hemos expandido la especialidad en el Perú desarrollando áreas como preservación del movimiento y microcirugía con técnicas mínimamente invasivas de columna, reconstrucciones complejas, y navegación. El doctor Paino es líder en Neurocirugía y educación, habiendo publicado artículos importantes y conferencias en la especialidad.  En la sala de operaciones de la Clínica San Felipe contamos con modernos equipos, instrumentos de precisión y navegación por imágenes. Estamos en capacidad para atender casos simples y extremadamente complejos.  Nuestro equipo multidisciplinario trabaja juntos para proporcionar todo el espectro de estrategias en el tratamiento del paciente desde la terapia conservadora, la cirugía si es necesaria y la rehabilitación post operatoria.  Nuestros anestesiólogos están preparados en los mejores centros, manejan casos muy delicados con un excelente record sin complicaciones.  Estamos comprometidos con una atención de excelencia, enfocados en la seguridad de nuestros pacientes e impecables resultados. Como profesor adjunto de investigación en la Universidad George Washington, avanzamos en el desarrollo de la próxima generación de osteobiológicos  para la fusión de lesiones complejas de columna.   Somos pioneros en el uso de Monitoreo Intra Operatorio (IOM), esto nos permite medir en todo momento la integridad funcional del paciente durante las cirugías complejas de columna o Cerebro de tal manera que reducimos el riesgo de cortar algún nervio durante la cirugía.  En nuestro instituto es realizado por un Neurólogo en la sala de operaciones.   </p>
 
                                                         </div>
                                                     </div>
                                                     <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline">
-                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#identidad_coorporativa">Servicios ...</button>
+                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#">Servicios ...</button>
                                                     </div>
 
                                                     <!--<div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline"><a class="vc_general vc_btn3 vc_btn3-size- vc_btn3-shape-default vc_btn3-style- btn-default-alt vc_btn3-color-cms-default" href="#1234" title="Link text" target="_self">Live Preview</a></div>-->
@@ -245,7 +381,7 @@
                                                     <div id="cms-empty-space-15679b50e42d7c" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                 </div>
                                             </div>
-                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-3 vc_col-md-4 padding120px">
+                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-5 vc_col-md-5" style="padding-top: 50px;">
                                                 <div class="wpb_wrapper">
                                                     <div id="cms-empty-space-15679b50e43515" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                     <div id="cms-custom-headding-15679b50e437dd" class="vc_custom_heading vc_custom_1446622133801  clearfix">
@@ -254,11 +390,11 @@
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element  vc_custom_1446622161468">
                                                         <div class="wpb_wrapper">
-                                                            <p>El manejo de su dolor es una parte importante de nuestro Instituto.  Especialistas en manejo percutáneo del dolor y rehabilitación se juntan para proporcionarle un alivio profundo y duraderos de sus dolores agudos y crónicos.  Nuestro equipo trabaja muy integrado para proporcionarle una variedad de intervenciones y estrategias que le permitan recobrar el control de su vida sin dolor.  La adición del Dr. Alejandro Castillo a nuestro equipo intervencionista fortalece nuestro programa por lo que podemos presentar excelentes resultados a nuestros pacientes.  Manejamos situaciones complejas como Neuralgias de Arnold, Neuropatías del Trigémino, bloqueos epidurales, bloqueos facetarios, etc.  Tratamos dolores de cabeza refractarios a otros tratamientos mediante un aborde multidisciplinario.  Otros diagnósticos tratados en nuestro Instituto incluyen lumbalgias, cervicalgias , radiculopatías, túnel del carpo y dolor central post derrame cerebral. </p>
+                                                            <p style="text-align: justify;">El manejo de su dolor es una parte importante de nuestro Instituto.  Especialistas en manejo percutáneo del dolor y rehabilitación se juntan para proporcionarle un alivio profundo y duraderos de sus dolores agudos y crónicos.  Nuestro equipo trabaja muy integrado para proporcionarle una variedad de intervenciones y estrategias que le permitan recobrar el control de su vida sin dolor.  La adición del Dr. Alejandro Castillo a nuestro equipo intervencionista fortalece nuestro programa por lo que podemos presentar excelentes resultados a nuestros pacientes.  Manejamos situaciones complejas como Neuralgias de Arnold, Neuropatías del Trigémino, bloqueos epidurales, bloqueos facetarios, etc.  Tratamos dolores de cabeza refractarios a otros tratamientos mediante un aborde multidisciplinario.  Otros diagnósticos tratados en nuestro Instituto incluyen lumbalgias, cervicalgias , radiculopatías, túnel del carpo y dolor central post derrame cerebral. </p>
                                                         </div>
                                                     </div>  
                                                     <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline">
-                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#gestion_diseño">+ Servicios</button>
+                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#">+ Servicios</button>
                                                     </div>
 
                                                 </div>
@@ -280,7 +416,7 @@
                                                     <div id="cms-empty-space-15679b50e452cb" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                 </div>
                                             </div>
-                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-3 vc_col-md-4 padding120px">
+                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-5 vc_col-md-5" style="padding-top: 50px;">
                                                 <div class="wpb_wrapper">
                                                     <div id="cms-empty-space-15679b50e4599e" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                     <div id="cms-custom-headding-15679b50e45c7c" class="vc_custom_heading vc_custom_1446622240763  clearfix">
@@ -289,11 +425,13 @@
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element  vc_custom_1446622256759">
                                                         <div class="wpb_wrapper">
-                                                            <p>Exclusivo para los pacientes de este Instituto. Nuestros pacientes se benefician de técnicas innovadoras en NeuroRehabilitación de columna vertebral.  Rehabilitamos también pacientes con afecciones degenerativas y cerebrales.  Manejamos programas que son supervisados directamente por nuestro Director Médico Neurocirujano.</p>
+                                                            <p style="text-align: justify;">Exclusivo para los pacientes de este Instituto. Nuestros pacientes se benefician de técnicas innovadoras en NeuroRehabilitación de columna vertebral.  Rehabilitamos también pacientes con afecciones degenerativas y cerebrales.  Manejamos programas que son supervisados directamente por nuestro Director Médico Neurocirujano.</p>
                                                         </div>
                                                     </div>
                                                    
-
+                                                     <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline">
+                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#">+ Servicios</button>
+                                                    </div>   
 
                                                     <div id="cms-empty-space-15679b50e46631" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                 </div>
@@ -314,7 +452,7 @@
                                                     <div id="cms-empty-space-15679b50e475b1" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                 </div>
                                             </div>
-                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-3 vc_col-md-4 padding120px">
+                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-5 vc_col-md-5" style="padding-top: 50px;">
                                                 <div class="wpb_wrapper">
                                                     <div id="cms-empty-space-15679b50e47cb5" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                     <div id="cms-custom-headding-15679b50e47f4f" class="vc_custom_heading vc_custom_1446622297636  clearfix">
@@ -325,13 +463,14 @@
                                                     <div class="wpb_text_column wpb_content_element  vc_custom_1446622307173">
                                                         <div class="wpb_wrapper">
                                                             
-                                                            <p>Nuestro Instituto es uno de los centros de referencia donde se ha desarrollado el programa de Radiocirugía (Gamma Knife) en el Perú, además el Dr. Paino es Medico Titular del Miami Gamma Knife Institute y referente del Instituto de Gamma Knife de la Universidad de Pittsburg en Pennsilvania, dirigida por el prestigioso Neurocirujano Dr. Douglas Kondziolka.  Nosotros sabemos que si los tumores no se tratan a tiempo o son de crecimiento rápido tal vez no respondan bien a radiocirugía por eso algunos pocos casos los pasamos a cirugía.  Para los casos quirúrgicos, Cirujanos Oncólogos trabajan con el Dr.  Paino para solucionar los casos mas complejos de tumores cerebrales y de columna como el Cordoma de Sacro y otros. En el caso de tumores cerebrales, Dr. Paino tiene varias publicaciones (ver publicaciones) en prestigiosas Revistas y ha estudiado por mas de 15 años el comportamiento de los Meningiomas en el laboratorio con el Neurocirujano Dr.  Sekhar.  
+                                                            <p style="text-align: justify;">Nuestro Instituto es uno de los centros de referencia donde se ha desarrollado el programa de Radiocirugía (Gamma Knife) en el Perú, además el Dr. Paino es Medico Titular del Miami Gamma Knife Institute y referente del Instituto de Gamma Knife de la Universidad de Pittsburg en Pennsilvania, dirigida por el prestigioso Neurocirujano Dr. Douglas Kondziolka.  Nosotros sabemos que si los tumores no se tratan a tiempo o son de crecimiento rápido tal vez no respondan bien a radiocirugía por eso algunos pocos casos los pasamos a cirugía.  Para los casos quirúrgicos, Cirujanos Oncólogos trabajan con el Dr.  Paino para solucionar los casos mas complejos de tumores cerebrales y de columna como el Cordoma de Sacro y otros. En el caso de tumores cerebrales, Dr. Paino tiene varias publicaciones (ver publicaciones) en prestigiosas Revistas y ha estudiado por mas de 15 años el comportamiento de los Meningiomas en el laboratorio con el Neurocirujano Dr.  Sekhar.  
 El Dr. Paino se entrenó además  en la especialidad bajo la tutoría del prestigioso Cirujano de Base de Cráneo Dr. Sen.  
 </p>
                                                         </div>
                                                     </div>
+
                                                     <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline">
-                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#estrategia_marketing">+ Servicios</button>
+                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#">+ Servicios</button>
                                                     </div>
 
                                                     <div id="cms-empty-space-15679b50e4871d" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
@@ -353,7 +492,7 @@ El Dr. Paino se entrenó además  en la especialidad bajo la tutoría del presti
                                                     <div id="cms-empty-space-15679b50e475b1" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-xsm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                 </div>
                                             </div>
-                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-3 vc_col-md-4 padding120px">
+                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-5 vc_col-md-5" style="padding-top: 50px;">
                                                 <div class="wpb_wrapper">
                                                     <div id="cms-empty-space-15679b50e47cb5" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                     <div id="cms-custom-headding-15679b50e47f4f" class="vc_custom_heading vc_custom_1446622297636  clearfix">
@@ -364,14 +503,14 @@ El Dr. Paino se entrenó además  en la especialidad bajo la tutoría del presti
                                                     <div class="wpb_text_column wpb_content_element  vc_custom_1446622307173">
                                                         <div class="wpb_wrapper">
                                                            
-                                                            <p>La investigación en el Perú requiere de todos nosotros. El Doctor Paino, un expediente es también pionero de la investigación de Células Madre en el Mundo y lidera el laboratorio de alta tecnología de Bioingeniería en la Universidad UTEC. El Gobierno Peruano, mediante su ente Científico CONCYTEC ha creído en él y ha financiado su proyecto a través de FONDECYT.  La Cleveland Clinic nos apoya desde el 2015 con intercambio de conocimientos  sobre nano partículas y más recientemente ha equipado nuestro laboratorio con donación de equipo de alta tecnología por lo cuál somos uno de los laboratorios más especializados en cultivos celulares del país según CONCYTEC.  
+                                                            <p style="text-align: justify;">La investigación en el Perú requiere de todos nosotros. El Doctor Paino, un expediente es también pionero de la investigación de Células Madre en el Mundo y lidera el laboratorio de alta tecnología de Bioingeniería en la Universidad UTEC. El Gobierno Peruano, mediante su ente Científico CONCYTEC ha creído en él y ha financiado su proyecto a través de FONDECYT.  La Cleveland Clinic nos apoya desde el 2015 con intercambio de conocimientos  sobre nano partículas y más recientemente ha equipado nuestro laboratorio con donación de equipo de alta tecnología por lo cuál somos uno de los laboratorios más especializados en cultivos celulares del país según CONCYTEC.  
 Estamos interesados en avanzar el conocimiento mediante investigación en Ciencias Básicas Biológicas. En un futuro, la unión entre las proteínas de células madre y  las nano partículas que pretendemos desarrollar podrían beneficiar directamente a cientos de pacientes quemados  y con lesiones de médula en todo el Perú.  El Dr. Paino también ha desarrollado toda un área de estudios con relación a terapia genética y células madre para enfermedades degenerativas del cerebro y la columna como ELA, Esclerosis Múltiple, Enfermedad de Tay Sachs, Enfermedad de Sandohoff, etc.   
 Por favor contactese con nuestra oficina de investigación al 2190258 si desea participar de algunos de esos estudios.
 </p>
                                                         </div>
                                                     </div>
                                                     <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline">
-                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#estrategia_marketing">+ Servicios</button>
+                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#">+ Servicios</button>
                                                     </div>
 
                                                     <div id="cms-empty-space-15679b50e4871d" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
@@ -393,7 +532,7 @@ Por favor contactese con nuestra oficina de investigación al 2190258 si desea p
                                                     <div id="cms-empty-space-15679b50e475b1" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                 </div>
                                             </div>
-                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-3 vc_col-md-4 padding120px">
+                                            <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-5 vc_col-md-5" style="padding-top: 50px;">
                                                 <div class="wpb_wrapper">
                                                     <div id="cms-empty-space-15679b50e47cb5" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                     <div id="cms-custom-headding-15679b50e47f4f" class="vc_custom_heading vc_custom_1446622297636  clearfix">
@@ -403,11 +542,12 @@ Por favor contactese con nuestra oficina de investigación al 2190258 si desea p
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element  vc_custom_1446622307173">
                                                         <div class="wpb_wrapper">
-                                                            <p>Médicos y psicólogos de nuestro instituto afiliados al campo de los desórdenes neuro cognitivos evalúan pacientes con preocupación acerca de la pérdida  temprana de la memoria.  Alteraciones del estado de ánimo , el comportamiento, el lenguaje y la memoria son  síntomas que tienen una variedad de causas, nosotros hemos desarrollado programas personalizados que tienen la finalidad de diagnosticar y prevenir alteraciones intelectuales, incluido el Alzheimer.   Realizamos evaluaciones completas para asegurar el mejor protocolo para nuestros pacientes.  Manejamos los últimos avances en la investigación y/o tratamiento de problemas neuro cognitivos.  Nuestros tratamientos están dirigidos a personas que en la actualidad no presentan problemas de memoria pero están interesadas en cultivar y/o ejercitar las capacidades cognitivas sobreviniendo el deterioro de las funciones intelectuales.  Manejamos también protocolos de investigación con células mesenquimales para la regeneración del tejido neurológico con el propósito de prevenir la demencia tratándola prematuramente y previniendo su avance. Bajo la dirección del Dr. Paino nuestro centro de prevención es pionero en el Perú.  Estamos afiliados con modernos centros de diagnostico por imágenes para el diagnóstico temprano.  Junto con nuestros científicos asociados como el Dr. Burton Feinerman en Florida, trabajamos arduamente para desarrollar alternativas de terapia genética para la prevención y tratamiento del envejecimiento temprano del cerebro. Las enfermedades neuro degenerativas afectan a miles de peruanos y sus causas permanecen desconocidas.  Nuestras investigaciones se enfocan también en atacar algunos factores de riesgo que pueden prevenir el avance de la demencia como por ejemplo el uso indiscriminado de analgésicos, estrés post traumáticos, enfermedades infecciosas, etc. Asesoramos a nuestros pacientes acerca de factores electromagnéticos ( antenas) que puedan causar modificaciones genéticas que aumenten los factores de riesgo de la demencia. </p>
+                                                            <p style="text-align: justify;">Médicos y psicólogos de nuestro instituto afiliados al campo de los desórdenes neuro cognitivos evalúan pacientes con preocupación acerca de la pérdida  temprana de la memoria.  Alteraciones del estado de ánimo , el comportamiento, el lenguaje y la memoria son  síntomas que tienen una variedad de causas, nosotros hemos desarrollado programas personalizados que tienen la finalidad de diagnosticar y prevenir alteraciones intelectuales, incluido el Alzheimer.   Realizamos evaluaciones completas para asegurar el mejor protocolo para nuestros pacientes.  Manejamos los últimos avances en la investigación y/o tratamiento de problemas neuro cognitivos.  Nuestros tratamientos están dirigidos a personas que en la actualidad no presentan problemas de memoria pero están interesadas en cultivar y/o ejercitar las capacidades cognitivas sobreviniendo el deterioro de las funciones intelectuales.  Manejamos también protocolos de investigación con células mesenquimales para la regeneración del tejido neurológico con el propósito de prevenir la demencia tratándola prematuramente y previniendo su avance. Bajo la dirección del Dr. Paino nuestro centro de prevención es pionero en el Perú.  Estamos afiliados con modernos centros de diagnostico por imágenes para el diagnóstico temprano.  Junto con nuestros científicos asociados como el Dr. Burton Feinerman en Florida, trabajamos arduamente para desarrollar alternativas de terapia genética para la prevención y tratamiento del envejecimiento temprano del cerebro. Las enfermedades neuro degenerativas afectan a miles de peruanos y sus causas permanecen desconocidas.  Nuestras investigaciones se enfocan también en atacar algunos factores de riesgo que pueden prevenir el avance de la demencia como por ejemplo el uso indiscriminado de analgésicos, estrés post traumáticos, enfermedades infecciosas, etc. Asesoramos a nuestros pacientes acerca de factores electromagnéticos ( antenas) que puedan causar modificaciones genéticas que aumenten los factores de riesgo de la demencia. </p>
                                                         </div>
                                                     </div>
+                                                    
                                                     <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline">
-                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#estrategia_marketing">+ Servicios</button>
+                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#">+ Servicios</button>
                                                     </div>
 
                                                     <div id="cms-empty-space-15679b50e4871d" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
