@@ -55,13 +55,23 @@
         <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
         <link href="http://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
         <style>
-        /*
-            #widget{
-                width: 300px;
-                height:400px;
-                overflow: auto;
-            }
-            ::-webkit-scrollbar {
+        ::-webkit-input-placeholder {
+           color: #fff;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+           color: #fff;  
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+           color: #fff;  
+        }
+
+        :-ms-input-placeholder {  
+           color: #fff;  
+        }
+
+        ::-webkit-scrollbar {
                 width: 10px;
                 height: 10px;
             }
@@ -71,17 +81,14 @@
             }
             
             ::-webkit-scrollbar-track-piece  {
-                background-color: #3b3b3b;
+                background-color: #fff;
                 -webkit-border-radius: 6px;
             }
             
             ::-webkit-scrollbar-thumb:vertical {
                 -webkit-border-radius: 6px;
-                background: #666 url(scrollbar_thumb_bg.png) no-repeat center;
-            }*/
-
-
-
+                background: #5d6f94 url(scrollbar_thumb_bg.png) no-repeat center;
+            }
 
             .seccion{
                 padding-top: 5em;
@@ -124,6 +131,10 @@
                 height:450px;
             }
         </style>
+        <script>
+            $( "#target" ).scroll();
+
+        </script>
 
     </head>
     <div class="panel-body">
@@ -199,12 +210,11 @@
            <div>
                 
                 <div>
-                    <div class="col-md-6 hidden-xs hidden-sm"  style="color:#1F1F1F; font-size: 3em; text-align: center; padding-top: 50px;">
-                        <span>Dr. <strong>Paino</strong></span>
+                    <div class="col-md-8 hidden-xs hidden-sm"  style="color:#1F1F1F; font-size: 3em; text-align: center; padding-top: 50px;padding-bottom: 50px;">
+                        
                     </div>
-
-                                <div class="scrolll">
-                                <div class="cont">
+                                <div id="target" class="target" style="overflow: scroll;overflow-x:hidden; width: 800px; height: 600px; margin: auto 20px;">
+                                    <h1 style="text-align: center;font-size: 2.5em;"><strong>Dr. Paino</strong></h1>
                                     <p style="text-align: justify;font-size: 0.8em;padding-right: 80px;">
                                     <ul style="list-style-type: none;">
                                         <li><strong>Cargos actuales:</strong></li>
@@ -276,7 +286,6 @@
 
                                         </p>
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -357,12 +366,6 @@
 
                                                         </div>
                                                     </div>
-                                                    <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline">
-                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#">Servicios ...</button>
-                                                    </div>
-
-                                                    <!--<div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline"><a class="vc_general vc_btn3 vc_btn3-size- vc_btn3-shape-default vc_btn3-style- btn-default-alt vc_btn3-color-cms-default" href="#1234" title="Link text" target="_self">Live Preview</a></div>-->
-                                                    <div id="cms-empty-space-15679b50e41c4d" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -393,10 +396,6 @@
                                                             <p style="text-align: justify;">El manejo de su dolor es una parte importante de nuestro Instituto.  Especialistas en manejo percutáneo del dolor y rehabilitación se juntan para proporcionarle un alivio profundo y duraderos de sus dolores agudos y crónicos.  Nuestro equipo trabaja muy integrado para proporcionarle una variedad de intervenciones y estrategias que le permitan recobrar el control de su vida sin dolor.  La adición del Dr. Alejandro Castillo a nuestro equipo intervencionista fortalece nuestro programa por lo que podemos presentar excelentes resultados a nuestros pacientes.  Manejamos situaciones complejas como Neuralgias de Arnold, Neuropatías del Trigémino, bloqueos epidurales, bloqueos facetarios, etc.  Tratamos dolores de cabeza refractarios a otros tratamientos mediante un aborde multidisciplinario.  Otros diagnósticos tratados en nuestro Instituto incluyen lumbalgias, cervicalgias , radiculopatías, túnel del carpo y dolor central post derrame cerebral. </p>
                                                         </div>
                                                     </div>  
-                                                    <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline">
-                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#">+ Servicios</button>
-                                                    </div>
-
                                                 </div>
                                             </div>
                                         </div>
@@ -428,12 +427,6 @@
                                                             <p style="text-align: justify;">Exclusivo para los pacientes de este Instituto. Nuestros pacientes se benefician de técnicas innovadoras en NeuroRehabilitación de columna vertebral.  Rehabilitamos también pacientes con afecciones degenerativas y cerebrales.  Manejamos programas que son supervisados directamente por nuestro Director Médico Neurocirujano.</p>
                                                         </div>
                                                     </div>
-                                                   
-                                                     <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline">
-                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#">+ Servicios</button>
-                                                    </div>   
-
-                                                    <div id="cms-empty-space-15679b50e46631" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -468,12 +461,6 @@ El Dr. Paino se entrenó además  en la especialidad bajo la tutoría del presti
 </p>
                                                         </div>
                                                     </div>
-
-                                                    <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline">
-                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#">+ Servicios</button>
-                                                    </div>
-
-                                                    <div id="cms-empty-space-15679b50e4871d" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -509,11 +496,6 @@ Por favor contactese con nuestra oficina de investigación al 2190258 si desea p
 </p>
                                                         </div>
                                                     </div>
-                                                    <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline">
-                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#">+ Servicios</button>
-                                                    </div>
-
-                                                    <div id="cms-empty-space-15679b50e4871d" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -546,11 +528,7 @@ Por favor contactese con nuestra oficina de investigación al 2190258 si desea p
                                                         </div>
                                                     </div>
                                                     
-                                                    <div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_appear vc_btn3-inline">
-                                                        <button type="button" class="btn btn-black" data-toggle="modal" data-target="#">+ Servicios</button>
-                                                    </div>
-
-                                                    <div id="cms-empty-space-15679b50e4871d" class="vc_empty_space cms-empty-space cms-custom-css height-lg height-md height-sm height-xs clearfix"><span class="vc_empty_space_inner"></span></div>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
@@ -679,24 +657,22 @@ Por favor contactese con nuestra oficina de investigación al 2190258 si desea p
             </div>
             <div class="panel-body" style="background-color: white;padding-top: 80px;" >
                 <div class="col-md-12" >
-                    <div class="col-md-4 col-sm-6 col-xs-6">
-                        <div style="width: 400px; height:400px;">
-                            <img src="images/guia.png" style="display: block;margin: auto auto;" width="200px" alt=""/><br>
-                            <p style="text-align: center">Guía 1</p>
-                        </div>
+                    <div class="col-md-1" style="margin: 20px;"></div>
+                    <div class="col-md-2 col-sm-3 col-xs-3" style="margin: 20px;">
+                        <img src="images/gu.png" style="display: block;margin: auto auto;" /><br>
+                        <p style="text-align: center">Guía 1</p>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-6" >
-                        <div style="width: 400px; height:400px;">  
-                            <img src="images/guia.png" style="display: block;margin: auto auto;" width="200px"  alt=""/><br>
-                            <p style="text-align: center">Guía 2</p>
-                        </div>
+                    <div class="col-md-1" style="margin: 20px;"></div>
+                    <div class="col-md-2 col-sm-3 col-xs-3" style="margin: 20px;">
+                        <img src="images/gu.png" style="display: block;margin: auto auto;" /><br>
+                        <p style="text-align: center">Guía 2</p>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-6">
-                        <div style="width: 400px; height:400px;">  
-                            <img src="images/guia.png" style="display: block;margin: auto auto;" width="200px" alt=""/><br>
-                            <p style="text-align: center">Guía 3</p>
-                        </div>
+                    <div class="col-md-1" style="margin: 20px;"></div>
+                    <div class="col-md-2 col-sm-3 col-xs-3" style="margin: 20px;">
+                        <img src="images/gu.png" style="display: block;margin: auto auto;"/><br>
+                        <p style="text-align: center">Guía 3</p>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -762,7 +738,7 @@ Por favor contactese con nuestra oficina de investigación al 2190258 si desea p
                             </h2>
                         </div>
                         <div class="wpb_text_column wpb_content_element  vc_custom_1446626694783">
-                            <div class="wpb_wrapper" style="color:#88b6d2; border-radius: 0.3em; padding-top: 0.5em;">
+                            <div class="wpb_wrapper" style="color:#0a2868; border-radius: 0.3em; padding-top: 0.5em;">
                                 <p> <strong>Tus comentarios, preguntas y sugerencias son importantes para nosotros.  
                                     Por favor llena los campos del formulario a continuación y te responderemos en el menor tiempo posible.</strong>
                                 </p>
@@ -802,11 +778,6 @@ Por favor contactese con nuestra oficina de investigación al 2190258 si desea p
                                                       class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" 
                                                       aria-required="true" aria-invalid="false" placeholder="ASUNTO:" 
                                                       title="Ingresar Mensaje" required></textarea></span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <button id="btnReserva" name="btnReserva" type="submit" value="Send Message" class="wpcf7-form-control wpcf7-submit btn-default-alt btn-white">ENVIAR MENSAJE</button>
                                     </div>
                                 </div>
                             </form>

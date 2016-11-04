@@ -2413,7 +2413,7 @@ body .overlay-wrapper.white .overlay .overlay-content h1 a, body .overlay-wrappe
   ========================================================================== */ }
 .cms-counter-wraper .cms-counter-inner {
     position: relative;
-    padding: 55px 0 40px 0;
+    padding: 20px 0 20px 0;
     -webkit-transition: all 300ms linear 0ms;
     -khtml-transition: all 300ms linear 0ms;
     -moz-transition: all 300ms linear 0ms;
@@ -5925,7 +5925,7 @@ table thead th, .table thead th, table .thead th, .table .thead th, table thead 
     width: 100%; }
 
 .cf7-zk-raven4 .wpcf7-form input, .cf7-zk-raven4 .wpcf7-form textarea, .cf7-zk-raven4 .wpcf7-form select {
-    background: rgba(188,208,218,0.5);
+    background: rgba(114,156,177,0.5);
     border-color: white;
     -webkit-border-radius: 0;
     -khtml-border-radius: 0;

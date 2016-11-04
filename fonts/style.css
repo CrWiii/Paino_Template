@@ -63,18 +63,18 @@
 
 .articulos:before{
   content: url(../images/Iconos/article.png);
-  zoom:20%;
+  zoom:15%;
 }
 
 .rehabilitacion:before{
   content: url(../images/Iconos/patient.png);
-  zoom:20%;
+  zoom:15%;
 }
 .investigacion:before{
   content: url(../images/Iconos/investigacion.png);
-  zoom:20%;
+  zoom:15%;
 }
 .paciente:before{
   content: url(../images/Iconos/paciente.png);
-  zoom:20%;
+  zoom:15%;
 }
