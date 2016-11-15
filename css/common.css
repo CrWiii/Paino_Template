@@ -137,7 +137,7 @@ p{
     color: #212121;
 }
 #cms-header-top {
-    background-color: #222222;
+    background-color: #686868;
 }
 #cms-header-top .widget {
     padding-top: 11px;
@@ -308,6 +308,7 @@ p{
 }
 .btn,
 .btn-default,
+
 button,
 .button,
 input[type="button"],
@@ -351,10 +352,10 @@ input[type="button"],
 input[type="submit"],
 .vc_general.vc_btn3.btn-default,
 .added_to_cart {
-    border-top: 3px solid #222222;
-    border-bottom: 3px solid #222222;
-    border-left: 3px solid #222222;
-    border-right: 3px solid #222222;
+    border-top: 3px solid #686868;
+    border-bottom: 3px solid #686868;
+    border-left: 3px solid #686868;
+    border-right: 3px solid #686868;
 }
 {
     height: 0px;
@@ -367,7 +368,7 @@ input[type="button"],
 input[type="submit"],
 .vc_general.vc_btn3.btn-default,
 .added_to_cart {
-    background-color: #222222;
+    background-color: #686868;
 }
 .btn,
 .btn-default,
@@ -404,10 +405,10 @@ input[type="submit"]:focus,
 .added_to_cart:hover,
 .added_to_cart:active,
 .added_to_cart:focus {
-    border-top: 3px solid #00a99d;
-    border-bottom: 3px solid #00a99d;
-    border-left: 3px solid #00a99d;
-    border-right: 3px solid #00a99d;
+    border-top: 3px solid #88b6d2;
+    border-bottom: 3px solid #88b6d2;
+    border-left: 3px solid #88b6d2;
+    border-right: 3px solid #88b6d2;
 }
 .btn:hover,
 .btn-default:hover,
@@ -433,7 +434,7 @@ input[type="submit"]:focus,
 .added_to_cart:hover,
 .added_to_cart:active,
 .added_to_cart:focus {
-    background-color: #00a99d;
+    background-color: #88b6d2;
 }
 .btn-default-alt,
 .vc_general.vc_btn3.btn-default-alt,
@@ -451,19 +452,19 @@ input[type="submit"]:focus,
 .vc_general.vc_btn3.btn-default-alt,
 .vc_general.vc_btn3.btn-default-alt i,
 .price_slider_amount button.button {
-    color: #222222;
+    color: #686868;
 }
 .btn-default-alt:hover,
 .vc_general.vc_btn3.btn-default-alt:hover,
 .vc_general.vc_btn3.btn-default-alt i:hover,
 .price_slider_amount button.button:hover {
-    color: #00a99d;
+    color: #88b6d2;
 }
 .btn-default-alt:active,
 .vc_general.vc_btn3.btn-default-alt:active,
 .vc_general.vc_btn3.btn-default-alt i:active,
 .price_slider_amount button.button:active {
-    color: #00a99d;
+    color: #88b6d2;
 }
 .btn-default-alt,
 .btn-default-alt:after,
@@ -507,10 +508,10 @@ input[type="submit"]:focus,
 .vc_general.vc_btn3.btn-default-alt:focus i,
 .price_slider_amount button.button:focus,
 .price_slider_amount button.button:focus:after {
-    border-top: 3px solid #00a99d;
-    border-bottom: 3px solid #00a99d;
-    border-left: 3px solid #00a99d;
-    border-right: 3px solid #00a99d;
+    border-top: 3px solid #88b6d2;
+    border-bottom: 3px solid #88b6d2;
+    border-left: 3px solid #88b6d2;
+    border-right: 3px solid #88b6d2;
 }
 .btn-default-alt:hover,
 .vc_general.vc_btn3.btn-default-alt:hover,
@@ -526,7 +527,7 @@ input[type="submit"]:focus,
     letter-spacing: 1px;
     font-weight: 900;
     font-style: normal;
-    font-size: 11px;
+    font-size: 20px;
 }
 .btn-primary,
 .vc_general.vc_btn3.btn-primary {
@@ -542,14 +543,14 @@ input[type="submit"]:focus,
 }
 .btn-primary,
 .vc_general.vc_btn3.btn-primary {
-    border-top: 3px solid #00a99d;
-    border-bottom: 3px solid #00a99d;
-    border-left: 3px solid #00a99d;
-    border-right: 3px solid #00a99d;
+    border-top: 3px solid #88b6d2;
+    border-bottom: 3px solid #88b6d2;
+    border-left: 3px solid #88b6d2;
+    border-right: 3px solid #88b6d2;
 }
 .btn-primary,
 .vc_general.vc_btn3.btn-primary {
-    background-color: #00a99d;
+    background-color: #88b6d2;
 }
 .btn-primary,
 .vc_general.vc_btn3.btn-primary {

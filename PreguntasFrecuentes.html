@@ -1,0 +1,631 @@
+ <!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="icon" type="image/png" href="images/logoplay.png">-->
+        <title>Dr. Paino</title>
+        <!--Inicio Bootstrap-->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <script src="bootstrap/jquery.min.js" type="text/javascript"></script>       
+        <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+        <link href="bootstrap/css/style-menu-play.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrap/logoplay.css" rel="stylesheet" type="text/css"/>
+        <!--Final Bootstrap-->
+        <!--styles css-->
+        <link rel='stylesheet' id='contact-form-7-css' href='css/styles.css' type='text/css' media='all' />
+        <link href="fonts/style.css" rel="stylesheet" type="text/css"/>
+        <!--Revolution slider-css-->
+        <link rel='stylesheet' id='rs-plugin-settings-css' href='css/slider/settings.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='rs-plugin-settings-inline-css' href='css/slider/rs-plugin-settings-inline.css' type='text/css' media='all' />
+        <!--cms style css-->
+        <link rel='stylesheet' id='cms-plugin-stylesheet-css' href='css/cms-style.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='zkraven-style-css' href='css/style.css' type='text/css' media='all' />
+        <!--[if lt IE 10]>
+          <link property="cms-stylesheet" rel='stylesheet' id='zkraven-ie-css'  href='http://raven.zooka.io/demo/wp-content/themes/wp_raven/assets/css/ie.css?ver=screen' type='text/css' media='all' />
+          <![endif]-->
+        <!--cms instagram css-->
+        <link rel='stylesheet' id='cms-widget-instagram-css' href='css/cms_instagram.css' type='text/css' media='all' />
+        <!--widget cart search css-->
+        <link rel='stylesheet' id='widget_cart_search_scripts-css' href='css/cms_cart_search.css' type='text/css' media='all' />
+        <!--js_composer.min.css-->
+        <link rel='stylesheet' id='js_composer_front-css' href='css/js_composer.min.css' type='text/css' media='all' />
+        <!--jquery js-->
+        <script type='text/javascript' src='js/jquery.js'></script>
+        <!--jquery migrate js-->
+        <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+        <!--revolution slider js-->
+        <script type='text/javascript' src='js/slider/jquery.themepunch.tools.min.js'></script>
+        <script type='text/javascript' src='js/slider/jquery.themepunch.revolution.min.js'></script>
+        <script type="text/javascript" src='js/slider/revolution.extension.slideanims.min.js'></script>
+        <script type="text/javascript" src="js/slider/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="js/slider/revolution.extension.navigation.min.js"></script>
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <!--[if lte IE 9]>
+          <link rel="stylesheet" type="text/css" href="http://raven.zooka.io/demo/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen">
+          <![endif]-->
+        <!--[if IE  8]>
+          <link rel="stylesheet" type="text/css" href="http://raven.zooka.io/demo/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen">
+          <![endif]-->
+        <!--common css-->
+        <!--<link rel='stylesheet' id='common-css' href='css/common.css' type='text/css' media='all' />-->
+        <!--index-custom-vc css-->
+        <link rel='stylesheet' id='index-custom-vc-css' href='css/index-custom-vc.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='custom-css'  href='css/custom.css' type='text/css' media='all' /><script type='text/javascript' src='js/modernizr.min.js'></script> 
+        <link rel='stylesheet' id='custom-css' href='css/custom.css' type='text/css' media='all' />
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+        <link href="http://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+        <style>
+        .ui-draggable, .ui-droppable {
+            background-position: top;
+        }
+
+        .target{
+                width: 800px; height: 570px; margin: auto 0;margin-left: 10px;
+            }
+        .tt{
+            margin: 20px;
+            }
+        .gg{
+            padding-top: 80px;padding-left: 25%;
+        }
+        .imgt{
+                width: 400px;
+                height: 400px;
+            }
+        .imga{
+            display: block;
+            margin: auto auto;
+            padding-top: 35%;
+            width:350px;
+        }
+        .heas{
+            background: url(images/azul-02.png);
+            background-size: 100% 100%; 
+            opacity: 0.7;
+        }
+        .heag{
+            background: url(images/faq.png);
+            background-size: 100% 100%;
+            opacity: 0.7;
+        }
+        .fz{
+             padding: 5em;
+        }
+        .divf{
+            height: 700px;
+        }
+
+        .btnLogin{
+            text-align: center;
+            margin: 0 auto;
+
+        }
+        .btnRegister{
+
+        }
+
+
+        @media (max-width: 767px) {
+            .divf{
+                height: auto;
+            }
+            .fz{
+                 padding: 1em
+            }
+            .heas{
+                height: 300px;
+                background-size: 400px 200px;
+            }
+            .target{
+                padding-top: 20px;
+                width: 95%; height: 600px; margin: auto 0;margin-left: 10px;
+            }
+            .tt{
+                margin: 0px;
+            }
+            .gg{
+                padding-top: 10px;padding-left: 0px;
+            }
+            .imgt{
+                width: 100%;
+                height: 100%;
+            }
+            .imga{
+                padding-top: 0px;
+            }
+            .tre{
+                /*margin: 0px !important;*/
+            }
+        }
+
+        ::-webkit-input-placeholder {
+           color: #fff;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+           color: #fff;  
+        }
+
+        ::-moz-placeholder {  /* Firefox 19+ */
+           color: #fff;  
+        }
+
+        :-ms-input-placeholder {  
+           color: #fff;  
+        }
+
+        ::-webkit-scrollbar {
+                width: 10px;
+                height: 10px;
+            }
+            ::-webkit-scrollbar-button:start:decrement,
+            ::-webkit-scrollbar-button:end:increment  {
+                display: none;
+            }
+            
+            ::-webkit-scrollbar-track-piece  {
+                background-color: #fff;
+                -webkit-border-radius: 6px;
+            }
+            
+            ::-webkit-scrollbar-thumb:vertical {
+                -webkit-border-radius: 6px;
+                background: #5d6f94 url(scrollbar_thumb_bg.png) no-repeat center;
+            }
+
+            .seccion{
+                padding-top: 5em;
+                padding-left: 0px;
+                padding-right: 0px;
+
+            }
+
+            .ir-arriba {
+                position: fixed;
+                display:inline;
+                padding:0.5em 0.65em 0.5em 0.65em;
+                border-radius: 5em;
+                background:rgba(0,0,0, 0.5);
+                color:#fff;
+                font-size:20px;
+                cursor:pointer;                
+                bottom: 1.5em;
+                right:1.5em;
+            }
+            .ir-arriba:hover,.ir-arriba:active {                
+                background:rgba(255,255,255, 0.5);
+                color:#000;
+            }
+            .nosotros{
+
+            }
+
+            .scrolll{
+                width:800px;
+                height:500px;
+                /*background-color: #88b6d2;*/
+                margin-top:40px;
+                margin-left:40px;
+                overflow-y:scroll;
+                float:left;
+            }
+
+            .cont{
+                height:450px;
+            }
+        </style>
+        <script>
+            $( "#target" ).scroll();
+
+        </script>
+
+    </head>
+    <div class="panel-body">
+        <!--<div class="ir-arriba">
+            <span class="glyphicon glyphicon-arrow-up"></span>
+        </div>-->
+    </div>
+    <body>
+
+        <nav class="navbar navbar-play navbar-fixed-top navbar-right">
+            <div class="container">
+                <div class="navbar-header">
+                    <div id="cms-nav-extra" class="pull-right navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="font-size: 1.1em; ">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <div id="logo-play" class="pull-left clearfix">
+                        <a class="cms-main-logo hidden-sm" href="#">
+                            <img alt="" src="images/logo.png" title="Play Media"> 
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#Inicio" class=""><span class="menu-title">Inicio</span></a></li>
+                            <li><a href="#DrPaino" class=""><span class="menu-title">Dr. Paino</span></a></li>
+                            <li><a href="#Especializaciones" class=""><span class="menu-title">Altos Niveles de Eficiencia</span></a></li>
+                            <li><a href="" class=""><span class="menu-title">Noticias</span></a></li>
+                            
+                            <!--<li><a href="#Alianzas" class=""><span class="menu-title">Alianzas</span></a></li>-->
+                            <li><a href="" class=""><span class="menu-title">Preguntas Frecuentes</span></a></li>
+                            <li><a href="#Contacto" class=""><span class="menu-title">Citas Médicas</span></a></li>
+                            <!--<li>Otros
+                                <ul>
+                                    <li><a href="#Contacto" class=""><span class="menu-title">gg</span></a></li>
+                                    <li><a href="#Contacto" class=""><span class="menu-title">ss</span></a></li>
+                                </ul>
+                            </li>-->
+                            <li><a href="" class=""><span class="menu-title">Otros</span></a>
+                                <!--<div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href=""><span class="menu-title">Trabajo social</span></a></li>
+                                        <li><a href=""><span class="menu-title">Publicaciones</span></a></li>
+                                        <li><a href=""><span class="menu-title">Monografías</span></a></li>
+                                        <li><a href=""><span class="menu-title">Abstractos y Presentaciones</span></a></li>
+                                        <li><a href=""><span class="menu-title">Invitaciones</span></a></li>
+                                        <li><a href=""><span class="menu-title">Dedicatorias</span></a></li>
+                                        <li><a href=""><span class="menu-title">Posters</span></a></li>
+                                        <li><a href=""><span class="menu-title">Diplomas</span></a></li>
+                                    </ul>
+                                </div>-->
+                            </li>
+
+
+                            <li><a style="padding-right: 0px;"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
+                            <li><a style="padding-left: 0px;"><span class="menu-title"><img src="images/Alianzas/spanish.png" width="30px"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div id="Inicio" class="seccion">
+            <div class="panel-body heag">
+                    <div class="col-md-12 hidden-xs hidden-sm fz"  style="opacity: 100;color:#000000; font-size: 3em; text-align: center;vertical-align: middle;">
+
+
+                    </div>
+            </div>
+        </div>
+
+        <div id="Inicio" class="seccion">
+            <div class="panel-body heas">
+                    <div class="col-md-12 hidden-xs hidden-sm fz"  style="opacity: 100;color:#000000; font-size: 3em; text-align: center;vertical-align: middle;">
+                    </div>
+            </div>
+        </div>
+
+
+
+        <div id="accordion">
+  <h3>Section 1</h3>
+  <div>
+    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h3>Section 4</h3>
+  <div>
+    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+  </div>
+</div>
+
+
+
+
+
+
+    </body>
+    <footer id="cms-footer" class="no-margin-top">
+        <div class="container">
+            <div id="cms-footer-bottom">
+                <div class="cms-footer-bottom-social">
+
+                    <!--<a href="http://twitter.com/" class="fa fa-twitter" title="Twitter"></a>-->
+                    <!--<a href="http://youtube.com/" class="fa fa-youtube-play" title="Youtube"></a>-->
+                    <!--<a href="https://www.vk.com/" class="fa fa-vk" title="VK"></a>-->
+                </div>
+                &copy; Site by <strong>Play</strong>Media. All Right Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    var input = document.getElementById("dateField");
+            var today = new Date();
+            var day = today.getDate();
+            // Set month to string to add leading 0
+            var mon = new String(today.getMonth()+1); //January is 0!
+            var yr = today.getFullYear();
+            
+              if(mon.length < 2) { mon = "0" + mon; }
+            
+              var date = new String( yr + '-' + mon + '-' + day );
+            
+            input.disabled = false; 
+            input.setAttribute('min', date);
+
+        $(document).ready(function () {
+            $("#accordion").accordion({collapsible: true});
+            $("#btnReserva").click(function () {
+                document.getElementById("btnReserva").value = "Enviando...";
+                $("#enviarCorreo").submit(function (e) {
+                    //$("#tabla1").html();
+                    var postData = $(this).serializeArray();
+                    var formURL = $(this).attr("action");
+                    document.getElementById("btnReserva").disabled = true;
+                    $.ajax({
+                        url: formURL,
+                        type: "POST",
+                        data: postData,
+                        success: function (response)
+                        {
+                            $("#modalCofirmacion").modal({backdrop: "static", keyboard: false});
+                            $("#contenidoCofirmacion").html(response);
+                        }
+                    });
+                    e.preventDefault(); //STOP default action
+                    e.unbind();
+                });
+                //$("#guardarCita").submit(); //SUBMIT FORM
+            });
+        });
+        $(document).ready(function () {
+            $('.creativo').tooltip({title: "<span class='pop'>Buscamos siempre huir de lo obvio y lo \n\
+                predecible para encontrar lo novedoso en los pequeños detalles \n\
+                que marcan la diferencia.</span>", html: true, placement: "bottom"});
+        });
+        $(document).ready(function () {
+            $('.proactivo').tooltip({title: "<span class='pop'>El mundo avanza constantemente, \n\
+                por esto no permitimos estancarnos ante \n\
+                ningún desafío y siempre estamos buscando la manera de avanzar.</span>", html: true, placement: "bottom"});
+        });
+        $(document).ready(function () {
+            $('.comprometido').tooltip({title: "<span class='pop'>Compartimos tu pasión por ser mejores \n\
+                y queremos ser parte de tus logros.</span>", html: true, placement: "bottom"});
+        });
+        $(document).ready(function () {
+            $('.divertido').tooltip({title: "<span class='pop'>Sabemos que la seriedad es muy importante en \n\
+                nuestro trabajo pero disfrutar del camino y \n\
+                hacerlo divertido es lo que nos hace lograr un trabajo de primera calidad.</span>", html: true, placement: "bottom"});
+        });
+        $('.ir-arriba').click(function () {
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 300);
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 0) {
+                $('.ir-arriba').slideDown(300);
+            } else {
+                $('.ir-arriba').slideUp(300);
+            }
+        });
+
+        $(document).ready(function () {
+            $('body').scrollspy({target: ".navbar", offset: 50});
+        });
+        $(document).ready(function () {
+            var altura = $('.menu').offset().top;
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() > altura) {
+                    $('.menu').addClass('menu-fixed');
+                } else {
+                    $('.menu').removeClass('menu-fixed');
+                }
+            });
+        });
+    </script>
+    <script type='text/javascript' src='js/jquery.form.min.js'></script>
+    <script type='text/javascript' src='js/modernizr.min.js'></script>
+
+    <script type='text/javascript' src='js/jquery.parallax-1.1.3.js'></script>
+    <script type='text/javascript' src='js/main.js'></script>
+    <script type='text/javascript' src='js/menu.js'></script>
+    <script type='text/javascript' src='js/jquery.fullscreen-popup.js'></script>
+    <script type='text/javascript' src='js/imagesloaded.js'></script>
+
+    <script type='text/javascript' src='js/jquery.matchHeight.js'></script>
+    <script type='text/javascript' src='js/js_composer_front.js'></script>
+    <script type='text/javascript'>
+        var cms_custom_css_object = {};
+    </script>
+    <script type='text/javascript' src='js/cms_custom_css.js'></script>
+    <script type='text/javascript' src='js/vc-accordion.js'></script>
+    <script type='text/javascript' src='js/vc-tta-autoplay.js'></script>
+    <script type='text/javascript' src='js/vc-tabs.js'></script>
+    <script type='text/javascript' src='js/waypoints.min.js'></script>
+    <script type='text/javascript' src='js/counter.min.js'></script>
+    <script type='text/javascript' src='js/counter.cms.js'></script>
+
+
+    <script type='text/javascript' src='js/cmsgrid.pagination.js'></script>
+    <script type='text/javascript' src='js/bootstrap-progressbar.min.js'></script>
+    <script type='text/javascript' src='js/bootstrap-progressbar.cms.js'></script>
+    <script type='text/javascript' src='js/mislider.js'></script>
+
+    <script type='text/javascript' src='js/jquery.shuffle.js'></script>
+
+    <script type='text/javascript' src='js/jquery.shuffle.cms.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var cms_special_carousel = {
+            "cms-special-carousel": {
+                "increment": "1",
+                "pause": "3000000",
+                "speed": "700",
+                "navButtons": "true",
+                "navList": "false",
+                "slideWidth": 400,
+                "stageHeight": false,
+                "slideScaling": 141
+            }
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='js/mislider.cms.js'></script>
+
+    <script type="text/javascript">
+        var setREVStartSize = function () {
+            try {
+                var e = new Object,
+                        i = jQuery(window).width(),
+                        t = 9999,
+                        r = 0,
+                        n = 0,
+                        l = 0,
+                        f = 0,
+                        s = 0,
+                        h = 0;
+                e.c = jQuery('#rev_slider_2_1');
+                e.responsiveLevels = [1240, 1024, 778, 480];
+                e.gridwidth = [1920, 1024, 778, 480];
+                e.gridheight = [960, 768, 960, 720];
+                e.sliderLayout = "fullscreen";
+                e.fullScreenAutoWidth = 'off';
+                e.fullScreenAlignForce = 'off';
+                e.fullScreenOffsetContainer = '';
+                e.fullScreenOffset = '';
+                if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) {
+                    f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
+                }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
+                    var u = (e.c.width(), jQuery(window).height());
+                    if (void 0 != e.fullScreenOffsetContainer) {
+                        var c = e.fullScreenOffsetContainer.split(",");
+                        if (c)
+                            jQuery.each(c, function (e, i) {
+                                u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
+                            }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
+                    }
+                    f = u
+                } else
+                    void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
+                e.c.closest(".rev_slider_wrapper").css({
+                    height: f
+                })
+
+            } catch (d) {
+                console.log("Failure at Presize of Slider:" + d)
+            }
+        };
+        setREVStartSize();
+        function revslider_showDoubleJqueryError(sliderID) {
+            var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+            errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+            errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+            errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+            errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+            jQuery(sliderID).show().html(errorMessage);
+        }
+        var tpj = jQuery;
+        tpj.noConflict();
+        var revapi2;
+        tpj(document).ready(function () {
+            if (tpj("#rev_slider_2_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_2_1");
+            } else {
+                revapi2 = tpj("#rev_slider_2_1").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: "//raven.zooka.io/demo3/wp-content/plugins/revslider/public/assets/js/",
+                    sliderLayout: "fullscreen",
+                    dottedOverlay: "none",
+                    delay: 6000,
+                    navigation: {
+                        keyboardNavigation: "off",
+                        keyboard_direction: "horizontal",
+                        mouseScrollNavigation: "off",
+                        onHoverStop: "on",
+                        touch: {
+                            touchenabled: "on",
+                            swipe_threshold: 75,
+                            swipe_min_touches: 1,
+                            swipe_direction: "horizontal",
+                            drag_block_vertical: false
+                        }
+                    },
+                    responsiveLevels: [1240, 1024, 778, 480],
+                    visibilityLevels: [1240, 1024, 778, 480],
+                    gridwidth: [1920, 1024, 778, 480],
+                    gridheight: [960, 768, 960, 720],
+                    lazyType: "none",
+                    shadow: 0,
+                    spinner: "spinner0",
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    fullScreenAutoWidth: "off",
+                    fullScreenAlignForce: "off",
+                    fullScreenOffsetContainer: "",
+                    fullScreenOffset: "",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: false,
+                    }
+                });
+            }
+        }); /*ready*/
+
+        /* <![CDATA[ */
+        var CMSOptions = {
+            "menu_sticky": "",
+            "menu_sticky_tablets": "",
+            "menu_sticky_mobile": "",
+            "paralax": "1",
+            "back_to_top": "1"
+        };
+        /* ]]> */
+
+        /* <![CDATA[ */
+        var mejsL10n = {
+            "language": "en-US",
+            "strings": {
+                "Close": "Close",
+                "Fullscreen": "Fullscreen",
+                "Download File": "Download File",
+                "Download Video": "Download Video",
+                "Play\/Pause": "Play\/Pause",
+                "Mute Toggle": "Mute Toggle",
+                "None": "None",
+                "Turn off Fullscreen": "Turn off Fullscreen",
+                "Go Fullscreen": "Go Fullscreen",
+                "Unmute": "Unmute",
+                "Mute": "Mute",
+                "Captions\/Subtitles": "Captions\/Subtitles"
+            }
+        };
+        var _wpmejsSettings = {
+            "pluginPath": "\/demo4\/wp-includes\/js\/mediaelement\/"
+        };
+        /* ]]> */
+    </script>
+
+</body>
+
+</html>
