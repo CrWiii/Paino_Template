@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
@@ -40,11 +40,6 @@
         <script type="text/javascript" src='js/slider/revolution.extension.slideanims.min.js'></script>
         <script type="text/javascript" src="js/slider/revolution.extension.layeranimation.min.js"></script>
         <script type="text/javascript" src="js/slider/revolution.extension.navigation.min.js"></script>
-
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
         <!--[if lte IE 9]>
           <link rel="stylesheet" type="text/css" href="http://raven.zooka.io/demo/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen">
           <![endif]-->
@@ -52,7 +47,7 @@
           <link rel="stylesheet" type="text/css" href="http://raven.zooka.io/demo/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen">
           <![endif]-->
         <!--common css-->
-        <!--<link rel='stylesheet' id='common-css' href='css/common.css' type='text/css' media='all' />-->
+        <link rel='stylesheet' id='common-css' href='css/common.css' type='text/css' media='all' />
         <!--index-custom-vc css-->
         <link rel='stylesheet' id='index-custom-vc-css' href='css/index-custom-vc.css' type='text/css' media='all' />
         <link rel='stylesheet' id='custom-css'  href='css/custom.css' type='text/css' media='all' /><script type='text/javascript' src='js/modernizr.min.js'></script> 
@@ -60,9 +55,6 @@
         <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
         <link href="http://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
         <style>
-        .ui-draggable, .ui-droppable {
-            background-position: top;
-        }
 
         .target{
                 width: 800px; height: 570px; margin: auto 0;margin-left: 10px;
@@ -84,14 +76,14 @@
             width:350px;
         }
         .heas{
-            background: url(images/azul-02.png);
-            background-size: 100% 100%; 
+            background: url(images/cuidado.png) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
             opacity: 0.7;
-        }
-        .heag{
-            background: url(images/faq.png);
-            background-size: 100% 100%;
-            opacity: 0.7;
+            margin-left: 0px;
+            margin-right: 0px;
         }
         .fz{
              padding: 5em;
@@ -219,38 +211,53 @@
                 height:450px;
             }
 
-            /* Style the buttons that are used to open and close the accordion panel */
-button.accordion {
-    background-color: #88b6d2;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
+            nav ul ul {
+                display: none;
+            }
+             
+            nav ul li:hover > ul {
+                display: block;
+            }
+            
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
-}
 
-div.panel {
-    margin: 0px !important;
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.6s ease-in-out;
-    opacity: 0;
+            nav ul li {
+    float: left;
 }
-
-div.panel.show {
-    padding: 20px;
-    opacity: 1;
-    max-height: 500px; 
+    nav ul li:hover {
+        background: #88b6d2;
+        background: linear-gradient(top, #88b6d2 0%, #88b6d2 40%);
+        background: -moz-linear-gradient(top, #88b6d2 0%, #88b6d2 40%);
+        background: -webkit-linear-gradient(top, #88b6d2 0%,#88b6d2 40%);
+    }
+        nav ul li:hover a {
+            color: #fff;
+        }
+    
+    nav ul li a {
+        display: block; padding: 25px 15px;
+        color: #000; text-decoration: none;
+    }
+ 
+nav ul ul {
+    background: #88b6d2; border-radius: 0px; padding: 0;
+    position: absolute; top: 100%;
+}
+    nav ul ul li {
+        float: none; 
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        position: relative;
+    }
+        nav ul ul li a {
+            padding: 5px 20px;
+            color: #000;
+        }   
+            nav ul ul li a:hover {
+                background: #88b6d2;
+            }
+            nav ul ul ul {
+    position: absolute; left: 100%; top:0;
 }
         </style>
         <script>
@@ -279,111 +286,84 @@ div.panel.show {
                     </div>
                 </div>
                 <div>
-                    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                    <!--<div class="collapse navbar-collapse navbar-right" id="myNavbar">
                         <ul class="nav navbar-nav">
                             <li><a href="#Inicio" class=""><span class="menu-title">Inicio</span></a></li>
                             <li><a href="#DrPaino" class=""><span class="menu-title">Dr. Paino</span></a></li>
                             <li><a href="#Especializaciones" class=""><span class="menu-title">Altos Niveles de Eficiencia</span></a></li>
                             <li><a href="" class=""><span class="menu-title">Noticias</span></a></li>
                             
-                            <!--<li><a href="#Alianzas" class=""><span class="menu-title">Alianzas</span></a></li>-->
+                        
                             <li><a href="" class=""><span class="menu-title">Preguntas Frecuentes</span></a></li>
                             <li><a href="#Contacto" class=""><span class="menu-title">Citas Médicas</span></a></li>
-                            <!--<li>Otros
-                                <ul>
-                                    <li><a href="#Contacto" class=""><span class="menu-title">gg</span></a></li>
-                                    <li><a href="#Contacto" class=""><span class="menu-title">ss</span></a></li>
-                                </ul>
-                            </li>-->
-                            <li><a href="" class=""><span class="menu-title">Otros</span></a>
-                                <!--<div class="collapse navbar-collapse navbar-right" id="myNavbar">
-                                    <ul class="nav navbar-nav">
-                                        <li><a href=""><span class="menu-title">Trabajo social</span></a></li>
-                                        <li><a href=""><span class="menu-title">Publicaciones</span></a></li>
-                                        <li><a href=""><span class="menu-title">Monografías</span></a></li>
-                                        <li><a href=""><span class="menu-title">Abstractos y Presentaciones</span></a></li>
-                                        <li><a href=""><span class="menu-title">Invitaciones</span></a></li>
-                                        <li><a href=""><span class="menu-title">Dedicatorias</span></a></li>
-                                        <li><a href=""><span class="menu-title">Posters</span></a></li>
-                                        <li><a href=""><span class="menu-title">Diplomas</span></a></li>
-                                    </ul>
-                                </div>-->
-                            </li>
-
-
+                        
+                            <li><a href="" class=""><span class="menu-title">Otros</span></a></li>
                             <li><a style="padding-right: 0px;"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
                             <li><a style="padding-left: 0px;"><span class="menu-title"><img src="images/Alianzas/spanish.png" width="30px"></span></a></li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
+                <nav>
+                    <!--<ul style="list-style-type:none">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Tutoriales</a>
+                            <ul style="list-style-type:none">
+                                <li><a href="#">Photoshop</a></li>
+                                <li><a href="#">Illustrator</a></li>
+                                <li><a href="#">Diseño web</a>
+                                    <ul style="list-style-type:none">
+                                        <li><a href="#">HTML</a></li>
+                                        <li><a href="#">CSS</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Artículos</a>
+                            <ul style="list-style-type:none">
+                                <li><a href="#">Diseño web</a></li>
+                                <li><a href="#">Experiencia de usuario</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Inspiración</a></li>-->
+
+
+                    <ul style="list-style-type:none">
+                        <li><a href="#Inicio" class=""><span class="menu-title">Inicio</span></a></li>
+                        <li><a href="#DrPaino" class=""><span class="menu-title">Dr. Paino</span></a></li>
+                        <li><a href="#Especializaciones" class=""><span class="menu-title">Altos Niveles de Eficiencia</span></a></li>
+                        <li><a href="" class=""><span class="menu-title">Noticias</span></a></li>
+                        <li><a href="" class=""><span class="menu-title">Preguntas Frecuentes</span></a></li>
+                        <li><a href="#Contacto" class=""><span class="menu-title">Citas Médicas</span></a></li>
+                        <li><a href="">Otros</a>
+                                <ul style="list-style-type:none">
+                                    <li><a href="#" class=""><span class="menu-title">Trabajo Social</span></a></li>
+                                    <li><a href="#" class=""><span class="menu-title">Publicaciones</span></a></li>
+                                    <li><a href="#" class=""><span class="menu-title">Monografías</span></a></li>
+                                    <li><a href="#" class=""><span class="menu-title">Presentaciones</span></a></li>
+                                    <li><a href="#" class=""><span class="menu-title">Invitaciones</span></a></li>
+                                    <li><a href="#" class=""><span class="menu-title">Dedicatorias</span></a></li>
+                                    <li><a href="#" class=""><span class="menu-title">Posters</span></a></li>
+                                    <li><a href="#" class=""><span class="menu-title">Diplomas</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a style="padding-right: 0px;"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
+                            <li><a style="padding-left: 0px;"><span class="menu-title"><img src="images/Alianzas/spanish.png" width="30px"></span></a></li>
+                    </ul>
+                </nav>
+
             </div>
         </nav>
 
 
         <div id="Inicio" class="seccion">
-            <div class="panel-body heag">
+            <div class="panel-body heas">
                     <div class="col-md-12 hidden-xs hidden-sm fz"  style="opacity: 100;color:#000000; font-size: 3em; text-align: center;vertical-align: middle;">
 
-
                     </div>
-            </div>
-        </div>
 
-<div id="Preguntas" class="seccion">
-            <div class="panel-body">
-            <div style="margin: 50px;">
-            <button class="accordion">1.    ¿Cubrirá mi seguro las consultas Médicas y Cirugía?</button>
-            <div class="panel">
-              <p>
-                Trabajamos con la mayoría de las compañías de seguros de salud mediante el Sistema del reembolso, cualquier duda comunicarse con nosotros al 261-6139/ 261-5615.</p>
-            </div>
-
-            <button class="accordion">2.    ¿Qué recomendaciones debo seguir para agendar mi cita?</button>
-            <div class="panel">
-              <p>
-                Anotar los datos de su cita.
-                Tener el nombre de la persona para la cual se solicita la cita médica.
-                Las anotaciones de su cita o interconsulta las brinda la secretaria.
-                De solicitar una cita médica, debe  gestionar una orden de laboratorio o Resonancia y asegurarse de que los resultados estén disponibles y tengan un tiempo máximo de antigüedad de 6 meses.
-                Si usted necesita y está preparado para una cita de urgencia, por favor anótese con nuestra secretaria en la lista de espera. Lo atenderemos a la brevedad.
-                De no poder asistir a su cita médica le agradeceremos se comunique con nosotros con anticipación para su reprogramación de acuerdo a la disponibilidad.
-                Colabore con la información que le solicita la secretaria, brinde su número telefónico fijo o celular y su cuenta de correo.
-                </p>
-            </div>
-
-            <button class="accordion">3.    ¿Dónde puedo Realizarme los exámenes de RX y Resonancia Magnética?</button>
-            <div class="panel">
-                <p>
-                    Se pueden realizar en DPI, ubicado en Av. Dos de Mayo 602 – San Isidro.
-                    Telf.202-33-33 Fax.202-33-42.
-                    Trabajan con todas las Compañías de Seguros y EPS.
-                </p>
-            </div>
-
-            <button class="accordion">4.    ¿Hay instrucciones que debo seguir si tengo una cirugía?</button>
-            <div class="panel">
-                <p>
-                    Sí. Nuestro personal revisará las instrucciones previas al procedimiento en el momento de programar su cirugía.
-                    Las siguientes son algunas pautas generales para todos los pacientes programados para un procedimiento:
-                    Dejar de tomar Anti-Inflamatorio o Aspirina 10 días antes de la cirugía.
-                    El día de la operación tome desayuno a las 6:00 am., consistente en un jugo de papaya o naranja, manzanilla, 2 tostadas, después de eso no puede tomar ningún tipo de líquido.
-                    Traer su CORSE RIGIDO BIVALVO – ORTOPEDIA WONG – Técnico Polo.
-                    Telf. 4404190-114- 98182689, es a medida y demoran 10 días aproximadamente para entregarlo.
-
-                </p>
-            </div>
-
-        </div>
                     
+                </div>
             </div>
-        </div>
-
-        
-
-
-
-
-
 
 
 
@@ -401,20 +381,97 @@ div.panel.show {
             </div>
         </div>
     </footer>
+    <!-- Ventana emergente confirmación de reserva  -->
 
+<!-- Ventana emergente anular reserva -->
+<!--
+<div id="modalAnula" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="exampleModalLabel">Anular Cita</h4>
+            </div>
+            <div class="modal-body" style="text-align:center">
+                <input type="text" id="COD_CODE" class="form-control" placeholder="Ingrese el Código" />
+            </div>
+            <div class="modal-footer" style="text-align:center">
+                <button type="button" class="btn btn-success" onClick="anularCitaProceso();">Anular</button>
+            </div>      
+        </div>
+    </div>
+</div>-->
+<!--
+<div class="modal fade" id="identidad_coorporativa" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Identidad Corporativa</h4>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Identidad Digital</li>
+                    <li>Identidad Corporativa</li>
+                    <li>Creación de logotipo</li>
+                    <li>Papelería</li>
+                    <li>Packaging</li>
+                </ul>
+            </div>
+            <div class="modal-footer">                
+                <button type="button" class="btn btn-black" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!--
+<div class="modal fade" id="gestion_diseño" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">GESTIÓN & DISEÑO</h4>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Administración de Contenido</li>
+                    <li>Monitoreo y análisis</li>
+                    <li>Desarrollo de Campañas</li>
+                    <li>Segmentación de Publicidad</li>                    
+                </ul>
+            </div>
+            <div class="modal-footer">                
+                <button type="button" class="btn btn-black" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+<!--<div class="modal fade" id="estrategia_marketing" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">MARKETING</h4>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Estrategias de Marketing según los objetivos de tu empresa</li>
+                    <li>Análisis y Reporte empresarial</li>
+                    <li>Desarrollo de Campañas On-Line / Off-Line</li>
+                    <li>Desarrollo de Campañas ATL / BTL</li>                    
+                </ul>
+            </div>
+            <div class="modal-footer">                
+                <button type="button" class="btn btn-black" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>-->
     <script>
-
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function(){
-            this.classList.toggle("active");
-            this.nextElementSibling.classList.toggle("show");
-        }
-    }
-
-
     var input = document.getElementById("dateField");
             var today = new Date();
             var day = today.getDate();
@@ -430,7 +487,6 @@ div.panel.show {
             input.setAttribute('min', date);
 
         $(document).ready(function () {
-            $("#accordion").accordion({collapsible: true});
             $("#btnReserva").click(function () {
                 document.getElementById("btnReserva").value = "Enviando...";
                 $("#enviarCorreo").submit(function (e) {
