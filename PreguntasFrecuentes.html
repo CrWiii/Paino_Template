@@ -89,9 +89,13 @@
             opacity: 0.7;
         }
         .heag{
-            background: url(images/faq.png);
-            background-size: 100% 100%;
+            background: url(images/faq.png) no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: 100% 110%;
             opacity: 0.7;
+            height: 600px !important;
         }
         .fz{
              padding: 5em;
@@ -111,6 +115,12 @@
 
 
         @media (max-width: 767px) {
+            .secttt{
+                padding-top: 0px !important;
+            }
+            .heag{
+                height: 300px !important;
+            }
             .divf{
                 height: auto;
             }
@@ -178,8 +188,11 @@
                 background: #5d6f94 url(scrollbar_thumb_bg.png) no-repeat center;
             }
 
-            .seccion{
+            .section2{
                 padding-top: 5em;
+            }
+
+            .seccion{
                 padding-left: 0px;
                 padding-right: 0px;
 
@@ -334,13 +347,13 @@ div.panel.show {
             <div style="margin: 50px;">
             <button class="accordion">1.    ¿Cubrirá mi seguro las consultas Médicas y Cirugía?</button>
             <div class="panel">
-              <p>
+              <p style="text-align: justify;">
                 Trabajamos con la mayoría de las compañías de seguros de salud mediante el Sistema del reembolso, cualquier duda comunicarse con nosotros al 261-6139/ 261-5615.</p>
             </div>
 
             <button class="accordion">2.    ¿Qué recomendaciones debo seguir para agendar mi cita?</button>
             <div class="panel">
-              <p>
+              <p style="text-align: justify;">
                 Anotar los datos de su cita.
                 Tener el nombre de la persona para la cual se solicita la cita médica.
                 Las anotaciones de su cita o interconsulta las brinda la secretaria.
@@ -353,7 +366,7 @@ div.panel.show {
 
             <button class="accordion">3.    ¿Dónde puedo Realizarme los exámenes de RX y Resonancia Magnética?</button>
             <div class="panel">
-                <p>
+                <p style="text-align: justify;">
                     Se pueden realizar en DPI, ubicado en Av. Dos de Mayo 602 – San Isidro.
                     Telf.202-33-33 Fax.202-33-42.
                     Trabajan con todas las Compañías de Seguros y EPS.
@@ -362,7 +375,7 @@ div.panel.show {
 
             <button class="accordion">4.    ¿Hay instrucciones que debo seguir si tengo una cirugía?</button>
             <div class="panel">
-                <p>
+                <p style="text-align: justify;">
                     Sí. Nuestro personal revisará las instrucciones previas al procedimiento en el momento de programar su cirugía.
                     Las siguientes son algunas pautas generales para todos los pacientes programados para un procedimiento:
                     Dejar de tomar Anti-Inflamatorio o Aspirina 10 días antes de la cirugía.
