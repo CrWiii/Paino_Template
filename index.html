@@ -3,16 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--<link rel="icon" type="image/png" href="images/logoplay.png">-->
+        <link rel="icon" type="image/png" href="images/fab.png">
         <title>Dr. Paino</title>
-        <!--Inicio Bootstrap-->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <script src="bootstrap/jquery.min.js" type="text/javascript"></script>       
         <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
         <link href="bootstrap/css/style-menu-play.css" rel="stylesheet" type="text/css"/>
         <link href="bootstrap/logoplay.css" rel="stylesheet" type="text/css"/>
-        <!--Final Bootstrap-->
-        <!--styles css-->
         <link rel='stylesheet' id='contact-form-7-css' href='css/styles.css' type='text/css' media='all' />
         <link href="fonts/style.css" rel="stylesheet" type="text/css"/>
         <!--Revolution slider-css-->
@@ -21,6 +18,7 @@
         <!--cms style css-->
         <link rel='stylesheet' id='cms-plugin-stylesheet-css' href='css/cms-style.css' type='text/css' media='all' />
         <link rel='stylesheet' id='zkraven-style-css' href='css/style.css' type='text/css' media='all' />
+        <link rel="stylesheet" href="dist/css/bootstrap-submenu.min.css">
         <!--[if lt IE 10]>
           <link property="cms-stylesheet" rel='stylesheet' id='zkraven-ie-css'  href='http://raven.zooka.io/demo/wp-content/themes/wp_raven/assets/css/ie.css?ver=screen' type='text/css' media='all' />
           <![endif]-->
@@ -47,6 +45,7 @@
           <link rel="stylesheet" type="text/css" href="http://raven.zooka.io/demo/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen">
           <![endif]-->
         <!--common css-->
+        <script src="dist/js/bootstrap-submenu.min.js" defer></script>
         <link rel='stylesheet' id='common-css' href='css/common.css' type='text/css' media='all' />
         <!--index-custom-vc css-->
         <link rel='stylesheet' id='index-custom-vc-css' href='css/index-custom-vc.css' type='text/css' media='all' />
@@ -58,11 +57,54 @@
         <script src="flip-carousel.js"></script>
         <link href="flip-carousel.css" rel="stylesheet" />
         <style>
+        /*img {
+            max-width: 100%;
+            height: auto;
+            width: auto\9;
+        }*/
+        .titlePai{
+            text-align: center;
+            font-size: 2.5em;
+            text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 3px 0 #b9b9b9,
+               0 3px 0 #aaa,
+               0 3px 1px rgba(0,0,0,.1),
+               0 0 3px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 3px rgba(0,0,0,.2),
+               0 3px 3px rgba(0,0,0,.25),
+               0 3px 3px rgba(0,0,0,.2),
+               0 3px 3px rgba(0,0,0,.15);
+        }
+        .subtit{
+            text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 3px 0 #b9b9b9,
+               0 3px 0 #aaa,
+               0 3px 1px rgba(0,0,0,.1),
+               0 0 3px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 3px rgba(0,0,0,.2),
+               0 3px 3px rgba(0,0,0,.25),
+               0 3px 3px rgba(0,0,0,.2),
+               0 3px 3px rgba(0,0,0,.15);
+        }
+
         .contscr{
             text-align: justify;
             font-size: 16px;
             overflow: scroll;
             overflow-x:hidden;
+            height: 280px;
+            padding: 10px;
+        }
+
+        .contnoscr{
+            text-align: justify;
+            font-size: 16px;
             height: 280px;
             padding: 10px;
         }
@@ -111,7 +153,10 @@
         }
 
         .heas{
-            background: url(images/cuidado.png) no-repeat; 
+            background: url(images/cuidado.png) no-repeat;
+            max-width: 100%;
+            height: auto;
+            width: auto\9;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -138,17 +183,50 @@
         .btnRegister{
             text-align: center;
             padding: 10px 100px 10px 100px; 
-            margin: 40px 230px;
+            margin: 40px 200px;
             font-size:20px !important;
             border-radius: 25px;
             box-shadow: 5px 5px 5px #444242;
         }
         .ewq{
+            color: white !important;
             line-height: 50px !important;
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #4c4848, 0 3px 0 #4c4848, 0 4px 0 #4c4848, 0 5px 0 #4c4848, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
         }
+        nav ul ul {
+                display: none;
+            }
+             
+            nav ul li:hover > ul {
+                display: block;
+            }
+
+        nav ul ul {
+    background: #88b6d2; border-radius: 0px; padding: 0;
+    position: absolute; top: 100%;
+}
+    nav ul ul li {
+        float: none; 
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        position: relative;
+    }
+        nav ul ul li a {
+            padding: 5px 10px;
+            /*color: #000;*/
+        }   
+            nav ul ul li a:hover {
+                background: #fff;
+            }
+            nav ul ul ul {
+    position: absolute; left: 100%; top:0;
+}
 
 
         @media (max-width: 767px) {
+            .sazz{
+                margin-left: 12px;
+            }
             .ewq{
             line-height: 20px !important;
             }
@@ -190,6 +268,9 @@
             article img{
                 max-width: 260px;
             }
+            article > h1, h2{
+                font-size: 22px !important;
+            }
 
 
             .geg{
@@ -213,9 +294,9 @@
             .fz{
                  padding: 1em
             }
-            .heas{
+            /*.heas{
                 background-size: 400px 200px;
-            }
+            }*/
             .target{
                 padding-top: 20px;
                 width: 95%; height: 600px; margin: auto 0;margin-left: 10px;
@@ -316,8 +397,8 @@
             }
         </style>
         <script>
+            $('[data-submenu]').submenupicker();
             $( "#target" ).scroll();
-
         </script>
 
     </head>
@@ -342,21 +423,23 @@
                         <ul class="nav navbar-nav">
                             <li><a href="#Inicio" class=""><span class="menu-title">Inicio</span></a></li>
                             <li><a href="#DrPaino" class=""><span class="menu-title">Dr. Paino</span></a></li>
-                            <li><a href="#Especializaciones" class=""><span class="menu-title">Altos Niveles de Eficiencia</span></a></li>
-                            <li><a href="" class=""><span class="menu-title">Noticias</span></a></li>
-                            
-                            <!--<li><a href="#Alianzas" class=""><span class="menu-title">Alianzas</span></a></li>-->
+                            <li><a href="#Especializaciones" class=""><span class="menu-title">Especialidades - Altos Niveles de Eficiencia</span></a></li>
+                            <li><a href="Noticias.html" class=""><span class="menu-title">Noticias</span></a></li>
                             <li><a href="PreguntasFrecuentes.html" class=""><span class="menu-title">Preguntas Frecuentes</span></a></li>
                             <li><a href="#Contacto" class=""><span class="menu-title">Citas Médicas</span></a></li>
-                            <!--<li>Otros
-                                <ul>
-                                    <li><a href="#Contacto" class=""><span class="menu-title">gg</span></a></li>
-                                    <li><a href="#Contacto" class=""><span class="menu-title">ss</span></a></li>
+                            <li><a href="Otros.html">Otros</a>
+                                <ul style="list-style-type:none">
+                                    <li><a href="Otros.html#Publicaciones"><span class="menu-title">Publicaciones</span></a></li>
+                                    <li><a href="Otros.html#Monografias"><span class="menu-title">Monografías</span></a></li>
+                                    <li><a href="Otros.html#Presentaciones"><span class="menu-title">Presentaciones</span></a></li>
+                                    <li><a href="Otros.html#Invitaciones"><span class="menu-title">Invitaciones</span></a></li>
+                                    <li><a href="Otros.html#Dedicatorias"><span class="menu-title">Dedicatorias</span></a></li>
+                                    <li><a href="Otros.html#Posters"><span class="menu-title">Posters</span></a></li>
+                                    <li><a href="Otros.html#Diplomas"><span class="menu-title">Diplomas</span></a></li>
                                 </ul>
-                            </li>-->
-                            <li><a href="" class=""><span class="menu-title">Otros</span></a></li>
+                            </li>
                             <li><a style="padding-right: 0px;"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
-                            <li><a style="padding-left: 0px;"><span class="menu-title"><img src="images/Alianzas/spanish.png" width="30px"></span></a></li>
+                            <li><a style="padding-left: 0px;"><span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -375,7 +458,8 @@
             </div>
 
         </div>
-        <div id="DrPaino"  style="background-color: #88b6d2;height: : 720px;" >
+    <div id="DrPaino"  style="background-color: #88b6d2;height: : 720px;" >
+        <div id="cms-row-15679b50e7b8a3" class="seccion vc_custom_1440984246360 ">
         <div class="col-md-4 hidden-xs hidden-sm" style="float: left;padding-top: 0px;padding-left: 200px;">
                     <img src="images/doc.png" width="200px">
                 </div>
@@ -386,24 +470,24 @@
                         
                     </div>
                                 <div id="target" class="target" style="overflow: scroll;overflow-x:hidden;background-color:white;color:black;padding-left: 20px;padding-top: 20px;padding-bottom: 30px;">
-                                    <h1 style="text-align: center;font-size: 2.5em;"><strong>Dr. Paino</strong></h1>
+                                    <h1 class="titlePai"><strong>Dr. Paino</strong></h1>
                                     <p style="text-align: justify;font-size: 0.8em;padding-right: 80px;">
 <ul style="list-style-type: none;">
 <li><strong>Cargos actuales:</strong></li>
-<li>Neurocirujano Titular; Clínica San Felipe; Lima, PERU</li>   
+<li>Neurocirujano Titular; Clínica San Felipe; Lima, PERÚ</li>   
 <li>Neurocurujano Titular: Stem Cell Regenerative Medicine; West Palm Beach, USA</li>
-<li>Investigador Principal.  Proyecto Nanoparticulas y Celulas Madre. Cleveland Clinic, USA y Universidad Tecnológica del Perú UTEC. Miraflores PERU</li>
-<li>Regidor Municipalidad de San Isidro, Lima, PERU</li>
-<li>Profesor Adjunto - Investigación; Universidad George Washington; Wasnington DC, USA</li>
-<li>Profesor Adjunto - Investigación; Universidad Tecnológica del Perú UTEC. Miraflores PERU</li>
-<li>Profesor Titular Y director de la Catedra - Bioquímica;  Universidad Tecnológica del Perú UTEC; Miraflores PERU</li>
-<li>Profesor Honoris Causa; Universidad San Martín de Porres; Lima, PERU</li>
+<li>Investigador Principal.  Proyecto Nanoparticulas y Células Madre. Cleveland Clinic, USA y Universidad Tecnológica del Perú UTEC. Miraflores PERÚ</li>
+<li>Regidor Municipalidad de San Isidro, Lima, PERÚ</li>
+<li>Profesor Adjunto - Investigación; Universidad George Washington; Washington DC, USA</li>
+<li>Profesor Adjunto - Investigación; Universidad Tecnológica del Perú UTEC. Miraflores PERÚ</li>
+<li>Profesor Titular y Director de la Cátedra - Bioquímica;  Universidad Tecnológica del Perú UTEC; Miraflores PERÚ</li>
+<li>Profesor Honoris Causa; Universidad San Martín de Porres; Lima, PERÚ</li>
 
 <li><strong>Licencias:</strong></li>
 <li>Colegio Médico del Perú; Licencia # CMP 27336.  Desde 1994.</li>
 <li>Registro Nacional de Especialistas - Neurocirugía. # RNE 19168.</li>
-<li>Licencia Medica, Estado de Nueva York # NYS 228347.  Desde el 2003. </li>
-<li>Marina de Guerra: Licencia de Salvamento y Buceo PERU # K-83064065.</li>
+<li>Licencia Médica, Estado de Nueva York # NYS 228347.  Desde el 2003. </li>
+<li>Marina de Guerra: Licencia de Salvamento y Buceo PERÚ # K-83064065.</li>
 
 <li><strong>Educación:</strong></li>
 <li>Neurocirujano Especialista: Mount Sinai School of Medicine, Nueva York, NY.  Residencia, 1998-2004.</li>
@@ -424,13 +508,13 @@
 <li>Escuela de Medicina George Washington University,  Washington, DC.</li>
 <li>Profesor Asistente de Investigación Departamento de Bioquímica y Biología Molecular 2005.</li>
 <li>Academia Stanley H. Kaplan, Washington, DC / Baltimore, MD</li>
-<li>Examenes de Licenciatura en Médicina EE.UU, 1995-1995.</li>
+<li>Exámenes de Licenciatura en Médicina EE.UU, 1995-1995.</li>
 <li>Rush Medical College Chicago, IL, División ArcVentures, Miami, FL</li>
 <li>Examenes de Licenciatura en Médicina EE.UU, 1992 – 1993.</li>
 
 <li><strong>Asesoría:</strong></li>
 <li>Marina de Guerra del Perú, Lima Perú, Neurocirugía, Hospital Naval, Lima PERÚ. Cirugías complejas de columna vertebral y cerebro.</li>
-<li>Intereses:</li>
+<li><strong>Intereses:</strong></li>
 <li>Cirugia Mínimamente  Invasiva de Columna.  Instrumentación compleja de columna vertebral.  Neuro trauma.</li>
 <li>Terapia Celular, Medicina regenerativa, enfermedades neurológicas, y quemados, Biología Molecular y Biotecnología, Laboratorio UTEC. </li>
 <li>Tumores cerebrales: 9 años de investigación y Cirugía Meningiomas Cerebrales. Dr. Sekhar, Dr. Sen</li>
@@ -454,7 +538,7 @@
 <li>"Premio de Intercambio Cultural Perú-Brasil". Becado en primer lugar en Medicina año 1982. Subvención Escuela de Medicina.</li>
 
 <li><strong>Proyectos financiados:</strong></li>
-<li>Fuente: Comisión peruana de Ciencia y Tecnología (CONCYTEC). Investigador principal.</li>
+<li>Fuente: Comisión PERÚana de Ciencia y Tecnología (CONCYTEC). Investigador principal.</li>
 <li>Fuente: Privada. Revisores; GWU y la Academia de Ciencias de Nueva York. Investigador principal.</li>
 <li>Fuente: Centro Médico Mount Sinai, Fundación para el incentivo en la  financiación de Investigación. Investigador principal.</li>
 <li>Fuente: Premio de Investigación Phillip Morris, Patrocinador GWU, Neurocirugía. Tesista.</li>
@@ -465,43 +549,34 @@
                                     </div>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="seccion" style="padding-top: 0px !important;">
-            <div class="panel-body" style="padding-top: 0px !important;">
-                <div class="vc_tta-container" data-vc-action="collapse">
-                    <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
-                        <div class="vc_tta-tabs-container">
-                           
-                        </div>
-
-                        <div class="vc_tta-panels-container">
-                            <div class="vc_tta-panels">
 
 
-                               
-
-
-
-                            </div>
-                        </div>
-                    </div>
+    <div id="Especializaciones" class="seccion" style="padding-top: 50px !important;">
+    <div id="cms-row-15679b50e7b8a3">
+            <div class="panel-body" style="background-color: #88b6d2;">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Especialidades - Altos Niveles de Eficiencia</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
                 </div>
             </div>
-        
 
 
-            
-        </div>
-        <div id="Especializaciones" class="seccion" style="padding-top: 0px !important;">
+
+
+       
             <div class="panel-body" style="padding-top: 0px !important;">
             <div class="carrr">
     <article title="item12">
         <h1>Neurocirugía de la Columna y Cerebro</h1>
-        <img src="images/Especialidades/Neurocirugiacolumna.jpg">
+        <img src="images/Especialidades/Neurocirugiacolumnaa.jpg">
         <p class="contscr">
             En Pronostico Positivo realizamos más de 100 cirugías al año y hemos expandido la especialidad en el Perú desarrollando áreas como preservación del movimiento y microcirugía con técnicas mínimamente invasivas de columna, reconstrucciones complejas, y navegación. El doctor Paino es líder en Neurocirugía y Educación, habiendo publicado importantes artículos y realizado conferencias en la especialidad.  En la sala de operaciones de la Clínica San Felipe contamos con modernos equipos, instrumentos de precisión y navegación por imágenes. Estamos en capacidad para atender casos simples y extremadamente complejos.  Nuestro equipo multidisciplinario trabaja juntos para proporcionar todo el espectro de estrategias en el tratamiento del paciente desde la terapia conservadora, la cirugía si es necesaria y la rehabilitación post operatoria.  Nuestros anestesiólogos están preparados en los mejores centros, manejan casos muy delicados con un excelente record sin complicaciones.  Estamos comprometidos con una atención de excelencia, enfocados en la seguridad de nuestros pacientes e impecables resultados. Como profesor adjunto de investigación en la Universidad George Washington, avanzamos en el desarrollo de la próxima generación de osteobiológicos  para la fusión de lesiones complejas de columna.   Somos pioneros en el uso de Monitoreo Intra Operatorio (IOM), esto nos permite medir en todo momento la integridad funcional del paciente durante las cirugías complejas de columna o Cerebro de tal manera que reducimos el riesgo de cortar algún nervio durante la cirugía.  En nuestro instituto el monitoreo es realizado por un Neurólogo en la sala de operaciones. 
         </p>
@@ -515,16 +590,16 @@
         </p>
     </article>
     <article title="item12">
-        <h1>Terapia Física / NeuroRehabilitación</h1>
+        <h1>Terapia Física / Neuro Rehabilitación</h1>
         <img src="images/Especialidades/rehabilitacion.jpg">
-        <p class="contscr">
+        <p class="contnoscr">
             Nuestros pacientes se benefician de técnicas innovadoras en Neuro Rehabilitación de la columna vertebral.  Rehabilitamos también pacientes con afecciones degenerativas y cerebrales.  Manejamos programas que son supervisados directamente por nuestro Director Médico-Neurocirujano.
         </p>
     </article>
 
 
     <article title="item12">
-        <h1>Tumores cerebrales y de Columna</h1>
+        <h1>Tumores Cerebrales y de Columna</h1>
         <img src="images/Especialidades/TumoresCerebrales.jpeg">
         <p class="contscr">
             Nuestro Instituto es uno de los centros de referencia para el nuevo  programa de Radiocirugía (Gamma Knife) en el Perú, además el Dr. Paino es Medico Titular del Miami Gamma Knife Institute y referente del Instituto de Gamma Knife de la Universidad de Pittsburg en Pennsilvania, dirigida por el prestigioso Neurocirujano Dr. Douglas Kondziolka.  Nosotros sabemos que si los tumores no se tratan a tiempo o son de crecimiento rápido tal vez no respondan bien a radiocirugía por eso algunos pocos casos los pasamos a cirugía.  Para los casos quirúrgicos, Cirujanos Oncólogos trabajan con el Dr.  Paino para solucionar los casos mas complejos de tumores cerebrales y de columna como el Cordoma de Sacro y otros. En el caso de tumores cerebrales, Dr. Paino tiene varias publicaciones (ver publicaciones) en prestigiosas Revistas de los Estados Unidos con prestigiosos Neurocirujanos como el Dr.  Sekhar y El Dr Sen. El Dr. Paino ha estudiado el comportamiento de tumores como los Meningiomas por mas de 15 años y se entrenó en la cirugía de tumores bajo la tutoría del prestigioso Cirujano de Base de Cráneo Dr. Sen.  
@@ -533,46 +608,36 @@
 
     <article title="item12">
         <h1 style="padding-bottom: 40px;">Investigación</h1>
-        <img src="images/Especialidades/Investigacion.jpg">
+        <img src="images/Especialidades/Investigaciona.jpg">
         <p class="contscr">
-            La investigación en el Perú requiere de todos nosotros. El Doctor Paino, es también pionero de la investigación de Células Madre en el Mundo y lidera el laboratorio de alta tecnología de Bioingeniería en la Universidad UTEC. El Gobierno Peruano, mediante su ente Científico CONCYTEC ha creído en él y ha financiado su proyecto a través de FONDECYT.  La Cleveland Clinic lo apoya desde el 2015 con intercambio de conocimientos  sobre nano partículas.  Más recientemente ha equipado nuestro laboratorio con donación de equipos de alta tecnología por lo cuál somos uno de los laboratorios más especializados en cultivos celulares del país según CONCYTEC.  
+            La investigación en el Perú requiere de todos nosotros. El Doctor Paino, es también pionero de la investigación de Células Madre en el Mundo y lidera el laboratorio de alta tecnología de Bioingeniería en la Universidad UTEC. El Gobierno PERÚano, mediante su ente Científico CONCYTEC ha creído en él y ha financiado su proyecto a través de FONDECYT.  La Cleveland Clinic lo apoya desde el 2015 con intercambio de conocimientos  sobre nano partículas.  Más recientemente ha equipado nuestro laboratorio con donación de equipos de alta tecnología por lo cuál somos uno de los laboratorios más especializados en cultivos celulares del país según CONCYTEC.  
             Estamos interesados en avanzar el conocimiento mediante investigación en Ciencias Básicas Biológicas. En un futuro, la unión entre las proteínas de células madre y  las nano partículas que pretendemos desarrollar podrían beneficiar directamente a cientos de pacientes quemados  y con lesiones de médula en todo el Perú.  El Dr. Paino también ha desarrollado toda un área de estudios con relación a terapia genética y células madre para enfermedades degenerativas del cerebro y la columna como ELA, Esclerosis Múltiple, Enfermedad de Tay Sachs, Enfermedad de Sandohoff, etc.   
             Por favor contactese con nuestra oficina de investigación al 2190258 si desea participar de algunos de esos estudios.
             Busque el estudio que le interesa en el Excel que sigue. 
         </p>
     </article>
     <article title="item12">
-        <h2>Alzheimer y prevención de otros desordenes</h2>
+        <h2>Alzheimer y Prevención de otros Desordenes</h2>
         <img src="images/Especialidades/Alzheimer.jpeg">
         <p class="contscr">
-            Médicos y psicólogos de nuestro instituto afiliados al campo de los desórdenes neuro cognitivos trabajan en el Instituto de la Memoria. Atendemos pacientes con pérdida temprana de la memoria o con preocupación de deficiencias hereditarias de memoria. Alteraciones del estado de ánimo , el comportamiento, el lenguaje y la memoria son  síntomas que tienen una variedad de causas, nosotros hemos desarrollado programas personalizados que tienen la finalidad de diagnosticar y prevenir alteraciones intelectuales, incluido el Alzheimer.   Realizamos evaluaciones completas para asegurar el mejor protocolo para nuestros pacientes.  Manejamos los últimos avances en la investigación y/o tratamiento de problemas neuro cognitivos.  Nuestros tratamientos también están dirigidos a personas que en la actualidad no presentan problemas de memoria pero están interesadas en cultivar y/o ejercitar las capacidades cognitivas sobreviniendo el deterioro de las funciones intelectuales.  Manejamos protocolos de investigación con células mesenquimales para la regeneración del tejido neurológico con el propósito de prevenir la demencia tratándola prematuramente y previniendo su avance. Bajo la dirección del Dr. Paino nuestro centro de prevención es pionero en el Perú.  Estamos afiliados con modernos centros de diagnostico por imágenes para el diagnóstico temprano.  Junto con nuestros científicos asociados como el Dr. Burton Feinerman en Florida, trabajamos arduamente para desarrollar alternativas de terapia genética para la prevención y tratamiento del envejecimiento temprano del cerebro. Las enfermedades neuro degenerativas afectan a miles de peruanos y sus causas permanecen desconocidas.  Nuestras investigaciones se enfocan también en atacar algunos factores de riesgo que pueden prevenir el avance de la demencia como por ejemplo el uso indiscriminado de analgésicos, estrés post traumáticos, enfermedades infecciosas, etc. Asesoramos a nuestros pacientes acerca de factores electromagnéticos (antenas) que puedan causar modificaciones genéticas que aumenten los factores de riesgo de la demencia.
+            Médicos y psicólogos de nuestro instituto afiliados al campo de los desórdenes neuro cognitivos trabajan en el Instituto de la Memoria. Atendemos pacientes con pérdida temprana de la memoria o con preocupación de deficiencias hereditarias de memoria. Alteraciones del estado de ánimo , el comportamiento, el lenguaje y la memoria son  síntomas que tienen una variedad de causas, nosotros hemos desarrollado programas personalizados que tienen la finalidad de diagnosticar y prevenir alteraciones intelectuales, incluido el Alzheimer.   Realizamos evaluaciones completas para asegurar el mejor protocolo para nuestros pacientes.  Manejamos los últimos avances en la investigación y/o tratamiento de problemas neuro cognitivos.  Nuestros tratamientos también están dirigidos a personas que en la actualidad no presentan problemas de memoria pero están interesadas en cultivar y/o ejercitar las capacidades cognitivas sobreviniendo el deterioro de las funciones intelectuales.  Manejamos protocolos de investigación con células mesenquimales para la regeneración del tejido neurológico con el propósito de prevenir la demencia tratándola prematuramente y previniendo su avance. Bajo la dirección del Dr. Paino nuestro centro de prevención es pionero en el Perú.  Estamos afiliados con modernos centros de diagnostico por imágenes para el diagnóstico temprano.  Junto con nuestros científicos asociados como el Dr. Burton Feinerman en Florida, trabajamos arduamente para desarrollar alternativas de terapia genética para la prevención y tratamiento del envejecimiento temprano del cerebro. Las enfermedades neuro degenerativas afectan a miles de PERÚanos y sus causas permanecen desconocidas.  Nuestras investigaciones se enfocan también en atacar algunos factores de riesgo que pueden prevenir el avance de la demencia como por ejemplo el uso indiscriminado de analgésicos, estrés post traumáticos, enfermedades infecciosas, etc. Asesoramos a nuestros pacientes acerca de factores electromagnéticos (antenas) que puedan causar modificaciones genéticas que aumenten los factores de riesgo de la demencia.
+        </p>
+    </article>
+    <article title="item12">
+        <h2>Trabajo Social - Misión Huascarán</h2>
+        <!--<img src="">-->
+        <!--<video width="400" controls>-->
+        <video width="320" controls preload="none">
+            <source src="video/Misión-Huascarán-en-Alta-Gala-2016.webmhd" type="video/mp4">
+            <source src="video/Misión-Huascarán-en-Alta-Gala-2016.webmhd" type="video/webm">
+            Your browser does not support HTML5 video.
+            <img alt="" src="images/previewForVideo.png" width="640" height="360"  title="" />
+</video>
+        </video>
+        <p class="contnoscr">El Dr. Paino anualmente visita pacientes necesitados de comunidades alejadas en diferentes altitudes de los Andes.  Participa activamente de obras humanitarias como la Misión Huascaran en Ancash, Perú.
         </p>
     </article>
 </div>
-<script>
-$(document).ready(function(){
-    resize();
-});
-    function resize(){
-        if($(window).innerWidth() <= 751) {
-            $('.hidd').hide();
-            $('article').flipcarousel({
-                pagination : false,
-                loader : true,
-                itemsperpage: 1,
-                randomizer: 0.7
-            });
-        } else {
-            $('.hidd').show(); 
-            $('article').flipcarousel({
-                pagination : false,
-                loader : true,
-                itemsperpage: 3,
-                randomizer: 0.7
-            });
-        }
-    }
-</script>
         </div>
         </div>
 
@@ -680,6 +745,7 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
+            </div>
         </div>
 
 
@@ -687,7 +753,7 @@ $(document).ready(function(){
         <div id="" class="seccion" style="padding-top: 0px !important">
             <div class="panel-body" style="background-color: #88b6d2;">
                 <div style="text-align: center;" class=" clearfix" id="cms-custom-headding-15679b50e50b82">
-                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding: 0px !important"><strong>Guías Descargables</strong></p>                                   
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Guías Descargables</strong></p>                                   
                 </div>                                
                 <div class="wpb_text_column wpb_content_element ">
                     
@@ -717,7 +783,7 @@ $(document).ready(function(){
         <div id="Alianzas" class="seccion" style="padding-top: 0px !important">
             <div class="panel-body" style="background-color: #88b6d2;">
                 <div style="text-align: center;" class=" clearfix" id="cms-custom-headding-15679b50e50b82">
-                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding: 0px !important"><strong>Alianzas Estratégicas</strong></p>                                   
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Alianzas Estratégicas</strong></p>                                   
                 </div>                                
                 <div class="wpb_text_column wpb_content_element ">
                     
@@ -759,20 +825,21 @@ $(document).ready(function(){
                 </div>
             </div>
         </div>
-        
-        <div id="Contacto" class="">
-            <div id="cms-row-15679b50e7b8a3" class="seccion vc_custom_1440984246360 ">
+
+
+        <div id="Contacto" class=".seccion">
+            <div id="cms-row-15679b50e7b8a3" class="seccion vc_custom_1440984246360" style="padding-bottom: 0px !important"><!--for edit-->
                 <div class="panel-body">
                     <div class="vc_col-lg-offset-1 vc_col-lg-5 vc_col-md-offset-1 vc_col-md-6  wpb_column vc_column_container cf7-zk-raven4 vc_custom_1442199020596  vc_custom_1442199020596">
                         <div id="cms-custom-headding-15679b50e7c409" class="vc_custom_heading cms-title-bottom-line clearfix">
-                            <h2 class="cms-custom-headding-title text-left" style="color:white;padding-bottom: 0px;margin-bottom: 40px;"></span>CITAS MÉDICAS</h2>
+                            <h2 class="cms-custom-headding-title text-left" style="color: #6f6767;padding-bottom: 0px;margin-bottom: 40px;">CITAS MÉDICAS</h2>
                         </div>
                         <div id="cms-custom-headding-15679b50e7c6d9" class="vc_custom_heading vc_custom_1446626527589  clearfix" style="margin-bottom: 0px !important;">
-                            <h4 style="color:white;margin-bottom: 40px;">Déjanos tus datos para programar una cita</h4>
+                            <h4 style="color: #6f6767;margin-bottom: 40px;">Déjanos tus datos para programar una cita</h4>
                         </div>
                         <div class="wpb_text_column wpb_content_element  vc_custom_1446626694783" style="margin-bottom: 40px !important;">
-                            <div class="wpb_wrapper" style="color:white; border-radius: 0.3em; padding-top: 0.5em;">
-                                <p style="text-align: justify;"> <strong>Tus comentarios, preguntas y sugerencias son importantes para nosotros.  
+                            <div class="wpb_wrapper" style="color: #6f6767; border-radius: 0.3em; padding-top: 0.5em;">
+                                <p style="text-align: justify;"> <strong>Tus comentarios son importantes para nosotros.  
                                     Por favor llena los campos del formulario a continuación y te responderemos en el menor tiempo posible.</strong>
                                 </p>
                             </div>
@@ -782,7 +849,7 @@ $(document).ready(function(){
                             <form id="enviarCorreo" action="enviarCorreo.php" method="POST" class="wpcf7-form">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                        <input type="text" name="nombre" value="" size="40" 
+                                        <input type="text" name="nombre" value="" size="40"  style="color: #6f6767 !important" 
                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" 
                                                aria-required="true" aria-invalid="false" title="Ingresar Nombre" placeholder="NOMBRE Y APELLIDO:" required/>
                                     </div>
@@ -799,10 +866,10 @@ $(document).ready(function(){
                                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
                                                aria-required="true" aria-invalid="false" title="Ingresar E-mail Valido" placeholder="CORREO ELECTRÓNICO:" required/>
                                     </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <!--<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                         <input id="dateField" min="2014-01-01" disabled type="text" onfocus="(this.type='date')" name="asunto" value="" size="40" class="wpcf7-form-control wpcf7-text"
                                                aria-invalid="false" placeholder="DÍA DE PREFERENCIA:" />
-                                    </div>
+                                    </div>-->
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -815,23 +882,27 @@ $(document).ready(function(){
                                 </div>
                             </form>
                         </div>
-                        <div class="wpb_wrapper" style="color:white; border-radius: 0.3em; padding-top: 0.5em;">
+                        <div class="wpb_wrapper" style="color:#6f6767; border-radius: 0.3em; padding-top: 0.5em;">
                                 <p style="text-align: justify;"> <strong>Si tiene alguna pregunta pase a nuestra sección de preguntas frecuentes para resolverlas.</strong>
                                 </p>
                             </div>
                     </div>
                     <div>
-                        <h2 class="tett" style="color:white;text-align: center">AGENDA TU CITA WEB</h2>
-                        <div>
-                            <button class="btnLogin">Login</button>
+                        <h2 class="tett" style="color:#6f6767;text-align: center">CALENDARIO WEB</h2>
+                        <div style="margin-top: 150px;">
+                            <button class="btnLogin">Cita</button>
                         </div>
                         <div>
-                            <button class="btnRegister">Registro</button>
+                            <button class="btnRegister">Calendario</button>
                         </div>
                     </div>
                 </div>
 
             </div>
+        </div>
+        
+
+        
             <div id="cms-row-15679b50e7de29" class="clearfix vc_custom_1446427805341 full-width cms-custom-css">
                 <div class="panel-body">
                     <div class="row">
@@ -870,7 +941,7 @@ $(document).ready(function(){
                                                 <div class="fancy-box-content geg" style="color:white">
                                                     <p style="padding: 0px !important"><strong>E-mail:</strong> 
                                                         <br />
-                                                        aliciac@neurocirugiaperu.com
+                                                        aliciac@neurocirugiaPERÚ.com
                                                     </p>
                                                 </div>
                                             </div>
@@ -889,7 +960,7 @@ $(document).ready(function(){
                                             </div>
                                             <div class="cms-single-fancybox-content" style="padding-top: 0px !important" >
                                                 <div class="fancy-box-content geg">
-                                                    <p style="padding: 0px !important;margin: 0px !important"><strong>Dirección</strong> 
+                                                    <p style="padding: 0px !important;margin: 0px !important"><strong>Dirección:</strong> 
                                                         <br />
                                                     <p style="padding: 0px !important;margin: 0px !important;font-size: 14px !important">Av. Gregorio Escobedo 676 Torre 2 Piso 5 consultorio 511, Jesús María</p>
                                                     </p>
@@ -912,7 +983,9 @@ $(document).ready(function(){
                                             </div>
                                             <div class="cms-single-fancybox-content" style="padding-top: 0px !important">
                                                 <div class="fancy-box-content">
-                                                    <p><strong>/neurocirugíaperu</strong> 
+                                                    <p style="padding: 0px !important;margin: 0px !important"><strong>Facebook:</strong> 
+                                                        <br />
+                                                    <p style="padding: 0px !important;margin: 0px !important;font-size: 14px !important"><strong>/neurocirugíaPERÚ</strong> 
                                                         <br />
                                                         <br>
                                                     </p>
@@ -926,7 +999,7 @@ $(document).ready(function(){
                     </div>
                 </div>
             </div>
-        </div>
+        
     </body>
     <footer id="cms-footer" class="no-margin-top">
         <div class="container">
@@ -937,7 +1010,31 @@ $(document).ready(function(){
             </div>
         </div>
     </footer>
-    <script>
+<script>
+
+$(document).ready(function(){
+    resize();
+});
+    function resize(){
+        if($(window).innerWidth() <= 751) {
+            $('.hidd').hide();
+            $('article').flipcarousel({
+                pagination : false,
+                loader : true,
+                itemsperpage: 1,
+                randomizer: 0.7
+            });
+        } else {
+            $('.hidd').show(); 
+            $('article').flipcarousel({
+                pagination : false,
+                loader : true,
+                itemsperpage: 3,
+                randomizer: 0.7
+            });
+        }
+    }
+
     var input = document.getElementById("dateField");
             var today = new Date();
             var day = today.getDate();
@@ -1010,7 +1107,7 @@ $(document).ready(function(){
         $(document).ready(function () {
             $('body').scrollspy({target: ".navbar", offset: 50});
         });
-    </script>
+</script>
     <script type='text/javascript' src='js/jquery.form.min.js'></script>
     <script type='text/javascript' src='js/modernizr.min.js'></script>
 

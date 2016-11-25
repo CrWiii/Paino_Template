@@ -5408,7 +5408,7 @@ img.wp-smiley, .rsswidget img {
         -webkit-opacity: 1;
         -khtml-opacity: 1;
         -moz-opacity: 1;
-        -ms-opacity: 1;
+        -ms-opacity: 1; 
         -o-opacity: 1;
         opacity: 1;
         /* BACKGROUND GRADIENT */
@@ -5926,7 +5926,7 @@ table thead th, .table thead th, table .thead th, .table .thead th, table thead 
 
 .cf7-zk-raven4 .wpcf7-form input, .cf7-zk-raven4 .wpcf7-form textarea, .cf7-zk-raven4 .wpcf7-form select {
     background: rgba(114,156,177,0.5);
-    border-color: white;
+    border-color: #6f6767;
     -webkit-border-radius: 0;
     -khtml-border-radius: 0;
     -moz-border-radius: 0;

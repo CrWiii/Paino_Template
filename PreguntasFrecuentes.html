@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
@@ -40,11 +40,8 @@
         <script type="text/javascript" src='js/slider/revolution.extension.slideanims.min.js'></script>
         <script type="text/javascript" src="js/slider/revolution.extension.layeranimation.min.js"></script>
         <script type="text/javascript" src="js/slider/revolution.extension.navigation.min.js"></script>
-
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
         <!--[if lte IE 9]>
           <link rel="stylesheet" type="text/css" href="http://raven.zooka.io/demo/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen">
           <![endif]-->
@@ -52,16 +49,45 @@
           <link rel="stylesheet" type="text/css" href="http://raven.zooka.io/demo/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen">
           <![endif]-->
         <!--common css-->
-        <!--<link rel='stylesheet' id='common-css' href='css/common.css' type='text/css' media='all' />-->
+        <link rel='stylesheet' id='common-css' href='css/common.css' type='text/css' media='all' />
         <!--index-custom-vc css-->
         <link rel='stylesheet' id='index-custom-vc-css' href='css/index-custom-vc.css' type='text/css' media='all' />
         <link rel='stylesheet' id='custom-css'  href='css/custom.css' type='text/css' media='all' /><script type='text/javascript' src='js/modernizr.min.js'></script> 
         <link rel='stylesheet' id='custom-css' href='css/custom.css' type='text/css' media='all' />
         <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
         <link href="http://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+        <script src="html5shiv.js"></script>
+        <script src="flip-carousel.js"></script>
+        <link href="flip-carousel.css" rel="stylesheet" />
         <style>
+        /*img {
+            max-width: 100%;
+            height: auto;
+            width: auto\9;
+
+        }*/
+
         .ui-draggable, .ui-droppable {
             background-position: top;
+        }
+
+        .contscr{
+            text-align: justify;
+            font-size: 16px;
+            overflow: scroll;
+            overflow-x:hidden;
+            height: 280px;
+            padding: 10px;
+        }
+        .carrr article {
+            width: 420px;
+        }
+        .carrr article > img {
+            padding-bottom: 20px;
+        }
+        article > h1,h2{
+            font-size: 28px !important;
+            margin-top: 0px !important;
         }
 
         .target{
@@ -80,13 +106,21 @@
         .imga{
             display: block;
             margin: auto auto;
-            padding-top: 35%;
             width:350px;
         }
-        .heas{
-            background: url(images/azul-02.png);
-            background-size: 100% 100%; 
-            opacity: 0.7;
+
+        .im{
+            padding-top: 35%;
+        }
+
+        .iim{
+            padding-top: 38%;
+        }
+        .iiim{
+            padding-top: 45%
+        }
+        .iiiim{
+            padding-top: 15%
         }
         .heag{
             background: url(images/faq.png) no-repeat;
@@ -97,6 +131,23 @@
             opacity: 0.7;
             height: 600px !important;
         }
+        .panel{
+            margin-bottom: 1px !important; 
+        }
+
+        .heas{
+            background: url(images/cuidado.png) no-repeat;
+            max-width: 100%;
+            height: auto;
+            width: auto\9;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            opacity: 0.7;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
         .fz{
              padding: 5em;
         }
@@ -106,30 +157,166 @@
 
         .btnLogin{
             text-align: center;
-            margin: 0 auto;
-
+            padding: 10px 120px 10px 120px; 
+            margin: 40px 230px;
+            font-size:20px !important;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px #444242;
         }
         .btnRegister{
-
+            text-align: center;
+            padding: 10px 100px 10px 100px; 
+            margin: 40px 230px;
+            font-size:20px !important;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px #444242;
         }
+        .ewq{
+            color: white !important;
+            line-height: 50px !important;
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #4c4848, 0 3px 0 #4c4848, 0 4px 0 #4c4848, 0 5px 0 #4c4848, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+        }
+        nav ul ul {
+                display: none;
+            }
+             
+            nav ul li:hover > ul {
+                display: block;
+            }
+
+        nav ul ul {
+    background: #88b6d2; border-radius: 0px; padding: 0;
+    position: absolute; top: 100%;
+}
+    nav ul ul li {
+        float: none; 
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        position: relative;
+    }
+        nav ul ul li a {
+            padding: 5px 10px;
+            /*color: #000;*/
+        }   
+            nav ul ul li a:hover {
+                background: #fff;
+            }
+            nav ul ul ul {
+    position: absolute; left: 100%; top:0;
+}
+
+    .edcv{
+        margin: 50px;
+    }
 
 
         @media (max-width: 767px) {
-            .secttt{
-                padding-top: 0px !important;
+            nav ul ul {
+                display: none;
+            }
+             
+            nav ul li:hover > ul {
+                display: block;
+            }
+
+            nav ul ul {
+                background: black; border-radius: 0px; padding: 0;
+                position: absolute; top: 100%;
+            }
+            nav ul ul li {
+                float: none; 
+                border-top: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+                position: relative;
+            }
+            nav ul ul li a {
+                padding: 5px 10px;
+                /*color: #000;*/
+                }   
+            nav ul ul li a:hover {
+                background: white;
+                }
+             nav ul ul ul {
+                position: absolute; left: 100%; top:0;
+            }
+
+
+
+            .edcv{
+                margin: 5px;
             }
             .heag{
-                height: 300px !important;
+                height: 350px !important;
+            }
+            .sazz{
+                margin-left: 12px;
+            }
+            .ewq{
+            line-height: 20px !important;
+            }
+
+            .fz{
+                font-size: 1.5em !important;
+            }
+            .saff{
+                height: 110px !important;
+            }
+            .safa{
+                padding-top: 15px;
+            }
+            .safb{
+                padding-top: 30px;
+            }
+            .iim{
+                padding-top: 30% !important;
+                padding-bottom: 40% !important;
+            }
+            .iiiim{
+                padding-bottom: 20% !important;
+            }
+            .qwdc{
+                height: 100%;
+            }
+            .tett{
+                padding-top: 70px;
+            }
+            .carrr article {
+                width: 300px;
+            }
+            .flip-carousel > ul > li{
+                width: 300px;
+            }
+            article {
+                width: 300px;
+            }
+            article img{
+                max-width: 260px;
+            }
+            article > h1, h2{
+                font-size: 22px !important;
+            }
+
+
+            .geg{
+                font-size: 15px;
+            }
+            .btnLogin{
+                text-align: center;
+                padding: 10px 80px 10px 80px; 
+                margin: 10px 50px;
+                font-size:20px !important;
+            }
+            .btnRegister{
+                text-align: center;
+                padding: 10px 60px 10px 60px; 
+                margin: 10px 50px;
+                font-size:20px !important;
             }
             .divf{
                 height: auto;
             }
             .fz{
                  padding: 1em
-            }
-            .heas{
-                height: 300px;
-                background-size: 400px 200px;
             }
             .target{
                 padding-top: 20px;
@@ -146,7 +333,8 @@
                 height: 100%;
             }
             .imga{
-                padding-top: 0px;
+                padding-top: 10%;
+                padding-bottom: 10%;
             }
             .tre{
                 /*margin: 0px !important;*/
@@ -185,14 +373,11 @@
             
             ::-webkit-scrollbar-thumb:vertical {
                 -webkit-border-radius: 6px;
-                background: #5d6f94 url(scrollbar_thumb_bg.png) no-repeat center;
-            }
-
-            .section2{
-                padding-top: 5em;
+                background: #5d6f94 url() no-repeat center;
             }
 
             .seccion{
+                padding-top: 1em;
                 padding-left: 0px;
                 padding-right: 0px;
 
@@ -231,39 +416,37 @@
             .cont{
                 height:450px;
             }
-
-            /* Style the buttons that are used to open and close the accordion panel */
-button.accordion {
-    background-color: #88b6d2;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+       button.accordion {
+    background-color: #88b6d2 !important;
+    color: #444 !important;
+    cursor: pointer !important;
+    padding: 10px !important;
+    width: 100% !important;
+    text-align: left !important;
+    border: none !important;
+    outline: none !important;
+    transition: 0.4s !important;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
+    background-color: #ddd !important;
 }
 
 div.panel {
-    margin: 0px !important;
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.6s ease-in-out;
-    opacity: 0;
+    margin: 0px !important !important;
+    padding: 0 18px !important;
+    background-color: white !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: 0.6s ease-in-out !important;
+    opacity: 0 !important;
 }
 
 div.panel.show {
-    padding: 20px;
-    opacity: 1;
-    max-height: 500px; 
+    padding: 10px !important;
+    opacity: 1 !important;
+    max-height: 500px !important; 
 }
         </style>
         <script>
@@ -273,9 +456,6 @@ div.panel.show {
 
     </head>
     <div class="panel-body">
-        <!--<div class="ir-arriba">
-            <span class="glyphicon glyphicon-arrow-up"></span>
-        </div>-->
     </div>
     <body>
 
@@ -294,44 +474,41 @@ div.panel.show {
                 <div>
                     <div class="collapse navbar-collapse navbar-right" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li><a href="#Inicio" class=""><span class="menu-title">Inicio</span></a></li>
-                            <li><a href="#DrPaino" class=""><span class="menu-title">Dr. Paino</span></a></li>
-                            <li><a href="#Especializaciones" class=""><span class="menu-title">Altos Niveles de Eficiencia</span></a></li>
+                            <li><a href="index.html#Inicio" class=""><span class="menu-title">Inicio</span></a></li>
+                            <li><a href="index.html#DrPaino" class=""><span class="menu-title">Dr. Paino</span></a></li>
+                            <li><a href="index.html#Especializaciones" class=""><span class="menu-title">Especialidades - Altos Niveles de Eficiencia</span></a></li>
                             <li><a href="" class=""><span class="menu-title">Noticias</span></a></li>
                             
                             <!--<li><a href="#Alianzas" class=""><span class="menu-title">Alianzas</span></a></li>-->
-                            <li><a href="" class=""><span class="menu-title">Preguntas Frecuentes</span></a></li>
-                            <li><a href="#Contacto" class=""><span class="menu-title">Citas Médicas</span></a></li>
+                            <li><a href="PreguntasFrecuentes.html" class=""><span class="menu-title">Preguntas Frecuentes</span></a></li>
+                            <li><a href="index.html#Contacto" class=""><span class="menu-title">Citas Médicas</span></a></li>
                             <!--<li>Otros
                                 <ul>
                                     <li><a href="#Contacto" class=""><span class="menu-title">gg</span></a></li>
                                     <li><a href="#Contacto" class=""><span class="menu-title">ss</span></a></li>
                                 </ul>
                             </li>-->
-                            <li><a href="" class=""><span class="menu-title">Otros</span></a>
-                                <!--<div class="collapse navbar-collapse navbar-right" id="myNavbar">
-                                    <ul class="nav navbar-nav">
-                                        <li><a href=""><span class="menu-title">Trabajo social</span></a></li>
-                                        <li><a href=""><span class="menu-title">Publicaciones</span></a></li>
-                                        <li><a href=""><span class="menu-title">Monografías</span></a></li>
-                                        <li><a href=""><span class="menu-title">Abstractos y Presentaciones</span></a></li>
-                                        <li><a href=""><span class="menu-title">Invitaciones</span></a></li>
-                                        <li><a href=""><span class="menu-title">Dedicatorias</span></a></li>
-                                        <li><a href=""><span class="menu-title">Posters</span></a></li>
-                                        <li><a href=""><span class="menu-title">Diplomas</span></a></li>
-                                    </ul>
-                                </div>-->
+                            <!--<li><a href="" class=""><span class="menu-title">Otros</span></a></li>-->
+
+                            <li><a href="Otros.html">Otros</a>
+                                <ul style="list-style-type:none">
+                                    <li><a href="Otros.html#Trabajosocial"><span class="menu-title">Trabajo Social</span></a></li>
+                                    <li><a href="Otros.html#Publicaciones"><span class="menu-title">Publicaciones</span></a></li>
+                                    <li><a href="Otros.html#Monografias"><span class="menu-title">Monografías</span></a></li>
+                                    <li><a href="Otros.html#Presentaciones"><span class="menu-title">Presentaciones</span></a></li>
+                                    <li><a href="Otros.html#Invitaciones"><span class="menu-title">Invitaciones</span></a></li>
+                                    <li><a href="Otros.html#Dedicatorias"><span class="menu-title">Dedicatorias</span></a></li>
+                                    <li><a href="Otros.html#Posters"><span class="menu-title">Posters</span></a></li>
+                                    <li><a href="Otros.html#Diplomas"><span class="menu-title">Diplomas</span></a></li>
+                                </ul>
                             </li>
-
-
                             <li><a style="padding-right: 0px;"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
-                            <li><a style="padding-left: 0px;"><span class="menu-title"><img src="images/Alianzas/spanish.png" width="30px"></span></a></li>
+                            <li><a style="padding-left: 0px;"><span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-
 
         <div id="Inicio" class="seccion">
             <div class="panel-body heag">
@@ -343,8 +520,8 @@ div.panel.show {
         </div>
 
 <div id="Preguntas" class="seccion">
-            <div class="panel-body">
-            <div style="margin: 50px;">
+    <div class="panel-body">
+        <div class="edcv">
             <button class="accordion">1.    ¿Cubrirá mi seguro las consultas Médicas y Cirugía?</button>
             <div class="panel">
               <p style="text-align: justify;">
@@ -382,40 +559,24 @@ div.panel.show {
                     El día de la operación tome desayuno a las 6:00 am., consistente en un jugo de papaya o naranja, manzanilla, 2 tostadas, después de eso no puede tomar ningún tipo de líquido.
                     Traer su CORSE RIGIDO BIVALVO – ORTOPEDIA WONG – Técnico Polo.
                     Telf. 4404190-114- 98182689, es a medida y demoran 10 días aproximadamente para entregarlo.
-
                 </p>
             </div>
-
         </div>
-                    
-            </div>
-        </div>
+    </div>
+</div>
 
         
-
-
-
-
-
-
-
-
     </body>
     <footer id="cms-footer" class="no-margin-top">
         <div class="container">
             <div id="cms-footer-bottom">
                 <div class="cms-footer-bottom-social">
-
-                    <!--<a href="http://twitter.com/" class="fa fa-twitter" title="Twitter"></a>-->
-                    <!--<a href="http://youtube.com/" class="fa fa-youtube-play" title="Youtube"></a>-->
-                    <!--<a href="https://www.vk.com/" class="fa fa-vk" title="VK"></a>-->
                 </div>
                 &copy; Site by <strong>Play</strong>Media. All Right Reserved.
             </div>
         </div>
     </footer>
-
-    <script>
+<script>
 
     var acc = document.getElementsByClassName("accordion");
     var i;
@@ -427,12 +588,10 @@ div.panel.show {
         }
     }
 
-
     var input = document.getElementById("dateField");
             var today = new Date();
             var day = today.getDate();
-            // Set month to string to add leading 0
-            var mon = new String(today.getMonth()+1); //January is 0!
+            var mon = new String(today.getMonth()+1);
             var yr = today.getFullYear();
             
               if(mon.length < 2) { mon = "0" + mon; }
@@ -443,7 +602,6 @@ div.panel.show {
             input.setAttribute('min', date);
 
         $(document).ready(function () {
-            $("#accordion").accordion({collapsible: true});
             $("#btnReserva").click(function () {
                 document.getElementById("btnReserva").value = "Enviando...";
                 $("#enviarCorreo").submit(function (e) {
@@ -502,17 +660,7 @@ div.panel.show {
         $(document).ready(function () {
             $('body').scrollspy({target: ".navbar", offset: 50});
         });
-        $(document).ready(function () {
-            var altura = $('.menu').offset().top;
-            $(window).on('scroll', function () {
-                if ($(window).scrollTop() > altura) {
-                    $('.menu').addClass('menu-fixed');
-                } else {
-                    $('.menu').removeClass('menu-fixed');
-                }
-            });
-        });
-    </script>
+</script>
     <script type='text/javascript' src='js/jquery.form.min.js'></script>
     <script type='text/javascript' src='js/modernizr.min.js'></script>
 

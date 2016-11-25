@@ -54,7 +54,40 @@
         <link rel='stylesheet' id='custom-css' href='css/custom.css' type='text/css' media='all' />
         <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
         <link href="http://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+        <script src="html5shiv.js"></script>
+        <script src="flip-carousel.js"></script>
+        <link href="flip-carousel.css" rel="stylesheet" />
         <style>
+        /*img {
+            max-width: 100%;
+            height: auto;
+            width: auto\9;
+        }*/
+        .fuimg{
+            width: 30%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contscr{
+            text-align: justify;
+            font-size: 16px;
+            overflow: scroll;
+            overflow-x:hidden;
+            height: 280px;
+            padding: 10px;
+        }
+        .carrr article {
+            width: 420px;
+        }
+        .carrr article > img {
+            padding-bottom: 20px;
+        }
+        article > h1,h2{
+            font-size: 28px !important;
+            margin-top: 0px !important;
+        }
 
         .target{
                 width: 800px; height: 570px; margin: auto 0;margin-left: 10px;
@@ -72,11 +105,28 @@
         .imga{
             display: block;
             margin: auto auto;
-            padding-top: 35%;
             width:350px;
         }
+
+        .im{
+            padding-top: 35%;
+        }
+
+        .iim{
+            padding-top: 38%;
+        }
+        .iiim{
+            padding-top: 45%
+        }
+        .iiiim{
+            padding-top: 15%
+        }
+
         .heas{
-            background: url(images/cuidado.png) no-repeat center center fixed; 
+            background: url(images/cuidado.png) no-repeat;
+            max-width: 100%;
+            height: auto;
+            width: auto\9;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -94,24 +144,125 @@
 
         .btnLogin{
             text-align: center;
-            margin: 0 auto;
-
+            padding: 10px 120px 10px 120px; 
+            margin: 40px 230px;
+            font-size:20px !important;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px #444242;
         }
         .btnRegister{
-
+            text-align: center;
+            padding: 10px 100px 10px 100px; 
+            margin: 40px 230px;
+            font-size:20px !important;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px #444242;
         }
+        .ewq{
+            color: white !important;
+            line-height: 50px !important;
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #4c4848, 0 3px 0 #4c4848, 0 4px 0 #4c4848, 0 5px 0 #4c4848, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+        }
+        nav ul ul {
+                display: none;
+            }
+             
+            nav ul li:hover > ul {
+                display: block;
+            }
+
+        nav ul ul {
+    background: #88b6d2; border-radius: 0px; padding: 0;
+    position: absolute; top: 100%;
+}
+    nav ul ul li {
+        float: none; 
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        position: relative;
+    }
+        nav ul ul li a {
+            padding: 5px 10px;
+            /*color: #000;*/
+        }   
+            nav ul ul li a:hover {
+                background: #fff;
+            }
+            nav ul ul ul {
+    position: absolute; left: 100%; top:0;
+}
 
 
         @media (max-width: 767px) {
+            .sazz{
+                margin-left: 12px;
+            }
+            .ewq{
+            line-height: 20px !important;
+            }
+
+            .fz{
+                font-size: 1.5em !important;
+            }
+            .saff{
+                height: 110px !important;
+            }
+            .safa{
+                padding-top: 15px;
+            }
+            .safb{
+                padding-top: 30px;
+            }
+            .iim{
+                padding-top: 30% !important;
+                padding-bottom: 40% !important;
+            }
+            .iiiim{
+                padding-bottom: 20% !important;
+            }
+            .qwdc{
+                height: 100%;
+            }
+            .tett{
+                padding-top: 70px;
+            }
+            .carrr article {
+                width: 300px;
+            }
+            .flip-carousel > ul > li{
+                width: 300px;
+            }
+            article {
+                width: 300px;
+            }
+            article img{
+                max-width: 260px;
+            }
+            article > h1, h2{
+                font-size: 22px !important;
+            }
+
+
+            .geg{
+                font-size: 15px;
+            }
+            .btnLogin{
+                text-align: center;
+                padding: 10px 80px 10px 80px; 
+                margin: 10px 50px;
+                font-size:20px !important;
+            }
+            .btnRegister{
+                text-align: center;
+                padding: 10px 60px 10px 60px; 
+                margin: 10px 50px;
+                font-size:20px !important;
+            }
             .divf{
                 height: auto;
             }
             .fz{
                  padding: 1em
-            }
-            .heas{
-                height: 300px;
-                background-size: 400px 200px;
             }
             .target{
                 padding-top: 20px;
@@ -128,7 +279,8 @@
                 height: 100%;
             }
             .imga{
-                padding-top: 0px;
+                padding-top: 10%;
+                padding-bottom: 10%;
             }
             .tre{
                 /*margin: 0px !important;*/
@@ -167,7 +319,7 @@
             
             ::-webkit-scrollbar-thumb:vertical {
                 -webkit-border-radius: 6px;
-                background: #5d6f94 url(scrollbar_thumb_bg.png) no-repeat center;
+                background: #5d6f94 url() no-repeat center;
             }
 
             .seccion{
@@ -210,55 +362,6 @@
             .cont{
                 height:450px;
             }
-
-            nav ul ul {
-                display: none;
-            }
-             
-            nav ul li:hover > ul {
-                display: block;
-            }
-            
-
-
-            nav ul li {
-    float: left;
-}
-    nav ul li:hover {
-        background: #88b6d2;
-        background: linear-gradient(top, #88b6d2 0%, #88b6d2 40%);
-        background: -moz-linear-gradient(top, #88b6d2 0%, #88b6d2 40%);
-        background: -webkit-linear-gradient(top, #88b6d2 0%,#88b6d2 40%);
-    }
-        nav ul li:hover a {
-            color: #fff;
-        }
-    
-    nav ul li a {
-        display: block; padding: 25px 15px;
-        color: #000; text-decoration: none;
-    }
- 
-nav ul ul {
-    background: #88b6d2; border-radius: 0px; padding: 0;
-    position: absolute; top: 100%;
-}
-    nav ul ul li {
-        float: none; 
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
-        position: relative;
-    }
-        nav ul ul li a {
-            padding: 5px 20px;
-            color: #000;
-        }   
-            nav ul ul li a:hover {
-                background: #88b6d2;
-            }
-            nav ul ul ul {
-    position: absolute; left: 100%; top:0;
-}
         </style>
         <script>
             $( "#target" ).scroll();
@@ -267,9 +370,6 @@ nav ul ul {
 
     </head>
     <div class="panel-body">
-        <!--<div class="ir-arriba">
-            <span class="glyphicon glyphicon-arrow-up"></span>
-        </div>-->
     </div>
     <body>
 
@@ -286,197 +386,400 @@ nav ul ul {
                     </div>
                 </div>
                 <div>
-                    <!--<div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li><a href="#Inicio" class=""><span class="menu-title">Inicio</span></a></li>
-                            <li><a href="#DrPaino" class=""><span class="menu-title">Dr. Paino</span></a></li>
-                            <li><a href="#Especializaciones" class=""><span class="menu-title">Altos Niveles de Eficiencia</span></a></li>
+                            <li><a href="index.html#Inicio" class=""><span class="menu-title">Inicio</span></a></li>
+                            <li><a href="index.html#DrPaino" class=""><span class="menu-title">Dr. Paino</span></a></li>
+                            <li><a href="index.html#Especializaciones" class=""><span class="menu-title">Especialidades - Altos Niveles de Eficiencia</span></a></li>
                             <li><a href="" class=""><span class="menu-title">Noticias</span></a></li>
                             
-                        
-                            <li><a href="" class=""><span class="menu-title">Preguntas Frecuentes</span></a></li>
-                            <li><a href="#Contacto" class=""><span class="menu-title">Citas Médicas</span></a></li>
-                        
-                            <li><a href="" class=""><span class="menu-title">Otros</span></a></li>
-                            <li><a style="padding-right: 0px;"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
-                            <li><a style="padding-left: 0px;"><span class="menu-title"><img src="images/Alianzas/spanish.png" width="30px"></span></a></li>
-                        </ul>
-                    </div>
-                </div>-->
-                <nav>
-                    <!--<ul style="list-style-type:none">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Tutoriales</a>
-                            <ul style="list-style-type:none">
-                                <li><a href="#">Photoshop</a></li>
-                                <li><a href="#">Illustrator</a></li>
-                                <li><a href="#">Diseño web</a>
-                                    <ul style="list-style-type:none">
-                                        <li><a href="#">HTML</a></li>
-                                        <li><a href="#">CSS</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Artículos</a>
-                            <ul style="list-style-type:none">
-                                <li><a href="#">Diseño web</a></li>
-                                <li><a href="#">Experiencia de usuario</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Inspiración</a></li>-->
+                            <!--<li><a href="#Alianzas" class=""><span class="menu-title">Alianzas</span></a></li>-->
+                            <li><a href="PreguntasFrecuentes.html" class=""><span class="menu-title">Preguntas Frecuentes</span></a></li>
+                            <li><a href="index.html#Contacto" class=""><span class="menu-title">Citas Médicas</span></a></li>
+                            <!--<li>Otros
+                                <ul>
+                                    <li><a href="#Contacto" class=""><span class="menu-title">gg</span></a></li>
+                                    <li><a href="#Contacto" class=""><span class="menu-title">ss</span></a></li>
+                                </ul>
+                            </li>-->
+                            <!--<li><a href="" class=""><span class="menu-title">Otros</span></a></li>-->
 
-
-                    <ul style="list-style-type:none">
-                        <li><a href="#Inicio" class=""><span class="menu-title">Inicio</span></a></li>
-                        <li><a href="#DrPaino" class=""><span class="menu-title">Dr. Paino</span></a></li>
-                        <li><a href="#Especializaciones" class=""><span class="menu-title">Altos Niveles de Eficiencia</span></a></li>
-                        <li><a href="" class=""><span class="menu-title">Noticias</span></a></li>
-                        <li><a href="" class=""><span class="menu-title">Preguntas Frecuentes</span></a></li>
-                        <li><a href="#Contacto" class=""><span class="menu-title">Citas Médicas</span></a></li>
-                        <li><a href="">Otros</a>
+                            <li><a href="#">Otros</a>
                                 <ul style="list-style-type:none">
-                                    <li><a href="#" class=""><span class="menu-title">Trabajo Social</span></a></li>
-                                    <li><a href="#" class=""><span class="menu-title">Publicaciones</span></a></li>
-                                    <li><a href="#" class=""><span class="menu-title">Monografías</span></a></li>
-                                    <li><a href="#" class=""><span class="menu-title">Presentaciones</span></a></li>
-                                    <li><a href="#" class=""><span class="menu-title">Invitaciones</span></a></li>
-                                    <li><a href="#" class=""><span class="menu-title">Dedicatorias</span></a></li>
-                                    <li><a href="#" class=""><span class="menu-title">Posters</span></a></li>
-                                    <li><a href="#" class=""><span class="menu-title">Diplomas</span></a></li>
+                                    <li><a href="Otros.html#Publicaciones"><span class="menu-title">Publicaciones</span></a></li>
+                                    <li><a href="Otros.html#Monografias"><span class="menu-title">Monografías</span></a></li>
+                                    <li><a href="Otros.html#Presentaciones"><span class="menu-title">Presentaciones</span></a></li>
+                                    <li><a href="Otros.html#Invitaciones"><span class="menu-title">Invitaciones</span></a></li>
+                                    <li><a href="Otros.html#Dedicatorias"><span class="menu-title">Dedicatorias</span></a></li>
+                                    <li><a href="Otros.html#Posters"><span class="menu-title">Posters</span></a></li>
+                                    <li><a href="Otros.html#Diplomas"><span class="menu-title">Diplomas</span></a></li>
                                 </ul>
                             </li>
                             <li><a style="padding-right: 0px;"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
-                            <li><a style="padding-left: 0px;"><span class="menu-title"><img src="images/Alianzas/spanish.png" width="30px"></span></a></li>
-                    </ul>
-                </nav>
-
+                            <li><a style="padding-left: 0px;"><span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
+<!--previewForVideo.png-->
+        <div id="Publicaciones" class="seccion" style="padding-top: 0px !important;">
+            <div class="panel-body" style="padding-top: 0px !important;">
+                <div class="vc_tta-container" data-vc-action="collapse">
+                    <div>
+                        <div class="vc_tta-tabs-container">
 
-
-        <div id="Inicio" class="seccion">
-            <div class="panel-body heas">
-                    <div class="col-md-12 hidden-xs hidden-sm fz"  style="opacity: 100;color:#000000; font-size: 3em; text-align: center;vertical-align: middle;">
-
-                    </div>
-
+                        <div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Publicaciones</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
                     
                 </div>
             </div>
+            <div class="panel-body" style="padding-top: 0px !important;">
+
+<ul style="text-align: left;margin-top: 80px">
+    <li>
+        JE Paino, MD, PhD;. H Gultikin, MD; Winn HR, MD. "Unusual Cryptococcal infection of the Central Nervous System: Case Report and Literature Review". Youmans Neurological Surgery E-Edition (4 Volume), 5th Edition 4 Volume ISBN 072163933X Saunders • Published February 2004.
+    </li>
+    <li>
+        Shapiro, RS; Paino, JE Hepatic Artery Thrombosis: Power Doppler Sonographic Demonstration of Intra-arterial Thrombus. Ultrasound J. Med.1999 Aug; 18 (8): 569-71
+        Levy, E.I .; Paino, J. E., M.D. .; Sarin, P.S., Ph.D .; Goldstein, A. L., Ph.D .;
+        Wright, D.C., M.D. .; Sekhar, L.N., M.D.
+        "Enzyme-linked immunosorbent assay Quantification of Cytokine Concentration in Human Meningiomas." Neurosurgery, 39 (4) October 1996.
+    </li>
+<li>Paino, J. E., M.D. .; Levy, E.I .; Sarin, P.S., Ph.D .; Goldstein, A. L., Ph.D .;
+Wright, D.C., M.D. .; Sekhar, L.N., M.D.
+"A Study of autocrine Growth Regulation in Human Meningiomas: The effects of blocking IL-6 and IL-6 receptor monoclonal antibodies With" (On review)
+</li>
+<li>
+Paino, J. E .; Sen, C. Proliferating Cell Nuclear Antigen (PCNA): An Immunohistochemical Tool for Tumor Progression Studies, Review of the literature ". (On review)
+</li>
+<li>
+    Paino, J.E., Hague, K., Paciucci, P.A., Ryder, J., Sen, C. Long-Term Cultures Explants Derived From Human Meningioma: Establishment and Characterization ". (Submitted)
+</li>
+</ul>
+</div>
 
 
 
+
+<div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Monografías</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
+                </div>
+            </div>
+    <div class="panel-body" style="padding-top: 80px !important;">
+
+        <ul style="text-align: left;margin-top: 10px">
+            <li>
+                Paino, J. E., M.D. "Flowcytometry: Scanning and Sorting for Beginners"
+            </li>
+            <li>
+                Internal publication, Biochemistry, The George Washington University, 1995.
+            </li>
+            <li>
+                Paino, J. E., M.D. .; Sternau, L. L., M.D. "Quick Reference for Neurosurgical Research" 1994.
+            </li>
+            <li>
+                Paino, J. E., M.D. .; Wallings, J. "Clinical Immunology: A Laboratory Manual" 1992.
+            </li>
+        </ul>
+    </div>
+
+    <div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Abstractos y Presentaciones</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
+                </div>
+            </div>
+    <div class="panel-body" style="padding-top: 80px !important;">
+
+        <ul style="text-align: left;margin-top: 10px">
+            <li>
+                Paino, J.E., Goldstein, AL, Ryder, .J, Paciucci, A., Post, KD, Sen, C. Prolifereation analysis of Meningioma Cells in Culture Latin American Congres of Neurosurgery, 30th Annual Meeting, Lima, PERU.. October, 2002.
+            </li>
+            <li>
+                Paino, J.E., Goldstein, AL, Ryder, .J., Paciucci, A., Post, KD, Sen, CProlifereation analysis of Meningioma Cells in Culture North American Skull Base Society, 12th Annual Meeting, San Diego, CA. March, 2001.
+            </li>
+            <li>
+                Paino, J.E., Hague, K., Ryder, .J., Paciucci, A. Sen, C.The Effects of High Dose Radiation on Meningioma Cells in Culture North American Skull Base Society, 11th Annual Meeting, Scttsdale, AZ. March, 2000.
+            </li>
+            <li>
+                Badamchian, M., Mora, C.A., Paino, J.E., Bauman, C.A. Goldstein A. L.
+                "The Pharmacokinetics of Thymosin α1 administration in Mice. Distribution of Tα1 in Brain, Serum, Urine and Major Organs of Mice. "Molecular Biology of the Cell, Vol. 6, Apoptosis II Abstr. 2073, pg 356a, Nov. 1995.
+            </li>
+            <li>
+                Badamchian, M., Mora, C.A., Paino, J.E., Bauman, C.A. A. Goldstein L. "Evaluation of Thymosin β4 (Tβ4) Levels in Brain, Serum, Urine, and Major Organs of Mice Following Administration of Synthetic Tβ4 IP."
+Molecular Biol. Of the Cell Vol. 6, Actin Associated Proteins II Abstr. 810. Pg 140a, Nov. 1995.
+</li>
+            <li>
+                Badamchian, M., Mora, C.A., Paino, J.E., Bauman, C.A. A. Goldstein L. "Evaluation of Thymosin β4 (Tβ4) Levels in Brain, Serum, Urine, and Major Organs of Mice Following Administration of Synthetic Tβ4 IP."
+Molecular Biol. Of the Cell Vol. 6, Actin Associated Proteins II Abstr. 810. pg140a, Nov. 1995.
+            </li>
+            <li>
+                Klimas, N. G., M.D. .; Fletcher, M.A.., Ph.D .; Wallings, J .; Paino, J. E., M.D. .; Patarca, R .; Garcia-Morales, R., M.D. .; Moody, D., Ph.D .; and O'Karma, T.
+                "Phase1 Trial of Adoptive Therapy with Purified CD8 Cells in HIV-1 Infection”
+                8th International Conference on AIDS. Amsterdam, Holland
+                Neuroscience of HIV Infection: Vol 2 pg B161, July1992.
+            </li>
+            <li>
+                Garcia-Morales, R., M.D. .; Klimas, N. G., M.D. .; Wallings, J., Paino, J. E., M.D. .; Patarca, R., Ph.D .; Moody, D .; Ph.D .; and Fletcher, M.A., Ph.D.
+"Phenotype of CD8 Lymphocytes from HIV-1 Infected Persons after Isolation and Ex-Vivo Expansion". Intrnl 7th Conference on AIDS, Florence, Italy, 1991.
+            </li>
+            <li>
+                B. Feinerman, J Paino 
+“Stem Cell and Gene Therapy for Tay Sachs”. 40 th  Annual Scientific Meeting of the ISEH – Society for Hematology and Stem Cells. Supplement to Experimental Hematoly. Journal for Hematology and Stem Cell Biology and Transplantation: Vol 39, Number 8, Supplement 1, August 2011.
+            </li>
+        </ul>
+    </div>
+
+    <div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Invitaciones</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
+                </div>
+            </div>
+    <div class="panel-body" style="padding-top: 80px !important;">
+
+        <ul style="text-align: left;margin-top: 10px">
+            <li>
+                Paino, J.E., Hague, K., Ryder.J, Paciucci, A. Sen, C.. "Long-term cultures derived from human meningioma explants: Establishment and characterization". Hospital das Nacoes, Curitiba, Parana, BRAZIL 1997.
+            </li>
+            <li>
+                Paino, J.E., Hague, K., Ryder.J, Paciucci, P.A., Sen, C. "Long-term cultures derived from human meningioma explants: Establishment and characterization". US & Canadian Academy of Pathology Annual Meeting, March, 1999.
+            </li>
+            <li>
+                Paino, J.E., Hague, K., Ryder, .J, Paciucci, A. Sen, C. "Long-term cultures derived from human meningioma explants: Establishment and characterization". Neurosurgery Research Day, Mount Sinai Medical Center, New York, NY. 1999.
+            </li>
+            <li>
+                Paino, J.E., Levy, E.I. "Immunology of The Central Nervous System". Mount Sinai Hospital. New York NY 1996.
+            </li>
+            <li>
+                Paino, J. E, "Immunology of The Central Nervous System". Neurological Sciences, Institute OscarTrelles Lima, Peru, Jan 1996.
+            </li>
+            <li>
+                Paino, J.E. "Brain Temperature With Brain Injury to Correlation" Neurosurgery Conferences Sylvester Comprehensive Cancer Center, U of Miami, FL. 1994.
+            </li>
+            <li>
+                Paino, J.E. "Descriptive presentation on Immunology Research Studies". Immunology, AIDS Interdisciplinary Conference "VA Hospital, Miami, FL, April, 1992.
+            </li>
+        </ul>
+    </div>
+
+     <div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Dedicatorias</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
+                </div>
+            </div>
+    <div class="panel-body" style="padding-top: 80px !important;">
+    <img src="images/dedica.jpg" class="fuimg">
+
+    </div>
+
+
+
+<div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Posters</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
+                </div>
+            </div>
+    <div class="panel-body" style="padding-top: 80px !important;">
+
+        <ul style="text-align: left;margin-top: 10px">
+            <li>
+                1998 AANS / CNS Philadelphia, PA, Joint section on Brain Tumors Biannual meeting. "Meningioma Cell Lines Derived from Human Explants: Establishment, Characterization and Analysis Proliferation".
+            </li>
+            <li>
+                Paino, J.E., Hague, K., Ryder.J, Paciucci, P.A., Sen, C. "Long-term cultures derived from human meningioma explants: Establishment and characterization". US & Canadian Academy of Pathology Annual Meeting, March, 1999.
+            </li>
+            <li>1997 National Medical Research Day. Galveston, Texas annualmeeting.</li>
+            <li>"Correlation of IL-1β and IL-6. The effects of blocking IL-6 and IL-6 receptor monoclonal antibodies With".</li>
+            <li>Levy, E.I .; Paino, J. E., M.D. .; Sarin, P.S., Ph.D .; Goldstein, A. L., Ph.D .;
+Wright, D.C., M.D. .; Sekhar, L.N., M.D.
+1996 International College of Surgeons. Washington, DC, May, Annual meeting. "A Study of autocrine Growth Regulation in Human Meningiomas: The effects of blocking IL-6 and IL-6 receptor monoclonal antibodies With".</li>
+<li>1995 AANS / CNS. Orlando, Florida, April, Annual Meeting.</li>
+<li>"Differential Cytokine Expression in Brain Neoplasms. Correlation of IL-1β and IL-6 The effects of blocking IL-6 and IL-6R receptor monoclonal antibodies With".</li>
+<li>Levy, E.I .; Paino, J. E., M.D. .; Sarin, P.S., Ph.D .; Goldstein, A. L., Ph.D .; Wright, D.C., M.D. .; Sekhar, L.N., M.D.
+1995, 1996. The William Beaumont Honor Society Research. 60th Annual Beaumont Day, "Differential Cytokine Expression in Brain Neoplasms: Correlation of IL-1β and IL-6". "The effects of blocking IL-6 and IL-6 receptor monoclonal antibodies With" (Two consecutive years award winner) Levy, EI, Paino, JE, MD; Sarin, PS, Ph.D .; Goldstein, AL, Ph. D .;
+Wright, D.C., M.D. .; Sekhar, L.N., M.D.</li>
+<li>1994, 1995 Science Research Day George Washington University Washington, D.C.October "Differential Cytokine Expression ..." & "A Study of autocrine Growth Regulation." Levy, E.I .; Paino, J. E., M.D. .; Sarin, P.S., Ph.D .; Goldstein, A. L., Ph.D .; Wright, D.C .; Sekhar.</li>
+        </ul>
+    </div>
+                        </div>
+
+                        <div class="vc_tta-panels-container">
+                            <div class="vc_tta-panels">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Monografias" class="seccion" style="padding-top: 0px !important;">
+            <div class="panel-body" style="padding-top: 0px !important;">
+                <div class="vc_tta-container" data-vc-action="collapse">
+                    <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
+                        <div class="vc_tta-tabs-container">
+                           
+                        </div>
+
+                        <div class="vc_tta-panels-container">
+                            <div class="vc_tta-panels">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Presentaciones" class="seccion" style="padding-top: 0px !important;">
+            <div class="panel-body" style="padding-top: 0px !important;">
+                <div class="vc_tta-container" data-vc-action="collapse">
+                    <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
+                        <div class="vc_tta-tabs-container">
+                           
+                        </div>
+
+                        <div class="vc_tta-panels-container">
+                            <div class="vc_tta-panels">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Invitaciones" class="seccion" style="padding-top: 0px !important;">
+            <div class="panel-body" style="padding-top: 0px !important;">
+                <div class="vc_tta-container" data-vc-action="collapse">
+                    <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
+                        <div class="vc_tta-tabs-container">
+                           
+                        </div>
+
+                        <div class="vc_tta-panels-container">
+                            <div class="vc_tta-panels">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Dedicatorias" class="seccion" style="padding-top: 0px !important;">
+            <div class="panel-body" style="padding-top: 0px !important;">
+                <div class="vc_tta-container" data-vc-action="collapse">
+                    <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
+                        <div class="vc_tta-tabs-container">
+                           
+                        </div>
+
+                        <div class="vc_tta-panels-container">
+                            <div class="vc_tta-panels">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Posters" class="seccion" style="padding-top: 0px !important;">
+            <div class="panel-body" style="padding-top: 0px !important;">
+                <div class="vc_tta-container" data-vc-action="collapse">
+                    <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
+                        <div class="vc_tta-tabs-container">
+                           
+                        </div>
+
+                        <div class="vc_tta-panels-container">
+                            <div class="vc_tta-panels">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Diplomas" class="seccion" style="padding-top: 0px !important;">
+            <div class="panel-body" style="padding-top: 0px !important;">
+                <div class="vc_tta-container" data-vc-action="collapse">
+                    <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
+                        <div class="vc_tta-tabs-container">
+                           
+                        </div>
+
+                        <div class="vc_tta-panels-container">
+                            <div class="vc_tta-panels">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        
     </body>
     <footer id="cms-footer" class="no-margin-top">
         <div class="container">
             <div id="cms-footer-bottom">
                 <div class="cms-footer-bottom-social">
-
-                    <!--<a href="http://twitter.com/" class="fa fa-twitter" title="Twitter"></a>-->
-                    <!--<a href="http://youtube.com/" class="fa fa-youtube-play" title="Youtube"></a>-->
-                    <!--<a href="https://www.vk.com/" class="fa fa-vk" title="VK"></a>-->
                 </div>
                 &copy; Site by <strong>Play</strong>Media. All Right Reserved.
             </div>
         </div>
     </footer>
-    <!-- Ventana emergente confirmación de reserva  -->
+<script>
 
-<!-- Ventana emergente anular reserva -->
-<!--
-<div id="modalAnula" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="exampleModalLabel">Anular Cita</h4>
-            </div>
-            <div class="modal-body" style="text-align:center">
-                <input type="text" id="COD_CODE" class="form-control" placeholder="Ingrese el Código" />
-            </div>
-            <div class="modal-footer" style="text-align:center">
-                <button type="button" class="btn btn-success" onClick="anularCitaProceso();">Anular</button>
-            </div>      
-        </div>
-    </div>
-</div>-->
-<!--
-<div class="modal fade" id="identidad_coorporativa" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Identidad Corporativa</h4>
-            </div>
-            <div class="modal-body">
-                <ul>
-                    <li>Identidad Digital</li>
-                    <li>Identidad Corporativa</li>
-                    <li>Creación de logotipo</li>
-                    <li>Papelería</li>
-                    <li>Packaging</li>
-                </ul>
-            </div>
-            <div class="modal-footer">                
-                <button type="button" class="btn btn-black" data-dismiss="modal">Cerrar</button>
-            </div>
-        </div>
-    </div>
-</div>-->
-<!--
-<div class="modal fade" id="gestion_diseño" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">GESTIÓN & DISEÑO</h4>
-            </div>
-            <div class="modal-body">
-                <ul>
-                    <li>Administración de Contenido</li>
-                    <li>Monitoreo y análisis</li>
-                    <li>Desarrollo de Campañas</li>
-                    <li>Segmentación de Publicidad</li>                    
-                </ul>
-            </div>
-            <div class="modal-footer">                
-                <button type="button" class="btn btn-black" data-dismiss="modal">Cerrar</button>
-            </div>
-        </div>
-    </div>
-</div>
--->
+$(document).ready(function(){
+    resize();
+});
+    function resize(){
+        if($(window).innerWidth() <= 751) {
+            $('.hidd').hide();
+            $('article').flipcarousel({
+                pagination : false,
+                loader : true,
+                itemsperpage: 1,
+                randomizer: 0.7
+            });
+        } else {
+            $('.hidd').show(); 
+            $('article').flipcarousel({
+                pagination : false,
+                loader : true,
+                itemsperpage: 3,
+                randomizer: 0.7
+            });
+        }
+    }
 
-<!--<div class="modal fade" id="estrategia_marketing" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">MARKETING</h4>
-            </div>
-            <div class="modal-body">
-                <ul>
-                    <li>Estrategias de Marketing según los objetivos de tu empresa</li>
-                    <li>Análisis y Reporte empresarial</li>
-                    <li>Desarrollo de Campañas On-Line / Off-Line</li>
-                    <li>Desarrollo de Campañas ATL / BTL</li>                    
-                </ul>
-            </div>
-            <div class="modal-footer">                
-                <button type="button" class="btn btn-black" data-dismiss="modal">Cerrar</button>
-            </div>
-        </div>
-    </div>
-</div>-->
-    <script>
     var input = document.getElementById("dateField");
             var today = new Date();
             var day = today.getDate();
-            // Set month to string to add leading 0
-            var mon = new String(today.getMonth()+1); //January is 0!
+            var mon = new String(today.getMonth()+1);
             var yr = today.getFullYear();
             
               if(mon.length < 2) { mon = "0" + mon; }
@@ -545,17 +848,7 @@ nav ul ul {
         $(document).ready(function () {
             $('body').scrollspy({target: ".navbar", offset: 50});
         });
-        $(document).ready(function () {
-            var altura = $('.menu').offset().top;
-            $(window).on('scroll', function () {
-                if ($(window).scrollTop() > altura) {
-                    $('.menu').addClass('menu-fixed');
-                } else {
-                    $('.menu').removeClass('menu-fixed');
-                }
-            });
-        });
-    </script>
+</script>
     <script type='text/javascript' src='js/jquery.form.min.js'></script>
     <script type='text/javascript' src='js/modernizr.min.js'></script>
 
