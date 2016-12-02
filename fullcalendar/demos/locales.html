@@ -8,24 +8,57 @@
 <script src='../lib/jquery.min.js'></script>
 <script src='../fullcalendar.min.js'></script>
 <script src='../locale-all.js'></script>
+<script src="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<style type="text/css">
+	body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+	font-size: 1em;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+</style>
 <script>
 
 	$(document).ready(function() {
 		var initialLocaleCode = 'en';
 
 		$('#calendar').fullCalendar({
+			locale: 'es',
 			header: {
 				left: 'prev,next today',
 				center: 'title',
 				right: 'month,agendaWeek,agendaDay,listMonth'
 			},
 			defaultDate: '2016-09-12',
-			locale: initialLocaleCode,
 			buttonIcons: false, // show the prev/next text
 			weekNumbers: true,
 			navLinks: true, // can click day/week names to navigate views
 			editable: true,
 			eventLimit: true, // allow "more" link when too many events
+			//navLinks: true, // can click day/week names to navigate views
+			/*selectable: true,
+			selectHelper: true,
+			select: function(start, end) {
+				var title = prompt('cita:');
+				var name = prompt('Nombre:');
+				var eventData;
+				if (title) {
+					eventData = {
+						title: title,
+						start: start,
+						end: end
+					};
+					$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+				}
+				$('#calendar').fullCalendar('unselect');
+			},*/
+			editable: true,
 			events: [
 				{
 					title: 'All Day Event',
@@ -102,6 +135,191 @@
 		});
 	});
 
+
+//fc-day fc-widget-content fc-tue fc-other-month fc-past
+
+	$( function() {
+    var dialog, form,
+ 
+      // From http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#e-mail-state-%28type=email%29
+      emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+      name = $( "#name" ),
+      email = $( "#email" ),
+      password = $( "#password" ),
+      allFields = $( [] ).add( name ).add( email ).add( password ),
+      tips = $( ".validateTips" );
+ 
+    function updateTips( t ) {
+      tips
+        .text( t )
+        .addClass( "ui-state-highlight" );
+      setTimeout(function() {
+        tips.removeClass( "ui-state-highlight", 1500 );
+      }, 500 );
+    }
+ 
+    function checkLength( o, n, min, max ) {
+      if ( o.val().length > max || o.val().length < min ) {
+        o.addClass( "ui-state-error" );
+        updateTips( "Length of " + n + " must be between " +
+          min + " and " + max + "." );
+        return false;
+      } else {
+        return true;
+      }
+    }
+ 
+    function checkRegexp( o, regexp, n ) {
+      if ( !( regexp.test( o.val() ) ) ) {
+        o.addClass( "ui-state-error" );
+        updateTips( n );
+        return false;
+      } else {
+        return true;
+      }
+    }
+ 
+    function addUser() {
+      var valid = true;
+      allFields.removeClass( "ui-state-error" );
+ 
+      valid = valid && checkLength( name, "username", 3, 16 );
+      valid = valid && checkLength( email, "email", 6, 80 );
+      valid = valid && checkLength( password, "password", 5, 16 );
+ 
+      valid = valid && checkRegexp( name, /^[a-z]([0-9a-z_\s])+$/i, "Username may consist of a-z, 0-9, underscores, spaces and must begin with a letter." );
+      valid = valid && checkRegexp( email, emailRegex, "eg. ui@jquery.com" );
+      valid = valid && checkRegexp( password, /^([0-9a-zA-Z])+$/, "Password field only allow : a-z 0-9" );
+ 
+      if ( valid ) {
+        $( "#users tbody" ).append( "<tr>" +
+          "<td>" + name.val() + "</td>" +
+          "<td>" + email.val() + "</td>" +
+          "<td>" + password.val() + "</td>" +
+        "</tr>" );
+        dialog.dialog( "close" );
+      }
+      return valid;
+    }
+ 
+    dialog = $( "#dialog-form" ).dialog({
+      autoOpen: false,
+      height: 400,
+      width: 350,
+      modal: true,
+      buttons: {
+        "Create an account": addUser,
+        Cancel: function() {
+          dialog.dialog( "close" );
+        }
+      },
+      close: function() {
+        form[ 0 ].reset();
+        allFields.removeClass( "ui-state-error" );
+      }
+    });
+ 
+    form = dialog.find( "form" ).on( "submit", function( event ) {
+      event.preventDefault();
+      addUser();
+    });
+ 
+    $( "#create-user" ).button().on( "click", function() {
+      dialog.dialog( "open" );
+    });
+  } );
+
+
+
+
+	$(document).ready(function() {
+    $myCalendar = $('#myCalendar').fullCalendar({
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: ''
+        },
+        theme: true,
+        selectable: true,
+        selectHelper: true,
+        height: 500,
+        select: function(start, end, allDay) {
+            $('#eventStart').datepicker("setDate", new Date(start));
+            $('#eventEnd').datepicker("setDate", new Date(end));
+            $('#calEventDialog').dialog('open');
+        },
+        eventClick: function(calEvent, jsEvent, view) {
+            $('#eventStart').datepicker("setDate", new Date(calEvent.start));
+            $('#eventEnd').datepicker("setDate", new Date(calEvent.end));
+            $('#calEventDialog #eventTitle').val(calEvent.title);
+            //                    alert(calEvent.className);
+            //                alert(calEvent.className=="gbcs-halfday-event"?"1":"2");
+            //                    $('#allday[value="' + calEvent.className=="gbcs-halfday-event"?"1":"2" + '"]').prop('checked', true);
+            $('#calEventDialog #allday').val([calEvent.className == "gbcs-halfday-event" ? "1" : "2"]).prop('checked', true);
+            $("#calEventDialog").dialog("option", "buttons", [
+                {
+                text: "Save",
+                click: function() {
+                    $(this).dialog("close");
+                }},
+            {
+                text: "Delete",
+                click: function() {
+                    $(this).dialog("close");
+                }},
+            {
+                text: "Cancel",
+                click: function() {
+                    $(this).dialog("close");
+                }}
+            ]);
+            $("#calEventDialog").dialog("option", "title", "Edit Event");
+            $('#calEventDialog').dialog('open');
+        },
+        editable: true
+    });
+    
+    var title = $('#eventTitle');
+    var start = $('#eventStart');
+    var end = $('#eventEnd');
+    var eventClass, color;
+    $('#calEventDialog').dialog({
+        resizable: false,
+        autoOpen: false,
+        title: 'Add Event',
+        width: 400,
+        buttons: {
+            Save: function() {
+                if ($('input:radio[name=allday]:checked').val() == "1") {
+                    eventClass = "gbcs-halfday-event";
+                    color = "#9E6320";
+                    end.val(start.val());
+                }
+                else {
+                    eventClass = "gbcs-allday-event";
+                    color = "#875DA8";
+                }
+                if (title.val() !== '') {
+                    $myCalendar.fullCalendar('renderEvent', {
+                        title: title.val(),
+                        start: start.val(),
+                        end: end.val(),
+                        allDay: true,
+                        className: eventClass,
+                        color: color
+                    }, true // make the event "stick"
+                    );
+                }
+                $myCalendar.fullCalendar('unselect');
+                $(this).dialog('close');
+            },
+            Cancel: function() {
+                $(this).dialog('close');
+            }
+        }
+    });
+});
+
 </script>
 <style>
 
@@ -130,14 +348,36 @@
 </head>
 <body>
 
-	<div id='top'>
+	<!--	<div id='top'>
 
 		Locales:
 		<select id='locale-selector'></select>
 
-	</div>
+	</div>-->
+	
 
-	<div id='calendar'></div>
+<div id="calEventDialog">
+    <form>
+        <fieldset>
+        <label for="eventTitle">Title</label>
+        <input type="text" name="eventTitle" id="eventTitle" /><br>
+        <label for="eventStart">Start Date</label>
+        <input type="text" name="eventStart" id="eventStart" /><br>
+        <label for="eventEnd">End Date</label>
+        <input type="text" name="eventEnd" id="eventEnd" /><br>
+        <input type="radio" id="allday" name="allday" value="1">
+        Half Day
+        <input type="radio" id="allday" name="allday" value="2">
+        All Day
+        </fieldset>
+    </form>
+</div>
+<!--<div style="border:solid 2px red;">-->
+       <div id='calendar'></div>
+<!--</div>-->
+
+
+
 
 </body>
 </html>
