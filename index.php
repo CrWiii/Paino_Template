@@ -9,8 +9,8 @@
         <script src="bootstrap/jquery.min.js" type="text/javascript"></script>       
         <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
         <link href="bootstrap/css/style-menu-play.css" rel="stylesheet" type="text/css"/>
-        <link href="bootstrap/logoplay.css" rel="stylesheet" type="text/css"/>
-        <link rel='stylesheet' id='contact-form-7-css' href='css/styles.css' type='text/css' media='all' />
+        <!--<link href="bootstrap/logoplay.css" rel="stylesheet" type="text/css"/>-->
+        <!--<link rel='stylesheet' id='contact-form-7-css' href='css/styles.css' type='text/css' media='all' />-->
         <link href="fonts/style.css" rel="stylesheet" type="text/css"/>
         <!--Revolution slider-css-->
         <link rel='stylesheet' id='rs-plugin-settings-css' href='css/slider/settings.css' type='text/css' media='all' />
@@ -32,11 +32,11 @@
         <!--jquery migrate js-->
         <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
         <!--revolution slider js-->
-        <script type='text/javascript' src='js/slider/jquery.themepunch.tools.min.js'></script>
+        <!--<script type='text/javascript' src='js/slider/jquery.themepunch.tools.min.js'></script>
         <script type='text/javascript' src='js/slider/jquery.themepunch.revolution.min.js'></script>
         <script type="text/javascript" src='js/slider/revolution.extension.slideanims.min.js'></script>
         <script type="text/javascript" src="js/slider/revolution.extension.layeranimation.min.js"></script>
-        <script type="text/javascript" src="js/slider/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="js/slider/revolution.extension.navigation.min.js"></script>-->
         <!--[if lte IE 9]>
           <link rel="stylesheet" type="text/css" href="http://raven.zooka.io/demo/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen">
           <![endif]-->
@@ -48,7 +48,8 @@
         <link rel='stylesheet' id='common-css' href='css/common.css' type='text/css' media='all' />
         <!--index-custom-vc css-->
         <link rel='stylesheet' id='index-custom-vc-css' href='css/index-custom-vc.css' type='text/css' media='all' />
-        <link rel='stylesheet' id='custom-css'  href='css/custom.css' type='text/css' media='all' /><script type='text/javascript' src='js/modernizr.min.js'></script> 
+        <link rel='stylesheet' id='custom-css'  href='css/custom.css' type='text/css' media='all' />
+        <script type='text/javascript' src='js/modernizr.min.js'></script> 
         <link rel='stylesheet' id='custom-css' href='css/custom.css' type='text/css' media='all' />
         <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
         <link href="http://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
@@ -66,6 +67,19 @@
             height: auto;
             width: auto\9;
         }*/
+
+        #top {
+        background: #eee;
+        border-bottom: 1px solid #ddd;
+        padding: 0 10px;
+        line-height: 40px;
+        font-size: 12px;
+        }
+        #calendar {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 10px;
+        }
         .titlePai{
             text-align: center;
             font-size: 2.5em;
@@ -130,7 +144,8 @@
             margin: 20px;
             }
         .gg{
-            padding-top: 80px;padding-left: 25%;
+            padding-top: 80px;
+            padding-left: 15%;
         }
         .imgt{
                 width: 400px;
@@ -402,44 +417,8 @@
 
     <body>
 
+    <?php include('menu.php'); ?>
 
-<nav class="navbar navbar-default top-mantain" style="margin-bottom: 0px !important;">
-    <div class="navbar-header" style="background-color: white;">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-    <a class="navbar-brand">
-        <div id="logo-play" class="pull-left clearfix"><a class="cms-main-logo hidden-sm" href="#"><img alt="" src="images/logo.png" title="Paino"> </a></div>
-    </a>
-  </div>
-
-    <div class="navbar-collapse collapse" aria-expanded="true" style="background-color: #ffffff !important;"><!--<div class="navbar-collapse collapse in" aria-expanded="true">-->
-        <ul class="nav navbar-nav" style="padding-left: 30px;">
-            <li><a tabindex="0" href="#Inicio" class="tyti">Inicio</a>
-            <li><a tabindex="0" href="#DrPaino" class="tyti"><span class="menu-title">Dr. Paino</span></a></li>
-            <li><a tabindex="0" href="#Especializaciones" class="tyti"><span class="menu-title">Especialidades - Altos Niveles de Eficiencia</span></a></li>
-            <li><a tabindex="0" href="Noticias.html" class="tyti"><span class="menu-title">Noticias</span></a></li>
-            <li><a tabindex="0" href="PreguntasFrecuentes.html" class="tyti"><span class="menu-title">Preguntas Frecuentes</span></a></li>
-            <li><a tabindex="0" href="#Contacto" class="tyti"><span class="menu-title">Citas Médicas</span></a></li>
-            <li class="dropdown"><a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="false" class="tyti">Otros<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a tabindex="0" href="Otros.html#Publicaciones"><span>Publicaciones</span></a></li>
-                    <li><a tabindex="0" href="Otros.html#Monografias"><span>Monografías</span></a></li>
-                    <li><a tabindex="0" href="Otros.html#Presentaciones"><span>Presentaciones</span></a></li>
-                    <li><a tabindex="0" href="Otros.html#Invitaciones"><span>Invitaciones</span></a></li>
-                    <li><a tabindex="0" href="Otros.html#Dedicatorias"><span>Dedicatorias</span></a></li>
-                    <li><a tabindex="0" href="Otros.html#Posters"><span>Posters</span></a></li>
-                    <li><a tabindex="0" href="Otros.html#Diplomas"><span>Diplomas</span></a></li>
-                </ul>
-            </li>
-            <li><a style="padding-right: 0px;" class="tyti"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
-            <li><a style="padding-left: 0px;" class="tyti"><span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span></a></li>
-        </ul>
-    </div>
-</nav>
         <div id="Inicio" class="seccion" style="padding-top: 80px !important;">
             <div class="panel-body  heas">
                     <div class="col-md-12 fz"  style="opacity: 100;color:#000000; font-size: 3em; text-align: center;vertical-align: middle;">
@@ -756,24 +735,30 @@
             <div class="panel-body gg" style="background-color: white;" >
                 <div class="col-md-12" >
                     <div class="col-md-2 col-sm-4 col-xs-4 tt">
+                         <a href="AF_DolorDeCuello(NoImprimible).pdf" target="_blank">
                          <img src="images/gu.png" style="display: block;margin: auto auto;" /><br>
-                        <p style="text-align: center;padding: 0px !important">Guía 1</p>
+                        <p style="text-align: center;padding: 0px !important">Guía 1 - Dolor de Cuello</p>
+                        </a>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-4 tt">
+                        <a href="LowBackPain.pdf" target="_blank">
                         <img src="images/gu.png" style="display: block;margin: auto auto;" /><br>
-                        <p style="text-align: center;padding: 0px !important">Guía 2</p>
+                        <p style="text-align: center;padding: 0px !important">Guía 2 - Low Back Pain</p>
+                        </a>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-4 tt">
+                        <a href="SpinalStenosis.pdf" target="_blank">
                         <img src="images/gu.png" style="display: block;margin: auto auto;"/><br>
-                        <p style="text-align: center;padding: 0px !important">Guía 3</p>
+                        <p style="text-align: center;padding: 0px !important">Guía 3 - Spinal Stenosis</p>
+                        </a>
                     </div>
-
+                    <div class="col-md-2 col-sm-4 col-xs-4 tt">
+                        <a href="http://www.youblisher.com/p/867089-Guia-Paciente-Proposit/" target="_blank"><img src="images/gu.png" style="display: block;margin: auto auto;"/><br>
+                        <p style="text-align: center;padding: 0px !important">Guía 4 - Proposit</p></a>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
         <div id="Alianzas" class="seccion" style="padding-top: 0px !important">
             <div class="panel-body" style="background-color: #88b6d2;">
                 <div style="text-align: center;" class=" clearfix" id="cms-custom-headding-15679b50e50b82">
@@ -787,32 +772,33 @@
                 <div class="col-md-12" >
                     <div class="col-md-4 col-sm-6 col-xs-6 qwdc saff safa" style="background-color: #e6e6e6" >
                         <div class="imgt">
-                            <img class="imga im" src="images/Alianzas/GWPortrait.png" alt=""/>
+                            <a href="https://www.gwu.edu/" target="_blank"><img class="imga im" src="images/Alianzas/GWPortrait.png" alt=""/></a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-6 qwdc" >
                         <div class="imgt">
-                            <img class="imga iim" src="images/Alianzas/Mount_Sinai.png" alt=""/>
+                            <a href="http://www.mountsinai.org/" target="_blank"><img class="imga iim" src="images/Alianzas/Mount_Sinai.png" alt=""/></a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-6 qwdc saff safb" style="background-color: #e6e6e6;">
                         <div class="imgt">  
-                            <img class="imga iiim" src="images/Alianzas/Mount.png" alt=""/>
+                            <a href="https://www.msmc.com/" target="_blank"><img class="imga iiim" src="images/Alianzas/Mount.png" alt=""/></a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-6 qwdc" >
                         <div class="imgt">  
-                            <img class="imga iiiim" src="images/Alianzas/umiami-logo.png"  alt=""/>
+                            <a href="http://welcome.miami.edu/" target="_blank"><img class="imga iiiim" src="images/Alianzas/umiami-logo.png"  alt=""/></a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-6 qwdc saff" style="background-color: #e6e6e6">
                         <div class="imgt">  
-                            <img class="imga iiiim" src="images/Alianzas/GLG_logo.png" alt=""/>
+                            <a href="https://glg.it/" target="_blank"><img class="imga iiiim" src="images/Alianzas/GLG_logo.png" alt=""/></a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-6 qwdc" >
                         <div class="imgt">  
-                            <img class="imga iiiim" src="images/Alianzas/Cedars.jpg"  alt=""/>
+                            <a href="http://www.cedars-sinai.edu/index.aspx?gclid=Cj0KEQiAtK3DBRCBxt-Yxduq5p4BEiQAbFiaPUSVV-dP3Sr3QACMlCivOLuV3CuV8v6t2xXtWAKMMAkaArwL8P8HAQ
+" target="_blank"><img class="imga iiiim" src="images/Alianzas/Cedars.jpg"  alt=""/></a>
                         </div>
                     </div>
 
@@ -887,7 +873,7 @@
                             <button class="btnLogin" id="btnLogin">Cita</button>
                         </div>
                         <div>
-                            <button class="btnRegister" id="btncalendar">Calendario</button>
+                            <button class="btnRegister" id="btncalendar" data-toggle="modal" data-target=".bs-example-modal-lg">Calendario</button>
                         </div>
                     </div>
                 </div>
@@ -993,8 +979,19 @@
                     </div>
                 </div>
             </div>
+            
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div style="margin:15px;">
+                        Calendario
+                    </div>
+                </div>
+            </div>
+        </div>
+
         
-    </body>
+    
     <footer id="cms-footer" class="no-margin-top">
         <div class="container">
             <div id="cms-footer-bottom">
@@ -1149,9 +1146,9 @@ $(document).ready(function(){
         };
         /* ]]> */
     </script>
-    <script type='text/javascript' src='js/mislider.cms.js'></script>
+    <!--<script type='text/javascript' src='js/mislider.cms.js'></script>-->
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         var setREVStartSize = function () {
             try {
                 var e = new Object,
@@ -1258,9 +1255,7 @@ $(document).ready(function(){
                     }
                 });
             }
-        }); /*ready*/
-
-        /* <![CDATA[ */
+        });
         var CMSOptions = {
             "menu_sticky": "",
             "menu_sticky_tablets": "",
@@ -1268,9 +1263,6 @@ $(document).ready(function(){
             "paralax": "1",
             "back_to_top": "1"
         };
-        /* ]]> */
-
-        /* <![CDATA[ */
         var mejsL10n = {
             "language": "en-US",
             "strings": {
@@ -1291,8 +1283,7 @@ $(document).ready(function(){
         var _wpmejsSettings = {
             "pluginPath": "\/demo4\/wp-includes\/js\/mediaelement\/"
         };
-        /* ]]> */
-    </script>
+    </script>-->
 
 </body>
 

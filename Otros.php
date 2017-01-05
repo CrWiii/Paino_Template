@@ -70,6 +70,13 @@
             margin-right: auto;
         }
 
+        .fuimg2{
+            width: 70%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .contscr{
             text-align: justify;
             font-size: 16px;
@@ -369,60 +376,11 @@
         </script>
 
     </head>
-    <div class="panel-body">
-    </div>
+
     <body>
 
-        <nav class="navbar navbar-play navbar-fixed-top navbar-right">
-            <div class="container">
-                <div class="navbar-header">
-                    <div id="cms-nav-extra" class="pull-right navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="font-size: 1.1em; ">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </div>
-                    <div id="logo-play" class="pull-left clearfix">
-                        <a class="cms-main-logo hidden-sm" href="#">
-                            <img alt="" src="images/logo.png" title="Play Media"> 
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html#Inicio" class=""><span class="menu-title">Inicio</span></a></li>
-                            <li><a href="index.html#DrPaino" class=""><span class="menu-title">Dr. Paino</span></a></li>
-                            <li><a href="index.html#Especializaciones" class=""><span class="menu-title">Especialidades - Altos Niveles de Eficiencia</span></a></li>
-                            <li><a href="" class=""><span class="menu-title">Noticias</span></a></li>
-                            
-                            <!--<li><a href="#Alianzas" class=""><span class="menu-title">Alianzas</span></a></li>-->
-                            <li><a href="PreguntasFrecuentes.html" class=""><span class="menu-title">Preguntas Frecuentes</span></a></li>
-                            <li><a href="index.html#Contacto" class=""><span class="menu-title">Citas Médicas</span></a></li>
-                            <!--<li>Otros
-                                <ul>
-                                    <li><a href="#Contacto" class=""><span class="menu-title">gg</span></a></li>
-                                    <li><a href="#Contacto" class=""><span class="menu-title">ss</span></a></li>
-                                </ul>
-                            </li>-->
-                            <!--<li><a href="" class=""><span class="menu-title">Otros</span></a></li>-->
+<?php include('menu.php'); ?>
 
-                            <li><a href="#">Otros</a>
-                                <ul style="list-style-type:none">
-                                    <li><a href="Otros.html#Publicaciones"><span class="menu-title">Publicaciones</span></a></li>
-                                    <li><a href="Otros.html#Monografias"><span class="menu-title">Monografías</span></a></li>
-                                    <li><a href="Otros.html#Presentaciones"><span class="menu-title">Presentaciones</span></a></li>
-                                    <li><a href="Otros.html#Invitaciones"><span class="menu-title">Invitaciones</span></a></li>
-                                    <li><a href="Otros.html#Dedicatorias"><span class="menu-title">Dedicatorias</span></a></li>
-                                    <li><a href="Otros.html#Posters"><span class="menu-title">Posters</span></a></li>
-                                    <li><a href="Otros.html#Diplomas"><span class="menu-title">Diplomas</span></a></li>
-                                </ul>
-                            </li>
-                            <li><a style="padding-right: 0px;"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
-                            <li><a style="padding-left: 0px;"><span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-<!--previewForVideo.png-->
         <div id="Publicaciones" class="seccion" style="padding-top: 0px !important;">
             <div class="panel-body" style="padding-top: 0px !important;">
                 <div class="vc_tta-container" data-vc-action="collapse">
@@ -464,7 +422,7 @@ Paino, J. E .; Sen, C. Proliferating Cell Nuclear Antigen (PCNA): An Immunohisto
 
 
 
-
+<div id="Monografias" class="seccion" style="padding-top: 0px !important;">
 <div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
                 <div style="text-align: center;" class=" clearfix" >
                     <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Monografías</strong></p>                                   
@@ -490,7 +448,8 @@ Paino, J. E .; Sen, C. Proliferating Cell Nuclear Antigen (PCNA): An Immunohisto
             </li>
         </ul>
     </div>
-
+</div>
+<div id="Presentaciones" class="seccion" style="padding-top: 0px !important;">
     <div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
                 <div style="text-align: center;" class=" clearfix" >
                     <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Abstractos y Presentaciones</strong></p>                                   
@@ -539,7 +498,8 @@ Molecular Biol. Of the Cell Vol. 6, Actin Associated Proteins II Abstr. 810. pg1
             </li>
         </ul>
     </div>
-
+    </div>
+<div id="Invitaciones" class="seccion" style="padding-top: 0px !important;">
     <div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
                 <div style="text-align: center;" class=" clearfix" >
                     <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Invitaciones</strong></p>                                   
@@ -574,7 +534,8 @@ Molecular Biol. Of the Cell Vol. 6, Actin Associated Proteins II Abstr. 810. pg1
             </li>
         </ul>
     </div>
-
+</div>
+<div id="Dedicatorias" class="seccion" style="padding-top: 0px !important;">
      <div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
                 <div style="text-align: center;" class=" clearfix" >
                     <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Dedicatorias</strong></p>                                   
@@ -587,9 +548,9 @@ Molecular Biol. Of the Cell Vol. 6, Actin Associated Proteins II Abstr. 810. pg1
     <img src="images/dedica.jpg" class="fuimg">
 
     </div>
+</div>
 
-
-
+<div id="Posters" class="seccion" style="padding-top: 0px !important;">
 <div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
                 <div style="text-align: center;" class=" clearfix" >
                     <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Posters</strong></p>                                   
@@ -630,13 +591,23 @@ Wright, D.C., M.D. .; Sekhar, L.N., M.D.</li>
                 </div>
             </div>
         </div>
+</div>
 
-        <div id="Monografias" class="seccion" style="padding-top: 0px !important;">
-            <div class="panel-body" style="padding-top: 0px !important;">
-                <div class="vc_tta-container" data-vc-action="collapse">
-                    <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
-                        <div class="vc_tta-tabs-container">
-                           
+
+
+<div id="Diplomas" class="seccion" style="padding-top: 0px !important;">
+<div class="panel-body" style="background-color: #88b6d2;margin-top: 100px">
+                <div style="text-align: center;" class=" clearfix" >
+                    <p style="color:#ffffff;font-size: 2.5em; text-transform: uppercase; line-height: normal; padding-top: 20px;padding-left: 0px;padding-right: 0px;"><strong class="subtit">Diplomas</strong></p>                                   
+                </div>                                
+                <div class="wpb_text_column wpb_content_element ">
+                    
+                </div>
+            </div>
+    <div class="panel-body" style="padding-top: 80px !important;">
+        <img src="images/dip.jpg" class="fuimg2 ">
+       
+    </div>
                         </div>
 
                         <div class="vc_tta-panels-container">
@@ -647,96 +618,7 @@ Wright, D.C., M.D. .; Sekhar, L.N., M.D.</li>
                 </div>
             </div>
         </div>
-
-        <div id="Presentaciones" class="seccion" style="padding-top: 0px !important;">
-            <div class="panel-body" style="padding-top: 0px !important;">
-                <div class="vc_tta-container" data-vc-action="collapse">
-                    <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
-                        <div class="vc_tta-tabs-container">
-                           
-                        </div>
-
-                        <div class="vc_tta-panels-container">
-                            <div class="vc_tta-panels">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="Invitaciones" class="seccion" style="padding-top: 0px !important;">
-            <div class="panel-body" style="padding-top: 0px !important;">
-                <div class="vc_tta-container" data-vc-action="collapse">
-                    <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
-                        <div class="vc_tta-tabs-container">
-                           
-                        </div>
-
-                        <div class="vc_tta-panels-container">
-                            <div class="vc_tta-panels">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="Dedicatorias" class="seccion" style="padding-top: 0px !important;">
-            <div class="panel-body" style="padding-top: 0px !important;">
-                <div class="vc_tta-container" data-vc-action="collapse">
-                    <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
-                        <div class="vc_tta-tabs-container">
-                           
-                        </div>
-
-                        <div class="vc_tta-panels-container">
-                            <div class="vc_tta-panels">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="Posters" class="seccion" style="padding-top: 0px !important;">
-            <div class="panel-body" style="padding-top: 0px !important;">
-                <div class="vc_tta-container" data-vc-action="collapse">
-                    <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
-                        <div class="vc_tta-tabs-container">
-                           
-                        </div>
-
-                        <div class="vc_tta-panels-container">
-                            <div class="vc_tta-panels">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="Diplomas" class="seccion" style="padding-top: 0px !important;">
-            <div class="panel-body" style="padding-top: 0px !important;">
-                <div class="vc_tta-container" data-vc-action="collapse">
-                    <div class="vc_general vc_tta vc_tta-tabs vc_tta-style-zk-raven vc_tta-o-shape-group vc_tta-tabs-position-top vc_tta-controls-align-center">
-                        <div class="vc_tta-tabs-container">
-                           
-                        </div>
-
-                        <div class="vc_tta-panels-container">
-                            <div class="vc_tta-panels">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
+</div>
 
 
 

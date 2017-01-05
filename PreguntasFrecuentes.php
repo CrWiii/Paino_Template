@@ -455,60 +455,9 @@ div.panel.show {
         </script>
 
     </head>
-    <div class="panel-body">
-    </div>
     <body>
 
-        <nav class="navbar navbar-play navbar-fixed-top navbar-right">
-            <div class="container">
-                <div class="navbar-header">
-                    <div id="cms-nav-extra" class="pull-right navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="font-size: 1.1em; ">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </div>
-                    <div id="logo-play" class="pull-left clearfix">
-                        <a class="cms-main-logo hidden-sm" href="#">
-                            <img alt="" src="images/logo.png" title="Play Media"> 
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html#Inicio" class=""><span class="menu-title">Inicio</span></a></li>
-                            <li><a href="index.html#DrPaino" class=""><span class="menu-title">Dr. Paino</span></a></li>
-                            <li><a href="index.html#Especializaciones" class=""><span class="menu-title">Especialidades - Altos Niveles de Eficiencia</span></a></li>
-                            <li><a href="" class=""><span class="menu-title">Noticias</span></a></li>
-                            
-                            <!--<li><a href="#Alianzas" class=""><span class="menu-title">Alianzas</span></a></li>-->
-                            <li><a href="PreguntasFrecuentes.html" class=""><span class="menu-title">Preguntas Frecuentes</span></a></li>
-                            <li><a href="index.html#Contacto" class=""><span class="menu-title">Citas Médicas</span></a></li>
-                            <!--<li>Otros
-                                <ul>
-                                    <li><a href="#Contacto" class=""><span class="menu-title">gg</span></a></li>
-                                    <li><a href="#Contacto" class=""><span class="menu-title">ss</span></a></li>
-                                </ul>
-                            </li>-->
-                            <!--<li><a href="" class=""><span class="menu-title">Otros</span></a></li>-->
-
-                            <li><a href="Otros.html">Otros</a>
-                                <ul style="list-style-type:none">
-                                    <li><a href="Otros.html#Trabajosocial"><span class="menu-title">Trabajo Social</span></a></li>
-                                    <li><a href="Otros.html#Publicaciones"><span class="menu-title">Publicaciones</span></a></li>
-                                    <li><a href="Otros.html#Monografias"><span class="menu-title">Monografías</span></a></li>
-                                    <li><a href="Otros.html#Presentaciones"><span class="menu-title">Presentaciones</span></a></li>
-                                    <li><a href="Otros.html#Invitaciones"><span class="menu-title">Invitaciones</span></a></li>
-                                    <li><a href="Otros.html#Dedicatorias"><span class="menu-title">Dedicatorias</span></a></li>
-                                    <li><a href="Otros.html#Posters"><span class="menu-title">Posters</span></a></li>
-                                    <li><a href="Otros.html#Diplomas"><span class="menu-title">Diplomas</span></a></li>
-                                </ul>
-                            </li>
-                            <li><a style="padding-right: 0px;"><span class="menu-title"><img src="images/Alianzas/english.png" width="20px"></span></a></li>
-                            <li><a style="padding-left: 0px;"><span class="menu-title"><img class="sazz" src="images/Alianzas/spanish.png" width="30px"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+<?php include('menu.php'); ?>
 
         <div id="Inicio" class="seccion">
             <div class="panel-body heag">
